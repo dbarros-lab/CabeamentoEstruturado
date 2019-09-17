@@ -96,7 +96,7 @@
 %% ====================================
 %% ====================================
 
-\title{Cabeamento Estruturado para Escritórios de Pequenos Negócios}
+\title{Cabeamento Estruturado para Escritório de Pequenos Negócios}
 
 
 % Title of your article goes here
@@ -136,7 +136,7 @@
 %% ====================================
 %% ====================================
 
-\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos equipamentos. Cada vez mais presentes no mercado os escritórios \textit{small business} são estruturas simples e possuem e muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, mas subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. O projeto contemplará o levantamento de planta física, elaboração da planta lógica, equipamentos a serem implementados conforme a necessidade, os custos envolvidos para a devida implementação. Trata-se de projeto-modelo fictício para uso em diversas aplicações. No cenário atual em que diversas redes são erroneamente implementadas e com práticas duvidosas, faz-se necessário um modelo guia, prático, pois muitas vezes a leitura de normas textuais se tornam praticamente ignoradas por pequenos negócios, pela dificuldade técnica de seus textos e falta de mão de obra e orçamento para implementação.}
+\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos equipamentos. Cada vez mais presentes no mercado os escritórios \textit{small business} são estruturas simples que possuem e muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, mas subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. O projeto contemplará o levantamento de planta física, elaboração da planta lógica, equipamentos a serem implementados conforme a necessidade, os custos envolvidos para a devida implementação. Trata-se de projeto-modelo fictício para uso em diversas aplicações. No cenário atual em que diversas redes são erroneamente implementadas e com práticas duvidosas, faz-se necessário um guia prático, pois, muitas vezes, a leitura de normas textuais se tornam praticamente ignoradas por pequenos negócios, seja pela dificuldade técnica de seus textos e falta de mão de obra para sua correta interpretação ou falta de orçamento para o direcionamento correto de custos.}
 
 
 %% ====================================
@@ -169,33 +169,90 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-Explique nesta primeira seção qual seria o perfil do caso. Perfil do cliente, quantidade de colaboradores, quantidade de equipamentos de TI atualmente.
 
-Indique também nesta seção o escopo do projeto.
+Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa o cliente de que os "500 megas" contratados poderá ser subutilizado caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps e estranha o fato de a velocidade contratada não estar sendo entregue pelo provedor de serviços. Este vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (FastEthernet).
+\bigskip
 
-Apresente um overview do parque tecnológico do caso.
+Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente se prestar atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (Gigabit) e possa beneficiar-se ainda de par metálico com fornecimento do serviço de fibra óptica. Há detalhes importantes desde um pequeno conector e seu banhamento metálico até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
+\bigskip
+
+\subsection{Escopo do Projeto}
+O escopo deste projeto é um novo escritório equipado com 25 computadores de mesa, 1 servidor, 1 roteador, 1 \textit{switch} e 3 pontos de acesso sem fio. Também se prevê redundância no acesso à Internet, com a assinatura de dois provedores. Será recomendado o uso de equipamento da marca marca \textit{Mikrotik}, especialmente pelo nível de configuração que se pode obter a um excelente custo-benefício. 
+
 \subsection{Benefícios}
-Hoje em dia, o estado em que muitas redes cabeadas estão projetadas, toda a "parafernália" comumente suporta velocidades de até 100 Mbps e não mais que isso, visto que a maioria dos roteadores de escritórios e domésticos são comercializados como roteadores base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido à instalação do cabeamento atual em seu local de trabalho, podendo trazer algumas frustrações, como gargalos de velocidade e dúvidas sobre o serviço externo, que muitas vezes não tem culpa de seu cliente estar mal preparado para receber a nova tecnologia. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o início para que se possa aproveitar de um serviço com plenitude, por longo tempo.
+Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas até 100 Mbps. A maioria dos roteadores de escritórios ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: gargalos na velocidade, má conexão devido à conectores prensados manualmente com alicates. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure muitos anos.
 
 \subsection{Organizações Envolvidas}
-Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
+Em se tratando de projeto fictício, não há organizações envolvidas. Para fins de orientação, a seguinte tabela demonstra um conjunto de organizações, empresas ou profissionais que poderão eventualmente participar no envolvimento da implementação de uma rede.\\
 
-Sugestão: crie uma tabela contento a relação delas.
+% =======================================
+% TABELINHA DE PROFISSIONAIS E ÓRGÃOS
+% =======================================
 
+\begin{table}[]
+	\centering
+	\renewcommand{\arraystretch}{2.0}
+	\begin{tabular}{|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Profissional / Empresa}} &	 \multicolumn{1}{|c|}{\textbf{Serviço}}                                 		  \\ \hline		Provedor de Internet 1                                
+		& Serviço de acesso à Internet                                              \\ \hline
+	    Provedor de Internet 2                               
+	    & Serviço de acesso à Internet para redundância            					\\ \hline
+		Engenheiro Elétrico                                  
+		& Instalações elétricas relacionadas e não relacionadas à rede          \\ \hline
+		Analista de Compras 
+        & Orçamentos e compras de equipamentos          \\ \hline
+		Projetista da Rede                                   
+		& Projeta, configura e coloca em operação a rede lógica    \\ \hline
+		Instalador da Rede                                   
+		& Profissional ou equipe que instala a rede física           \\ \hline
+		Telecom Local                                        
+		& Instala/remaneja os troncos telefônicos         \\ \hline
+		Empresa de Telefonia                                    
+		& Profissional para instalar PABX e cabos telefônicos    \\ \hline
+		ANATEL                                  
+		& Órgão credenciador para certificação de redes \\ \hline
+	\end{tabular}
+\end{table}
 
+% =======================================
+% FIM DA TABELA
+% =======================================
 
-\section{Estado atual}
-Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
-
-Caso tenha rede, deixe claro:
-\begin{itemize}
-	\item os passivos de rede atuais:path panels, cabos, etc..;
-	\item as principais reclamações dos usuários. Qual o principal motivo da reestruturação? Efetue uma pesquisa junto aos colaboradores para determinar quais problemas a rede apresenta.
-	\item Observações. Analise a rede e verifique se há estruturas que não se enquadram nas normas ou que indicam suspeita de problemas.
-\end{itemize}
 
 \section{Requisitos}
-Crie uma enumeração dos requisitos do projeto.
+
+\subsection{Velocidade real contratada e percebida}
+Toda a instalação deverá perceber a velocidade real do provedor de serviços de Internet contratado, acima de 100Mbps, isto é, os \textit{hosts} deverão suportar as transmissões na base 10/100/1000, sem gargalos.
+
+\subsection{Extinção de conectores manualmente prensados com alicate}
+Talvez um dos sintomas mais simples de um nó da rede que está apresentando falhas, fatalmente é devido a um conector estar manualmente prensado na ponta do fio de rede. Para uma rede certificada, é necessário que apenas se utilize a ferramenta de inserção (\textit{punch-down}) e um cordão injetado (\textit{patch cord}).
+
+\subsection{Tolerância à falha - Redundância contra quedas no serviço}
+O roteador principal do escritório deverá receber dois sinais de WAN em duas interfaces, e deverá priorizar a mais veloz como a principal WAN; ao passo que, havendo um eventual blecaute e falta do sinal, o segundo provedor de internet assume o fornecimento de acesso, sem que o usuário final perceba que ocorreu um problema.
+
+\subsection{Cobre de alta qualidade}
+Para garantir uma boa longevidade da estrutura de instalação, sendo instalação nova, é preferível somente o uso de cabos de rede Categoria 6 (CAT6), por 03 motivos: \\ \\
+(a) Geralmente possuem bitola maior no cobre;\\
+(b) Possuem um separador que isola cada par trançado. Este separador fornece resistência física ao cabo.\\
+(c) São um bom custo benefício para redes Gigabit.\\
+
+Em se tratando de cobre de alta qualidade, também se pensa em conectores corretos, da Categoria 6, pois o uso de conectores da Categoria 5e poderão causar problemas de incompatibilidade pelas características físicas entre estas categorias.
+
+\subsection{Todos os equipamentos ativos e passivos na base 1000}
+Um bom cabeamento poderá ser rendido à tremenda subutilização se a rede estiver interligada à dispositivos que operam somente na base 10/100. Proritariamente, a compra de equipamentos -- roteadores, \textit{switches} e \textit{access points} -- deverá observar as características de que tais operam na base 10/100/1000, suportando as velocidades Gigabit.
+
+\subsection{WiFi - Padrão IEEE 802.11ac implementado}
+Este protocolo permite velocidades médias de 600Mbps nos pontos de acesso, ou seja, na data atual, uma referência muito boa para os padrões de Wi-Fi. (INSERIR REFERÊNCIA) 
+
+\subsection{Normas ABNT - Listadas algumas como prioritárias}
+\begin{itemize}
+	\item Dois pontos de rede por área de trabalho.(INSERIR REFERÊNCIA) 
+	\item Aterramento isolado e proteção contra surtos.(INSERIR REFERÊNCIA) 
+	\item Manutenção. (INSERIR REFERÊNCIA) 
+	
+\end{itemize}
+
 
 \section{Usuários e Aplicativos}
 Explique nesta seção os usuários atuais e o perfil de crescimento, se por exemplo, há estimativa na evolução da empresa no que tange a quantidade de usuários, pontos de redes, equipamentos.
