@@ -19,7 +19,10 @@
 \usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}	% Custom captions under/above floats
 \usepackage{epstopdf}												% Converts .eps to .pdf
 \usepackage{subfig}													% Subfigures
-\usepackage{booktabs}												% Nicer tables
+\usepackage{booktabs}
+			% Nicer tables
+\usepackage{float}
+												
 \usepackage{fix-cm}													% Custom fontsizes
 \usepackage[utf8]{inputenc}
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
@@ -189,7 +192,7 @@ Em se tratando de projeto fictício, não há organizações envolvidas. Para fi
 % TABELINHA DE PROFISSIONAIS E ÓRGÃOS
 % =======================================
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{2.0}
 	\begin{tabular}{|l|l|}
@@ -245,32 +248,145 @@ Um bom cabeamento poderá ser rendido à tremenda subutilização se a rede esti
 \subsection{WiFi - Padrão IEEE 802.11ac implementado}
 Este protocolo permite velocidades médias de 600Mbps nos pontos de acesso, ou seja, na data atual, uma referência muito boa para os padrões de Wi-Fi. (INSERIR REFERÊNCIA) 
 
-\subsection{Normas ABNT - Listadas algumas como prioritárias}
+\subsection{Normas ABNT NBR 14565 - Listadas algumas como prioritárias}
 \begin{itemize}
-	\item Dois pontos de rede por área de trabalho.(INSERIR REFERÊNCIA) 
-	\item Aterramento isolado e proteção contra surtos.(INSERIR REFERÊNCIA) 
-	\item Manutenção. (INSERIR REFERÊNCIA) 
+	\item Dois pontos de rede por área de trabalho. \cite{abnt14565}
+	\item Aterramento isolado e proteção contra surtos. \cite{abnt14565}
+	\item Manutenção. \cite{abnt14565}
 	
 \end{itemize}
 
 
 \section{Usuários e Aplicativos}
-Explique nesta seção os usuários atuais e o perfil de crescimento, se por exemplo, há estimativa na evolução da empresa no que tange a quantidade de usuários, pontos de redes, equipamentos.
- 
+O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio, e usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada rede lógica separada para a acomodação dos dispositivos sem fio dos eventuais visitantes. A rede projetada deverá conter 2 pontos por área de trabalho (ATR), outros dois pontos nas áreas de impressora, incluindo pontos extras. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas trabalhando, não há projeto de expansibilidade de imediato, no entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par (04 vias) trançado.
 
 \subsection{Usuários}
-Crie uma relação da quantidade, perfil de usuários de seu projeto.
+
+Nesta seção será descrita a tabela de todos os profissionais atuantes na edificação que farão o uso do cabeamento estruturado. E a explicação da rotina do acesso à rede de cada um deles.
+
+% =======================================
+% TABELA DE FUNCIONÁRIOS
+% =======================================
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{2.0}
+	\begin{tabular}{|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Usuário}} &	 \multicolumn{1}{|c|}{\textbf{Aplicativos mais utilizados}}                                 		  \\ \hline		Diretor                                
+		& Windows e Microsoft Office                                              \\ \hline
+		Recepcionista                               
+		& Windows e Microsoft Outlook            					\\ \hline
+		Analista de T.I.                                  
+		& Windows Server, SQL Server, RouterOS (MikroTik)          \\ \hline
+		Adminstrador 1 a 4 
+		& Windows e Microsoft Office         \\ \hline
+		Contador 1 e 2                                  
+		& Windows, Microsoft Office e programas fiscais    \\ \hline
+	\end{tabular}
+\end{table}
+
+% =======================================
+% FIM DA TABELA
+% =======================================
+
+O \textbf{diretor da empresa} utilizar-se-á do sistema operacional Windows 10 e da suíte de aplicativos Microsoft Office. Grande parte da função do diretor é comandar a sua empresa, realizando contatos, conferindo planilhas no Servidor de Arquivos e comunicando-se com demais funcionários. É posição estratégica de liderança. Deve compreender que o uso bem empregado da tecnologia alavanque seus negócios, portanto deverá valorizar especialmente o Analista de T.I., pois seu negócio, além de estar disponível na Internet, precisa deste profissional como que na função de um "coringa", sempre apto a socorrê-lo numa situação de indisponibilidade com algum serviço.
+\\ \\
+O(a) \textbf{recepcionista} faz uso intenso do Microsoft Outlook, agendando compromissos, verificando e-mails a serem repassados e atendendo à telefonemas. Calendário e agendamento de compromissos é a palavra chave aqui. Também é o(a) profissional que é o "cartão de visita" da empresa, por conta do primeiro e subsequentes atendimentos prestados aos clientes.
+\\ \\
+O \textbf{analista de tecnologia da informação} é o profissional que se encarregará de tomar conta da infraestrutura de rede, do servidor físico, da sala de equipamentos (SEQ) -- com acesso restrito -- equipamentos ativos e passivos de rede. Também será responsável pela manutenção de software, sendo os mais importantes o Windows Server e seus serviços críticos como o servidor de arquivos (File Server), o servidor de banco de dados, usado pela contabilidade, e o sistema operacional RouterOS (bastante similiar ao CISCO IOS, nos roteadores CISCO). Tais tarefas também incluem rotinas de backup e contato com fornecedores de equipamentos e serviços de T.I.
+\\ \\
+Serão 04 funcionários atrelados à administração da empresa, \textbf{administradores} com diversas tarefas administrativas: folha de pagamento, impostos, contas a pagar, custos, despesas, compras e atividades bancárias. Disponibilidade de estar \textit{online} é essencial para esses funcionários.
+\\ \\
+Parte crítica da empresa e importantes funções são a de \textbf{contador}, em número de 2. Além do uso do sistema operacional Windows, intenso uso do Microsoft Office, mais especificamente o aplicativo Excel e de programas fiscais exigidos pela Receita Federal. Fazem uso intensivo do banco de dados SQL Server, registrando empenhos e demais atividades de contabilidade considerados operações muito críticas.
+
+
 
 \subsection{Aplicativos}
-Crie uma relação dos aplicativos e seus níveis críticos de uso.
+
+Nesta seção será descrita a tabela de aplicativos e suas funções críticas no negócio. As aplicações críticas levam à frente um asterisco (*).
+
+
+
+% =======================================
+% TABELA DE APLICATIVOS
+% =======================================
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{2.0}
+	\begin{tabular}{|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Aplicativo/Sistema}} &	 \multicolumn{1}{|c|}{\textbf{Descrição  de aplicativo}}                                 		  \\ \hline
+		Windows Server 2016*                               
+		& Servidor: File Server*, SQL Server*.                                               \\ \hline
+		Windows 10                             
+		& Sistema operacional das estações           					\\ \hline
+		SQL Server                                  
+		& Serviço do Windows Server          \\ \hline
+		RouterOS
+		& Sistema operacional do roteador         \\ \hline
+		Microsoft Office                                  
+		& Suite com aplicativos de escritório   \\ \hline
+	\end{tabular}
+\end{table}
+
+% =======================================
+% FIM DA TABELA
+% =======================================
+
+Nas estações de trabalho, impera-se pelo uso do sistema operacional \textbf{Microsoft Windows 10} (versão atual de compilação número 1930) e \textbf{Microsoft Office Professional 2016}, com as respectivas aplicações incorporadas: \\ 
+
+\begin{itemize}
+	\item Microsoft Word 2016 
+	\item Microsoft Excel 2016
+	\item Microsoft PowerPoint 2016
+	\item Microsoft Outlook 2016
+	\item Microsoft Publisher 2016
+	\item Microsoft Access 2016
+\end{itemize}
+
+
+
+O sistema RouterOS, incorporado no roteador Mikrotik, equivalente ao CISCO IOS, totalmente operado pela linha de comando e de extremo poder a um custo relativamente acessível e muito melhor que roteadores domésticos convencionais, até mesmo superior às linhas domésticas da CISCO (Linksys). Fornecerá o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de internet e balancear esta carga, caso um dos links torne-se indisponível. Mais sobre este roteador na tabela e equipamentos de redes.
+
+
+Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP nem DNS para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas, daí a necessidade de não se preocupar com serviços de DHCP e DNS neste servidor. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas, devido a melhor segurança. 
+
+No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa. E será armazenado neste servidor.
+
+Por segurança, o analista de T.I. deverá separar a rede Wi-Fi em duas redes lógicas. Os convidados ao escritório podem acessar somente uma dessas redes lógicas. Os funcionários acessarão a rede Wi-Fi principal. Falar-se-á mais sobre os \textit{access points} MikroTik mais adiante, que são aparelhos muito robustos com seu próprio sistema operacional embutido.
 
 
 \section{Estrutura predial existente}
 
-Explique aqui a planta física dos prédios
-Pode ser anexada, em escala ou não.
+Trata-se de escritório de 9 cômodos, desconsiderando a área de circulação que é a area de ingresso ao andar. Situa-se numa edificação de um 01 térreo e 01 andar. O escritório em si é o 1º andar. O acesso ao telhado é fácil, visto que a edificação é construída com bom madeiramento e telhas cerâmicas. A parte elétrica bem isolada, sem emaranhados de fios, o que facilita a retirada de algumas telhas para a travessia de alguns cabos de rede que fazem maiores interligações entre o \textit{switch} e cada cômodo. \\
 
-Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
+As restrições de instalação são quebras da alvenaria e nova feitura de conduítes com argamassa. Nesse caso, utilizar-se-á pedaços de conduítes laranja (reforçado) entre laje e descida aos pontos de rede, em cada cômodo. 
+
+Os cabos deverão sofrer curvaturas de no máximo 45 graus e de volta em posição retilínea, seja ela vertical ou horizontal. As saídas dos pontos de rede deverão apresentar sua respectiva tomada externa, que deverão ser posicionadas à 40 cm do chão. Canaletas deverão ser utilizadas para a acomodação e boa visibilidade das instalações. 
+
+%inicio dos comandos para criar uma nova pagina A3 horizontal
+\clearpage
+\KOMAoptions{paper=a3, paper=landscape, DIV=20}
+\recalctypearea
+%\subsection{Planta Física com Mobília}
+
+\begin{figure}
+	%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[width=\textwidth]{planta_01}
+	}
+	\caption{Planta física com mobília - Formato A3}
+	\label{fig1}
+\end{figure}
+
+%Retornar ao formato A4
+\clearpage
+\KOMAoptions{paper=a4, paper=portrait, DIV=15}
+\recalctypearea
+%-- reinicio em A4 
+
 
 \section{Planta Lógica - Elementos estruturados}
 
@@ -323,7 +439,7 @@ Quais relatórios de certificação serão (ou deveriam ser) entregues?
 Revisões periódicas na rede, emissão de certificados para novos pontos.
 
 \subsection{Plano de expansão}
-Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as estremidades da rede? 
+Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as extremidades da rede? 
 
 \section{Risco}
 Enumerar e explicar os riscos do projeto.
@@ -384,7 +500,7 @@ Você também pode modificar a tabela manualmente, incluindo, por exemplo h! den
 
 \subsection{Figuras}
 
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
+As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig10} apresenta.....
 
 Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
 
@@ -412,19 +528,8 @@ Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90.
 	\label{fig3}
 \end{figure}
 
-\subsubsection{Resumo gráfico}
 
-Você pode optar por fazer um resumo no formato de mapa mental/conceitual. 
-Aqui foi utilizado o site https://app.mindmup.com para gerar o mapa.
 
-Para utilizar o resumo gráfico, remova o texto da seção resumo (linha 137) e inclua o código para inserir a figura, conforme figura \ref{fig4}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth,height=5cm,keepaspectratio]{fig4}
-	\caption{Exemplo de resumo gráfico}
-	\label{fig4}	
-\end{figure}
 
 %% ***********************************************************************
 %% === ate aqui    =====  ================================================
