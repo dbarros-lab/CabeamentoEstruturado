@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.9)  28 SEP 2019 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.9)  8 OCT 2019 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,6 +1072,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
+
+ []
+
 [9]
 
 Package typearea Warning: Bad type area settings!
@@ -1097,9 +1107,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 371.
+(typearea)              on input line 391.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 371.
+(typearea)             dimensions of LaTeX on input line 391.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 146%
@@ -1124,14 +1134,14 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 372.
+(typearea)              on input line 392.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 372.
-<planta_01.png, id=45, 1932.65344pt x 1041.93993pt>
+(typearea)             dimensions of LaTeX on input line 392.
+<planta_01.png, id=45, 1932.4998pt x 1041.77205pt>
 File: planta_01.png Graphic file (type png)
 <use planta_01.png>
-Package pdftex.def Info: planta_01.png  used on input line 379.
-(pdftex.def)             Requested size: 1015.76349pt x 547.61491pt.
+Package pdftex.def Info: planta_01.png  used on input line 399.
+(pdftex.def)             Requested size: 1015.76349pt x 547.59026pt.
 [10 <./planta_01.png>]
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
@@ -1149,9 +1159,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 386.
+(typearea)              on input line 406.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 386.
+(typearea)             dimensions of LaTeX on input line 406.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1168,11 +1178,11 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 387.
+(typearea)              on input line 407.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 387.
+(typearea)             dimensions of LaTeX on input line 407.
  (./tab1.tex
-<fig1.png, id=51, 608.2725pt x 423.5825pt>
+<fig1.png, id=52, 608.2725pt x 423.5825pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 8.
@@ -1185,7 +1195,7 @@ Package pdftex.def Info: fig1.png  used on input line 9.
 
 
  <./fig1.png>]
-Overfull \hbox (61.71268pt too wide) in paragraph at lines 425--430
+Overfull \hbox (61.71268pt too wide) in paragraph at lines 445--450
 []\OT1/cmr/m/n/12 (-20) Segue uma rela^^Xc~ao de fer-ra-men-tas: http://asana.c
 om/, https://trello.com/, http://www.ganttproject.biz/,
  []
@@ -1205,24 +1215,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [13]
 
-LaTeX Warning: Reference `fig10' on page 14 undefined on input line 503.
+LaTeX Warning: Reference `fig10' on page 14 undefined on input line 523.
 
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 509.
+Package pdftex.def Info: fig1.png  used on input line 529.
 (pdftex.def)             Requested size: 478.00635pt x 332.87494pt.
-<fig2.png, id=64, 214.8025pt x 516.93124pt>
+<fig2.png, id=65, 214.8025pt x 516.93124pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 517.
+Package pdftex.def Info: fig2.png  used on input line 537.
 (pdftex.def)             Requested size: 214.80197pt x 516.92998pt.
-<fig3.jpg, id=65, 533.5935pt x 361.35pt>
+<fig3.jpg, id=66, 533.5935pt x 361.35pt>
 File: fig3.jpg Graphic file (type jpg)
 <use fig3.jpg>
-Package pdftex.def Info: fig3.jpg  used on input line 526.
+Package pdftex.def Info: fig3.jpg  used on input line 546.
 (pdftex.def)             Requested size: 705.86pt x 478.00635pt.
 
-LaTeX Warning: Float too large for page by 50.45999pt on input line 529.
+LaTeX Warning: Float too large for page by 50.45999pt on input line 549.
 
 
 AED: lastpage setting LastPage
@@ -1235,10 +1245,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21166 strings out of 494541
- 377610 string characters out of 6176674
- 684058 words of memory out of 5000000
- 24446 multiletter control sequences out of 15000+600000
+ 21164 strings out of 494541
+ 377598 string characters out of 6176674
+ 684040 words of memory out of 5000000
+ 24444 multiletter control sequences out of 15000+600000
  557074 words of font info for 130 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  54i,13n,121p,9093b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1257,9 +1267,9 @@ cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 /texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on modelo_projeto.pdf (17 pages, 4042486 bytes).
+Output written on modelo_projeto.pdf (17 pages, 2114860 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  29210 words of extra memory for PDF output out of 29859 (max. 10000000)
