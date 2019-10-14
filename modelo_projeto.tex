@@ -410,8 +410,55 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 
 \section{Planta Lógica - Elementos estruturados}
 
-\subsection{Estado atual}
-Deve ter a planta atual, se for o caso
+\subsection{Visão do cabeamento}
+A planta lógica é apresentada na Figura 2. Conforme determina a norma, é necessário observar algumas coisas num projeto. Primeiro, a variedade de plantas excedem por muitas vezes a própria norma, sendo impossível de se ter um padrão seguindo à risca. Segundo porque a própria norma torna opcional determinadas feituras num projeto, tal como a identificação por código de cor, quando uma edificação não tem mais que um pavimento.
+\\
+
+Para a simplificação da planta lógica, foram divididos, do \textit{switch}, portas que compreendem as numerações A, B, C e D. Sendo estas, A: Portas 1-10; B: Portas 11-20; C: Portas 21-30 e D: Portas 31-40. Oito portas restantes ficam como suplementares em eventuais problemas com as portas utilizadas. As letras também indicam os eletrodutos que correm pela laje e descem por canaletas e calhas verticais. 
+\\
+
+Observe-se que é importante neste agrupamento, meios de assegurar a melhor organização possível. No que tange às áreas de trabalho, são recomendados, no mínimo, 2 pontos por ATR, sendo pontos opcionais permitidos. Denominadas de ATR, as áreas de trabalho são pequenos espaços de trabalho, de um funcionário ou de dispositivos utilizados por funcionários, como impressoras e outros equipamentos. Os pontos RJ45 devem ser etiquetados com iniciação PT. Não é o caso de termos mais do que 01 \textit{switch} operando nesta rede, então foi simplificado o etiquetamento das saídas, como PT, duto de origem e/o grupo de portas com numeração.
+\\
+
+A Sala de Equipamentos (SEQ) é o local em que residirá o \textit{rack} da rede, comportando um \textit{switch} de 48 portas, e o roteador \textit{Mikrotik}. Ambos equipamentos ativos, suportando o padrão Gigabit. Dá-se a subida dos cabos pela laje, pelo cômodo SEQ, com todos os cabos distribuídos em 4 caminhos, até o ponto de descida (\textit{spots} verdes, na figura). Na descida, encaminhar-se-ão por eletrocalhas fechadas e canaletas, até os \textit{keystones}, evitando ao máximo, que se prense conectores às terminações dos cabos. 
+\\
+
+Na planta, é possível observar que temos indicações de número de cabos dentro da canaleta ou, da calha. Em certos pontos, temos por certo que recebemos em torno de 8 cabos; e, com a ligação sequencial dos PTs, a quantidade de cabos vai diminuindo. É por isso que temos certas indicações como "4 x UTP" e "2 x UTP" na sequência: pois está contando em 02, tendo-se 02 cabos devidamente instalados, de 04 possíveis, naquele segmento. Importante observar que o manuseio dos cabos UTP sejam o mais cuidadoso possível: nenhuma dobra abaixo de 90, para que o cabo não perca suas características físicas de transmissão -- uma única dobra incorreta pode comprometer aquele ponto na rede. 
+\\
+
+Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, bem como as impressoras de rede (\textit{Wi-Fi} 01 a 04), sendo posicionados para uma cobertura razoável de sinal sem fio. O QG, a entrada das comunicações, é o armário da edificação que comporta as entradas dos troncos telefônicos e da fibra óptica. Não é parte do projeto a estrutura de cabeamento telefônico, porém, vale dizer que é neste armário que está posicionada a Central de PABX híbrida. Caso ocorra alguma atualização dos equipamentos de telefonia, a rede já está preparada para suportar uma demanda de VoIP. 
+
+
+%inicio dos comandos para criar uma nova pagina A3 horizontal
+\clearpage
+\KOMAoptions{paper=a3, paper=landscape, DIV=20}
+\recalctypearea
+%\subsection{Planta Física com Mobília}
+
+\begin{figure}
+	%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[width=\textwidth]{planta_02}
+	}
+	\caption{Planta lógica da visão do cabeamento - Formato A3}
+	\label{fig1}
+\end{figure}
+
+%Retornar ao formato A4
+\clearpage
+\KOMAoptions{paper=a4, paper=portrait, DIV=15}
+\recalctypearea
+%-- reinicio em A4 
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Topologia}
 Proposta futura, proposta após implantação.
