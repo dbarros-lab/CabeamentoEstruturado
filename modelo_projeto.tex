@@ -139,7 +139,7 @@
 %% ====================================
 %% ====================================
 
-\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos equipamentos. Cada vez mais presentes no mercado os escritórios \textit{small business} são estruturas simples que possuem e muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, mas subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. O projeto contemplará o levantamento de planta física, elaboração da planta lógica, equipamentos a serem implementados conforme a necessidade, os custos envolvidos para a devida implementação. Trata-se de projeto-modelo fictício para uso em diversas aplicações. No cenário atual em que diversas redes são erroneamente implementadas e com práticas duvidosas, faz-se necessário um guia prático, pois, muitas vezes, a leitura de normas textuais se tornam praticamente ignoradas por pequenos negócios, seja pela dificuldade técnica de seus textos e falta de mão de obra para sua correta interpretação ou falta de orçamento para o direcionamento correto de custos.}
+\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos componentes passivos. Cada vez mais presentes no mercado, os escritórios \textit{small business} são estruturas simples que possuem falta de infraestrutura e muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, porém subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. O projeto contemplará o levantamento de planta física, elaboração da planta lógica, equipamentos passivos a serem implementados conforme a necessidade, os custos envolvidos para a devida implementação. Trata-se de projeto-modelo fictício para uso em diversas aplicações. No cenário atual em que diversas redes são erroneamente implementadas norteadas por práticas comuns e duvidosas, faz-se necessário um guia prático, pois, a leitura de normas textuais tornam-se praticamente ignoradas por pequenos negócios, seja pela dificuldade técnica de seus textos, variedade de opções de feituras ou normas, falta de mão de obra para sua correta interpretação ou falta de orçamento para o direcionamento correto de custos.}
 
 
 %% ====================================
@@ -173,17 +173,17 @@
 %% ====================================
 \section{Introdução}
 
-Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa o cliente de que os "500 megas" contratados poderá ser subutilizado caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps e estranha o fato de a velocidade contratada não estar sendo entregue pelo provedor de serviços. Este vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (FastEthernet).
+Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa o cliente de que os "500 megas" contratados poderá ser subutilizado caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps (devido ao \textit{overhead} do roteador) e associa a baixa velocidade a um problema com o serviço do provedor de internet. Este vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (FastEthernet).
 \bigskip
 
-Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente se prestar atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (Gigabit) e possa beneficiar-se ainda de par metálico com fornecimento do serviço de fibra óptica. Há detalhes importantes desde um pequeno conector e seu banhamento metálico até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
+Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente prestar-se atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (Gigabit) e possa beneficiar-se ainda mais do custo-benefício do par metálico, com fornecimento do serviço de fibra óptica. Há detalhes importantes: desde um pequeno conector e seu banhamento metálico de ouro, até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
 \bigskip
 
 \subsection{Escopo do Projeto}
-O escopo deste projeto é um novo escritório equipado com 25 computadores de mesa, 1 servidor, 1 roteador, 1 \textit{switch} e 3 pontos de acesso sem fio. Também se prevê redundância no acesso à Internet, com a assinatura de dois provedores. Será recomendado o uso de equipamento da marca marca \textit{Mikrotik}, especialmente pelo nível de configuração que se pode obter a um excelente custo-benefício. 
+O escopo deste projeto é a projeção de todos os componentes passivos de um cabeamento estruturado que será equipado com 25 computadores de mesa, 01 servidor, 01 roteador, 01 \textit{switch} e 04 pontos de acesso sem fio. Também se prevê redundância no acesso à Internet, com a contratação de dois provedores de serviços de internet. Apesar de o escopo não ser equipamentos ativos, serão descritos mais adiante uma recomendação para equipamentos ativos.
 
 \subsection{Benefícios}
-Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas até 100 Mbps. A maioria dos roteadores de escritórios ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: gargalos na velocidade, má conexão devido à conectores prensados manualmente com alicates. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure muitos anos.
+Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas de até 100 Mbps. A maioria dos roteadores de escritórios e/ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: gargalos na velocidade, má conexão devido à conectores prensados manualmente com alicates, conectores velhos, cabos dobrados indevidamente em determinado segmento do cabeamento. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure muitos anos.
 
 \subsection{Organizações Envolvidas}
 Em se tratando de projeto fictício, não há organizações envolvidas. Para fins de orientação, a seguinte tabela demonstra um conjunto de organizações, empresas ou profissionais que poderão eventualmente participar no envolvimento da implementação de uma rede.\\
@@ -226,27 +226,27 @@ Em se tratando de projeto fictício, não há organizações envolvidas. Para fi
 \section{Requisitos}
 
 \subsection{Velocidade real contratada e percebida}
-Toda a instalação deverá perceber a velocidade real do provedor de serviços de Internet contratado, acima de 100Mbps, isto é, os \textit{hosts} deverão suportar as transmissões na base 10/100/1000, sem gargalos.
+Toda a instalação deverá perceber a velocidade real do provedor de serviços de Internet contratado, acima de 100 Mbps, isto é, os \textit{hosts} deverão suportar as transmissões na base 10/100/1000, sem gargalos, bem como futuras atualizações de velocidade, até 1 Gbps.
 
 \subsection{Extinção de conectores manualmente prensados com alicate}
-Talvez um dos sintomas mais simples de um nó da rede que está apresentando falhas, fatalmente é devido a um conector estar manualmente prensado na ponta do fio de rede. Para uma rede certificada, é necessário que apenas se utilize a ferramenta de inserção (\textit{punch-down}) e um cordão injetado (\textit{patch cord}).
+Talvez um dos sintomas mais simples de um nó da rede que está apresentando falhas, fatalmente é devido a um conector estar manualmente prensado na ponta do fio de rede. Para obter algo próximo de uma rede certificada, é necessário que apenas se utilize a ferramenta de inserção (\textit{punch-down}) e um cordão injetado, comumente chamado de \textit{patch cord}.
 
 \subsection{Tolerância à falha - Redundância contra quedas no serviço}
-O roteador principal do escritório deverá receber dois sinais de WAN em duas interfaces, e deverá priorizar a mais veloz como a principal WAN; ao passo que, havendo um eventual blecaute e falta do sinal, o segundo provedor de internet assume o fornecimento de acesso, sem que o usuário final perceba que ocorreu um problema.
+O roteador principal do escritório deverá receber dois sinais de WAN em duas interfaces, e deverá priorizar a mais veloz como a principal WAN; ao passo que, havendo um eventual blecaute e falta do sinal, o segundo provedor de internet assume o fornecimento de acesso, sem que o usuário final perceba que ocorreu um problema. Esta prática passou a ser mais comum devido à demanda das pequenas empresas realizarem operações de transferências de dados remotas com diversos fornecedores e clientes.
 
 \subsection{Cobre de alta qualidade}
 Para garantir uma boa longevidade da estrutura de instalação, sendo instalação nova, é preferível somente o uso de cabos de rede Categoria 6 (CAT6), por 03 motivos: \\ \\
 (a) Geralmente possuem bitola maior no cobre;\\
-(b) Possuem um separador que isola cada par trançado. Este separador fornece resistência física ao cabo.\\
+(b) Possuem um septo separador que isola cada par trançado. Este separador fornece resistência física ao cabo e diminui aumenta o fenômeno chamado de \textit{cancelamento}, que ocorre nas correntes eletromagnéticas. Mais sobre \textit{cancelamento} é explicado na última subseção.\\
 (c) São um bom custo benefício para redes Gigabit.\\
 
-Em se tratando de cobre de alta qualidade, também se pensa em conectores corretos, da Categoria 6, pois o uso de conectores da Categoria 5e poderão causar problemas de incompatibilidade pelas características físicas entre estas categorias.
+Em se tratando de cobre de alta qualidade, também se pensa em conectores corretos da Categoria 6, pois o uso de conectores da Categoria 5e poderão causar problemas de incompatibilidade pelas características físicas entre estas categorias. Eis que o conector CAT6 tem um melhor banho metálico em seus terminais.
 
 \subsection{Todos os equipamentos ativos e passivos na base 1000}
-Um bom cabeamento poderá ser rendido à tremenda subutilização se a rede estiver interligada à dispositivos que operam somente na base 10/100. Proritariamente, a compra de equipamentos -- roteadores, \textit{switches} e \textit{access points} -- deverá observar as características de que tais operam na base 10/100/1000, suportando as velocidades Gigabit.
+Um bom cabeamento poderá ser rendido à completa subutilização se a rede estiver interligada à dispositivos que operam somente na base 10/100. Proritariamente, a compra de equipamentos --- roteadores, \textit{switches} e \textit{access points} --- deverá observar as características de que tais operam na base 10/100/1000, suportando as velocidades Gigabit.
 
 \subsection{WiFi - Padrão IEEE 802.11ac implementado}
-Este protocolo permite velocidades médias de 600Mbps nos pontos de acesso, ou seja, na data atual, uma referência muito boa para os padrões de Wi-Fi. (INSERIR REFERÊNCIA) 
+Este protocolo permite velocidades médias de 600Mbps nos pontos de acesso, ou seja, na data atual, uma referência muito boa para os padrões de Wi-Fi. (INSERIR REFERÊNCIA) Não é o escopo do projeto de cabeamento, mas a referência ao ponto de acesso correto certamente resultará em um sistema sem fio altamente eficiente.
 
 \subsection{Normas ABNT NBR 14565 - Listadas algumas como prioritárias}
 \begin{itemize}
@@ -258,11 +258,11 @@ Este protocolo permite velocidades médias de 600Mbps nos pontos de acesso, ou s
 
 
 \section{Usuários e Aplicativos}
-O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio, e usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada rede lógica separada para a acomodação dos dispositivos sem fio dos eventuais visitantes. A rede projetada deverá conter 2 pontos por área de trabalho (ATR), outros dois pontos nas áreas de impressora, incluindo pontos extras. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas trabalhando, não há projeto de expansibilidade de imediato, no entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par (04 vias) trançado.
+O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio; e, usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada uma VLAN para dispositivos sem fio dos eventuais visitantes. No que se refere a cabeamento, a rede projetada deverá conter 2 pontos por área de trabalho (ATR), outros dois pontos nas áreas de impressora, incluindo pontos extras. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas trabalhando, não há projeto de expansibilidade de imediato, no entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par (04 vias) trançado. Sobre os equipamentos ativos, haverá a recomendação das marcas. Porém, a rede lógica fica a critério do departamento de T.I., em forma, aqui, de recomendações.
 
 \subsection{Usuários}
 
-Nesta seção será descrita a tabela de todos os profissionais atuantes na edificação que farão o uso do cabeamento estruturado. E a explicação da rotina do acesso à rede de cada um deles.
+Nesta seção será descrita a tabela de todos os profissionais atuantes na edificação que farão o uso do cabeamento estruturado e a explicação da rotina do acesso à rede de cada um deles.
 
 % =======================================
 % TABELA DE FUNCIONÁRIOS
@@ -292,13 +292,13 @@ Nesta seção será descrita a tabela de todos os profissionais atuantes na edif
 
 O \textbf{diretor da empresa} utilizar-se-á do sistema operacional Windows 10 e da suíte de aplicativos Microsoft Office. Grande parte da função do diretor é comandar a sua empresa, realizando contatos, conferindo planilhas no Servidor de Arquivos e comunicando-se com demais funcionários. É posição estratégica de liderança. Deve compreender que o uso bem empregado da tecnologia alavanque seus negócios, portanto deverá valorizar especialmente o Analista de T.I., pois seu negócio, além de estar disponível na Internet, precisa deste profissional como que na função de um "coringa", sempre apto a socorrê-lo numa situação de indisponibilidade com algum serviço.
 \\ \\
-O(a) \textbf{recepcionista} faz uso intenso do Microsoft Outlook, agendando compromissos, verificando e-mails a serem repassados e atendendo à telefonemas. Calendário e agendamento de compromissos é a palavra chave aqui. Também é o(a) profissional que é o "cartão de visita" da empresa, por conta do primeiro e subsequentes atendimentos prestados aos clientes.
+O(a) \textbf{recepcionista} faz uso intenso do Microsoft Outlook, agendando compromissos, verificando e-mails a serem repassados e atendendo a telefonemas. Calendário e agendamento de compromissos é a palavra chave aqui. Também é o(a) profissional que é o "cartão de visita" da empresa, por conta do primeiro e subsequentes atendimentos prestados aos clientes.
 \\ \\
-O \textbf{analista de tecnologia da informação} é o profissional que se encarregará de tomar conta da infraestrutura de rede, do servidor físico, da sala de equipamentos (SEQ) -- com acesso restrito -- equipamentos ativos e passivos de rede. Também será responsável pela manutenção de software, sendo os mais importantes o Windows Server e seus serviços críticos como o servidor de arquivos (File Server), o servidor de banco de dados, usado pela contabilidade, e o sistema operacional RouterOS (bastante similiar ao CISCO IOS, nos roteadores CISCO). Tais tarefas também incluem rotinas de backup e contato com fornecedores de equipamentos e serviços de T.I.
+O \textbf{Analista de Tecnologia da Informação} é o profissional que se encarregará de tomar conta da infraestrutura de rede, do servidor físico, da sala de equipamentos (SEQ) --- com acesso restrito --- equipamentos ativos e passivos de rede. Também será responsável pela manutenção de software, sendo os mais importantes o Windows Server e seus serviços críticos como o servidor de arquivos (\textit{File Server}), o servidor de banco de dados, usado pela contabilidade, e o sistema operacional RouterOS (bastante similiar ao CISCO IOS, nos roteadores CISCO). Tais tarefas também incluem rotinas de backup e contato com fornecedores de equipamentos e serviços de T.I.
 \\ \\
 Serão 04 funcionários atrelados à administração da empresa, \textbf{administradores} com diversas tarefas administrativas: folha de pagamento, impostos, contas a pagar, custos, despesas, compras e atividades bancárias. Disponibilidade de estar \textit{online} é essencial para esses funcionários.
 \\ \\
-Parte crítica da empresa e importantes funções são a de \textbf{contador}, em número de 2. Além do uso do sistema operacional Windows, intenso uso do Microsoft Office, mais especificamente o aplicativo Excel e de programas fiscais exigidos pela Receita Federal. Fazem uso intensivo do banco de dados SQL Server, registrando empenhos e demais atividades de contabilidade considerados operações muito críticas.
+Parte crítica da empresa e importantes funções são a de \textbf{contador}, em número de 02 pessoas. Além do uso do sistema operacional Windows, intenso uso do Microsoft Office, mais especificamente o aplicativo Excel e de programas fiscais exigidos pela Receita Federal. Fazem uso intensivo do banco de dados SQL Server, registrando empenhos e demais atividades de contabilidade considerados operações muito críticas.
 
 
 
@@ -323,9 +323,9 @@ Nesta seção será descrita a tabela de aplicativos e suas funções críticas 
 		Windows 10                             
 		& Sistema operacional das estações           					\\ \hline
 		SQL Server                                  
-		& Serviço do Windows Server          \\ \hline
+		& Serviço do Windows Server*         \\ \hline
 		RouterOS
-		& Sistema operacional do roteador         \\ \hline
+		& Sistema operacional do roteador*        \\ \hline
 		Microsoft Office                                  
 		& Suite com aplicativos de escritório   \\ \hline
 	\end{tabular}
@@ -348,24 +348,23 @@ Nas estações de trabalho, impera-se pelo uso do sistema operacional \textbf{Mi
 
 
 
-O sistema RouterOS, incorporado no roteador Mikrotik, equivalente ao CISCO IOS, totalmente operado pela linha de comando e de extremo poder a um custo relativamente acessível e muito melhor que roteadores domésticos convencionais, até mesmo superior às linhas domésticas da CISCO (Linksys). Fornecerá o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de internet e balancear esta carga, caso um dos links torne-se indisponível. Mais sobre este roteador na tabela e equipamentos de redes.
+O sistema RouterOS, incorporado no roteador \textit{Mikrotik}, equivalente ao CISCO IOS, totalmente operado pela linha de comando e de extremo poder a um custo relativamente acessível e muito melhor que roteadores domésticos convencionais, até mesmo superior às linhas domésticas da CISCO (Linksys). Fornecerá o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de internet e balancear esta carga, caso um dos links torne-se indisponível. Mais sobre este roteador na tabela recomendação de equipamentos ativos.
+\\
 
+Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP, nem DNS, para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas, daí a desnecessidade de preocupar-se com serviços de DHCP e DNS neste servidor, providos pelo sistema operacional. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas, devido à melhor segurança. 
+\\
 
-Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP nem DNS para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas, daí a necessidade de não se preocupar com serviços de DHCP e DNS neste servidor. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas, devido a melhor segurança. 
-
-No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa. E será armazenado neste servidor.
-
-Por segurança, o analista de T.I. deverá separar a rede Wi-Fi em duas redes lógicas. Os convidados ao escritório podem acessar somente uma dessas redes lógicas. Os funcionários acessarão a rede Wi-Fi principal. Falar-se-á mais sobre os \textit{access points} MikroTik mais adiante, que são aparelhos muito robustos com seu próprio sistema operacional embutido.
+No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa, e será armazenado neste servidor Windows.
 
 
 \section{Estrutura predial existente}
 
-Trata-se de escritório de 9 cômodos, considerando também como cômodo, a área de circulação que é a área de ingresso ao andar. Situa-se numa edificação de um 01 térreo e 01 andar. O escritório em si é o 1º andar. O acesso ao telhado é fácil, visto que a edificação é construída com bom madeiramento e telhas cerâmicas. A parte elétrica bem isolada, sem emaranhados de fios, o que facilita a retirada de algumas telhas para a travessia de alguns cabos de rede que fazem maiores interligações entre o \textit{switch} e cada cômodo. \\
+Trata-se de escritório de 9 cômodos, considerando também como cômodo, a área de circulação que é a área de ingresso ao andar. Situa-se numa edificação de um 01 térreo e 01 andar. O escritório em si é o 1º andar. O telhado da edificação é de fácil acesso físico, visto que a edificação é construída com bom madeiramento e telhas cerâmicas. A parte elétrica bem isolada, sem emaranhados de fios, o que facilita a retirada de algumas telhas para a travessia de alguns eletrodutos que comportarão os cabos, interligando o \textit{switch} e cada setor especificado. \\
 
-As restrições de instalação são quebras da alvenaria e nova feitura de conduítes com argamassa. Nesse caso, utilizar-se-á pedaços de conduítes laranja (reforçado) entre laje e descida aos pontos de rede, em cada cômodo. Somente 1 único cabo por conduíte laranja reforçado, devido ao fato de que a passagem de dois cabos pode causar ferimentos em sua proteção se entrarem diretamente num ponto de atrito.
+As restrições de instalação são quebras da alvenaria mínimas e nova feitura de conduítes com argamassa. Nesse caso, utilizar-se-á pedaços de conduítes laranja (reforçado) entre laje e descida aos pontos de rede, em cada cômodo. Somente um único cabo por conduíte laranja reforçado, devido ao fato de que a passagem de dois cabos pode causar ferimentos em sua proteção se entrarem diretamente num ponto de atrito.
 \\
 
-Os cabos deverão sofrer curvaturas de no máximo 45 graus e de volta em posição retilínea, seja ela vertical ou horizontal. As saídas dos pontos de rede deverão apresentar sua respectiva tomada externa, que deverão ser posicionadas à 40 centímetros do chão. Canaletas deverão ser utilizadas para a acomodação e boa visibilidade das instalações.
+Os cabos deverão sofrer curvaturas de no máximo 45 graus e de volta em posição retilínea, seja ela vertical ou horizontal. As saídas dos pontos de rede deverão apresentar sua respectiva tomada externa, que deverão ser posicionadas à 40 centímetros do piso. Canaletas deverão ser utilizadas para a acomodação e boa visibilidade das instalações.
 \\
 
 Temos a área total de 109,12 metros quadrados, fragmentada em:
@@ -411,19 +410,19 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 \section{Planta Lógica - Elementos estruturados}
 
 \subsection{Visão do cabeamento}
-A planta lógica é apresentada na Figura 2. Conforme determina a norma, é necessário observar algumas coisas num projeto. Primeiro, a variedade de plantas excedem por muitas vezes a própria norma, sendo impossível de se ter um padrão seguindo à risca. Segundo porque a própria norma torna opcional determinadas feituras num projeto, tal como a identificação por código de cor, quando uma edificação não tem mais que um pavimento.
+A planta lógica é apresentada na Figura 2. Conforme determina a norma, é necessário observar algumas coisas neste projeto. Primeiro, a variedade de plantas excedem por muitas vezes a própria norma, sendo impossível de se ter um padrão seguindo à risca. Segundo porque a própria norma torna opcional determinadas feituras num projeto, tal como a identificação por código de cor, quando uma edificação não tem mais que um pavimento.
 \\
 
-Para a simplificação da planta lógica, foram divididos, do \textit{switch}, portas que compreendem as numerações A, B, C e D. Sendo estas, A: Portas 1-10; B: Portas 11-20; C: Portas 21-30 e D: Portas 31-40. Oito portas restantes ficam como suplementares em eventuais problemas com as portas utilizadas. As letras também indicam os eletrodutos que correm pela laje e descem por canaletas e calhas verticais. 
+Para a simplificação da planta lógica, foram divididos, do \textit{switch}, portas que compreendem as numerações A, B, C e D. Sendo estas, \textbf{A: Portas 1-10}; \textbf{B: Portas 11-20}; \textbf{C: Portas 21-30} e \textbf{D: Portas 31-40}. Oito portas restantes ficam como suplementares em eventuais problemas com as portas utilizadas. As letras também indicam os eletrodutos que correm pela laje e descem por canaletas, passagens e posteriormente seguindo para e calhas verticais. 
 \\
 
 Observe-se que é importante neste agrupamento, meios de assegurar a melhor organização possível. No que tange às áreas de trabalho, são recomendados, no mínimo, 2 pontos por ATR, sendo pontos opcionais permitidos. Denominadas de ATR, as áreas de trabalho são pequenos espaços de trabalho, de um funcionário ou de dispositivos utilizados por funcionários, como impressoras e outros equipamentos. Os pontos RJ45 devem ser etiquetados com iniciação PT. Não é o caso de termos mais do que 01 \textit{switch} operando nesta rede, então foi simplificado o etiquetamento das saídas, como PT, duto de origem e/o grupo de portas com numeração.
 \\
 
-A Sala de Equipamentos (SEQ) é o local em que residirá o \textit{rack} da rede, comportando um \textit{switch} de 48 portas, e o roteador \textit{Mikrotik}. Ambos equipamentos ativos, suportando o padrão Gigabit. Dá-se a subida dos cabos pela laje, pelo cômodo SEQ, com todos os cabos distribuídos em 4 caminhos, até o ponto de descida (\textit{spots} verdes, na figura). Na descida, encaminhar-se-ão por eletrocalhas fechadas e canaletas, até os \textit{keystones}, evitando ao máximo, que se prense conectores às terminações dos cabos. 
+A Sala de Equipamentos (SEQ) é o local em que residirá o \textit{rack} da rede, comportando um \textit{switch} de 48 portas, e demais equipamentos ativos. Todos os equipamentos ativos, suportando o padrão Gigabit. Dá-se a subida dos cabos pela laje, pelo cômodo SEQ, com todos os cabos distribuídos em 04 caminhos, até o ponto de descida, indicados pelos \textit{spots} verdes, na figura. Na descida, encaminhar-se-ão por eletrocalhas fechadas e canaletas, até os \textit{keystones}, evitando ao máximo, que se prense conectores às terminações dos cabos. 
 \\
 
-Na planta, é possível observar que temos indicações de número de cabos dentro da canaleta ou, da calha. Em certos pontos, temos por certo que recebemos em torno de 8 cabos; e, com a ligação sequencial dos PTs, a quantidade de cabos vai diminuindo. É por isso que temos certas indicações como "4 x UTP" e "2 x UTP" na sequência: pois está contando em 02, tendo-se 02 cabos devidamente instalados, de 04 possíveis, naquele segmento. Importante observar que o manuseio dos cabos UTP sejam o mais cuidadoso possível: nenhuma dobra abaixo de 90, para que o cabo não perca suas características físicas de transmissão -- uma única dobra incorreta pode comprometer aquele ponto na rede. 
+Na planta, é possível observar que temos indicações de número de cabos dentro da canaleta ou, da calha. Em certos pontos, temos por certo que recebemos em torno de 8 cabos; e, com a ligação sequencial dos PTs, a quantidade de cabos vai diminuindo. É por isso que temos certas indicações como "4 x UTP" e "2 x UTP" na sequência: pois está contando em 02, tendo-se 02 cabos já tem previsão de estarem devidamente instalados, de 04 possíveis, naquele segmento. Importante observar que o manuseio dos cabos UTP sejam o mais cuidadoso possível: nenhuma dobra abaixo de 90, para que o cabo não perca suas características físicas e mecânicas de transmissão --- uma única dobra incorreta pode comprometer aquele ponto na rede. 
 \\
 
 Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, bem como as impressoras de rede (\textit{Wi-Fi} 01 a 04), sendo posicionados para uma cobertura razoável de sinal sem fio. O QG, a entrada das comunicações, é o armário da edificação que comporta as entradas dos troncos telefônicos e da fibra óptica. Não é parte do projeto a estrutura de cabeamento telefônico, porém, vale dizer que é neste armário que está posicionada a Central de PABX híbrida. Caso ocorra alguma atualização dos equipamentos de telefonia, a rede já está preparada para suportar uma demanda de VoIP. 

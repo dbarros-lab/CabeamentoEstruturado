@@ -1,36 +1,36 @@
 \babel@toc {brazil}{}
-\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{4}% 
-\contentsline {subsection}{\numberline {1.1}Escopo do Projeto}{4}% 
-\contentsline {subsection}{\numberline {1.2}Benef\IeC {\'\i }cios}{4}% 
-\contentsline {subsection}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~o}es Envolvidas}{4}% 
-\contentsline {section}{\numberline {2}Requisitos}{5}% 
-\contentsline {subsection}{\numberline {2.1}Velocidade real contratada e percebida}{5}% 
-\contentsline {subsection}{\numberline {2.2}Extin\IeC {\c c}\IeC {\~a}o de conectores manualmente prensados com alicate}{5}% 
-\contentsline {subsection}{\numberline {2.3}Toler\IeC {\^a}ncia \IeC {\`a} falha - Redund\IeC {\^a}ncia contra quedas no servi\IeC {\c c}o}{5}% 
-\contentsline {subsection}{\numberline {2.4}Cobre de alta qualidade}{6}% 
-\contentsline {subsection}{\numberline {2.5}Todos os equipamentos ativos e passivos na base 1000}{6}% 
-\contentsline {subsection}{\numberline {2.6}WiFi - Padr\IeC {\~a}o IEEE 802.11ac implementado}{6}% 
-\contentsline {subsection}{\numberline {2.7}Normas ABNT NBR 14565 - Listadas algumas como priorit\IeC {\'a}rias}{6}% 
-\contentsline {section}{\numberline {3}Usu\IeC {\'a}rios e Aplicativos}{6}% 
-\contentsline {subsection}{\numberline {3.1}Usu\IeC {\'a}rios}{7}% 
-\contentsline {subsection}{\numberline {3.2}Aplicativos}{8}% 
-\contentsline {section}{\numberline {4}Estrutura predial existente}{9}% 
-\contentsline {section}{\numberline {5}Planta L\IeC {\'o}gica - Elementos estruturados}{11}% 
-\contentsline {subsection}{\numberline {5.1}Vis\IeC {\~a}o do cabeamento}{11}% 
-\contentsline {subsection}{\numberline {5.2}Topologia}{13}% 
-\contentsline {subsection}{\numberline {5.3}Encaminhamento}{13}% 
-\contentsline {subsection}{\numberline {5.4}Memorial descritivo}{13}% 
-\contentsline {subsection}{\numberline {5.5}Identifica\IeC {\c c}\IeC {\~a}o dos cabos}{13}% 
-\contentsline {section}{\numberline {6}Implanta\IeC {\c c}\IeC {\~a}o}{13}% 
-\contentsline {section}{\numberline {7}Plano de certifica\IeC {\c c}\IeC {\~a}o}{14}% 
-\contentsline {section}{\numberline {8}Plano de manuten\IeC {\c c}\IeC {\~a}o}{14}% 
-\contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{14}% 
-\contentsline {section}{\numberline {9}Risco}{14}% 
-\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{14}% 
-\contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{14}% 
-\contentsline {section}{\numberline {12}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{14}% 
-\contentsline {section}{\numberline {13}Elementos textuais - Alguns exemplos}{15}% 
-\contentsline {subsection}{\numberline {13.1}Colocar elementos em itens}{15}% 
-\contentsline {subsubsection}{\numberline {13.1.1}Uma subse\IeC {\c c}\IeC {\~a}o de terceiro nivel}{15}% 
-\contentsline {subsection}{\numberline {13.2}Tabelas}{15}% 
-\contentsline {subsection}{\numberline {13.3}Figuras}{16}% 
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{5}% 
+\contentsline {subsection}{\numberline {1.1}Escopo do Projeto}{5}% 
+\contentsline {subsection}{\numberline {1.2}Benef\IeC {\'\i }cios}{5}% 
+\contentsline {subsection}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~o}es Envolvidas}{6}% 
+\contentsline {section}{\numberline {2}Requisitos}{6}% 
+\contentsline {subsection}{\numberline {2.1}Velocidade real contratada e percebida}{6}% 
+\contentsline {subsection}{\numberline {2.2}Extin\IeC {\c c}\IeC {\~a}o de conectores manualmente prensados com alicate}{6}% 
+\contentsline {subsection}{\numberline {2.3}Toler\IeC {\^a}ncia \IeC {\`a} falha - Redund\IeC {\^a}ncia contra quedas no servi\IeC {\c c}o}{6}% 
+\contentsline {subsection}{\numberline {2.4}Cobre de alta qualidade}{7}% 
+\contentsline {subsection}{\numberline {2.5}Todos os equipamentos ativos e passivos na base 1000}{7}% 
+\contentsline {subsection}{\numberline {2.6}WiFi - Padr\IeC {\~a}o IEEE 802.11ac implementado}{7}% 
+\contentsline {subsection}{\numberline {2.7}Normas ABNT NBR 14565 - Listadas algumas como priorit\IeC {\'a}rias}{7}% 
+\contentsline {section}{\numberline {3}Usu\IeC {\'a}rios e Aplicativos}{7}% 
+\contentsline {subsection}{\numberline {3.1}Usu\IeC {\'a}rios}{8}% 
+\contentsline {subsection}{\numberline {3.2}Aplicativos}{9}% 
+\contentsline {section}{\numberline {4}Estrutura predial existente}{10}% 
+\contentsline {section}{\numberline {5}Planta L\IeC {\'o}gica - Elementos estruturados}{13}% 
+\contentsline {subsection}{\numberline {5.1}Vis\IeC {\~a}o do cabeamento}{13}% 
+\contentsline {subsection}{\numberline {5.2}Topologia}{15}% 
+\contentsline {subsection}{\numberline {5.3}Encaminhamento}{15}% 
+\contentsline {subsection}{\numberline {5.4}Memorial descritivo}{15}% 
+\contentsline {subsection}{\numberline {5.5}Identifica\IeC {\c c}\IeC {\~a}o dos cabos}{15}% 
+\contentsline {section}{\numberline {6}Implanta\IeC {\c c}\IeC {\~a}o}{15}% 
+\contentsline {section}{\numberline {7}Plano de certifica\IeC {\c c}\IeC {\~a}o}{16}% 
+\contentsline {section}{\numberline {8}Plano de manuten\IeC {\c c}\IeC {\~a}o}{16}% 
+\contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{16}% 
+\contentsline {section}{\numberline {9}Risco}{16}% 
+\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{16}% 
+\contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{16}% 
+\contentsline {section}{\numberline {12}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{16}% 
+\contentsline {section}{\numberline {13}Elementos textuais - Alguns exemplos}{17}% 
+\contentsline {subsection}{\numberline {13.1}Colocar elementos em itens}{17}% 
+\contentsline {subsubsection}{\numberline {13.1.1}Uma subse\IeC {\c c}\IeC {\~a}o de terceiro nivel}{17}% 
+\contentsline {subsection}{\numberline {13.2}Tabelas}{17}% 
+\contentsline {subsection}{\numberline {13.3}Figuras}{18}% 
