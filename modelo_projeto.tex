@@ -10,17 +10,16 @@
 							fontsize=12pt,%
 							onecolumn]{scrartcl}	 					% KOMA-article class
 
-\usepackage{lipsum}													% Package to create dummy text
-\usepackage[brazil]{babel}										% English language/hyphenation
-\usepackage[protrusion=true,expansion=true]{microtype}				% Better typography
+\usepackage{lipsum}			% Package to create dummy text
+\usepackage[brazil]{babel}	% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	% Better typography
 \usepackage{amsmath,amsfonts,amsthm}					% Math packages
-\usepackage[pdftex]{graphicx}									% Enable pdflatex
-\usepackage[svgnames]{xcolor}									% Enabling colors by their 'svgnames'
+\usepackage[pdftex]{graphicx}							% Enable pdflatex
+\usepackage[svgnames]{xcolor}			% Enabling colors by their 'svgnames'
 \usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}	% Custom captions under/above floats
-\usepackage{epstopdf}												% Converts .eps to .pdf
-\usepackage{subfig}													% Subfigures
-\usepackage{booktabs}
-			% Nicer tables
+\usepackage{epstopdf}						% Converts .eps to .pdf
+\usepackage{subfig}							% Subfigures
+\usepackage{booktabs}		% Nicer tables
 \usepackage{float}
 												
 \usepackage{fix-cm}													% Custom fontsizes
@@ -90,7 +89,7 @@
 										}
 
 \pretitle{\vspace{-30pt} \begin{flushleft} \HorRule 
-				\fontsize{40}{40} \usefont{OT1}{phv}{b}{n} \color{DarkBlue} \selectfont 
+				\fontsize{35}{35} \usefont{OT1}{phv}{b}{n} \color{DarkBlue} \selectfont 
 				}
 
 %% ====================================
@@ -131,15 +130,13 @@
 % The first character should be within \initial{}
 
 
-
-
 %% ====================================
 %% ====================================
 %% mude o resumo  do projeto
 %% ====================================
 %% ====================================
 
-\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos componentes passivos. Cada vez mais presentes no mercado, os escritórios \textit{small business} são estruturas simples que possuem falta de infraestrutura e muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, porém subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. O projeto contemplará o levantamento de planta física, elaboração da planta lógica, equipamentos passivos a serem implementados conforme a necessidade, os custos envolvidos para a devida implementação. Trata-se de projeto-modelo fictício para uso em diversas aplicações. No cenário atual em que diversas redes são erroneamente implementadas norteadas por práticas comuns e duvidosas, faz-se necessário um guia prático, pois, a leitura de normas textuais tornam-se praticamente ignoradas por pequenos negócios, seja pela dificuldade técnica de seus textos, variedade de opções de feituras ou normas, falta de mão de obra para sua correta interpretação ou falta de orçamento para o direcionamento correto de custos.}
+\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos componentes passivos. Cada vez mais presentes no mercado, os escritórios \textit{small business} são estruturas simples que possuem falta de infraestrutura e muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, porém subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. O projeto contemplará o levantamento de planta física, elaboração da planta lógica, equipamentos passivos a serem implementados conforme a necessidade, os custos envolvidos para a devida implementação. Trata-se de projeto-modelo fictício para uso em diversas aplicações. No cenário atual em que diversas redes são erroneamente implementadas norteadas por práticas comuns e duvidosas, faz-se necessário um guia prático, pois, a leitura de normas textuais tornam-se praticamente ignoradas por pequenos negócios, seja pela dificuldade técnica de seus textos, falta de mão de obra para sua correta interpretação ou falta de orçamento para o direcionamento correto de custos.}
 
 
 %% ====================================
@@ -432,7 +429,7 @@ Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, b
 \clearpage
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
 \recalctypearea
-%\subsection{Planta Física com Mobília}
+%\subsection{Planta Física Cabeada}
 
 \begin{figure}
 	%	\centering
@@ -460,21 +457,140 @@ Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, b
 
 
 \subsection{Topologia}
-Proposta futura, proposta após implantação.
-Deve conter o diagrama da rede. Atente-se a redundância  e ligações truncadas.
-Deve explicar todos termos e componentes utilizados nestas plantas. Por exemplo: entrance facility, work area, horizontal cabling, etc..
 
-Todos os elementos das figuras devem ser explicados. 
-Crie esboço da configuração dos racks e brackets. Explique cada um dos componentes. Você pode criar uma tabela contendo figuras dentro, ou criar uma tabela e incluí-la como imagem. Por exemplo, verifique a tabela \ref{tab1}.
+A topologia de rede segue o modelo top-down e indica-se os elementos da maneira mais didática possível. Pode-se ver na imagem, que o projeto contempla duas entradas para a internet no roteador: WAN 1 e WAN 2. Diretamente ligado ao roteador, temos o \textit{switch} de 48 portas. Em uma das portas do \textit{switch}, o servidor de \textit{rack}. As ligações em vermelho, com marcações A, B, C e D, são os \textit{backbones} dos grupos de portas do \textit{switch}, mas que estão tomando diferentes caminhos, após a subida dos cabos.
 
-\input{tab1}
+% =======================================
+% TABELA DE PORTAS DO SWITCH
+% =======================================
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{2.0}
+	\begin{tabular}{|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Letra do \textit{Backbone}}} &	 \multicolumn{1}{|c|}{\textbf{Portas}}                                 		  \\ \hline		A                                
+		& 01, 02, 03, 04, 05, 06, 07, 08, 09*, 10*, 11*, 12*, 13*, 14*.                                             \\ \hline
+		B                               
+		& 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25*, 26*, 27*, 28*.         					\\ \hline
+		C                                  
+		& 29, 30, 31, 32, 33, 34, 35*, 36*, 37*, 38*.          \\ \hline
+		D 
+		& 39, 40, 41, 42, 43, 44, 45*, 46*, 47*, 48*.         \\ \hline
+		
+	\end{tabular}
+\end{table}
+
+% =======================================
+% FIM DA TABELA
+% =======================================
+
+Note-se que pelo cabeamento, as portas que recebem asterisco (*) são portas não utilizadas no \textit{switch}, mas com o cabeamento devidamente passado, para fins de redundância ou substituição de cabos. Conforme a população de cabos dentro do \textit{backbone}, tem-se mais cabos disponíveis para substituição.
+\\
+
+Conforme já demonstrado, os \textit{backbones} são cabeamentos majoritariamente horizontais, que terminam nos pontos de consolidação onde se começa a descida em cada cômodo. A única exceção que se faz é que esses \textit{backbones} totalizando 48 cabos, possuem uma parte na vertical, que sobem do \textit{rack} e vão até a laje, numa distância não mais que 2 metros.
+\\
+
+Dos pontos de consolidação, saem os cabos para todas as tomadas de conexão. No desenho, os dispositivos tais como computadores, impressoras, pontos de acesso sem fio e tomadas de conexão restantes são todos contabilizados como as saída de todos os cabos. Os retângulos em cinza indicam o cômodo em que determinado ponto de conexão ou dispositivo está instalado. Observe-se que determinado ponto de descida de \textit{backbone} pode alimentar outro cômodo, como é o exemplo do cômodo da Administração 1, no qual o cabeamento vertical, vai correr para o cômodo Administração 2.
+\\
+
+Os pontos de acesso sem fio são a exceção do cabeamento horizontal, pois, na verdade, esses dispositivos são instalados mais próximo à altura da porta (2,10 m) do que outros, dada a natureza de desejar-se boa cobertura de \textit{Wi-Fi}.
+\\
+
+Dentro dos tubos azuis, e das linhas vermelhas, é esperado uma determinada população de cabos (entre 10 e 14), enquanto que as linhas pretas não o cabeamento horizontal singular até a tomada e seu respectivo dispositivo. A linha pontilhada indica cabeamento vertical singular para o \textit{Wi-Fi}.
+
+
+
+%inicio dos comandos para criar uma nova pagina A3 horizontal
+\clearpage
+\KOMAoptions{paper=a3, paper=landscape, DIV=20}
+\recalctypearea
+%\subsection{Topologia}
+
+\begin{figure}
+	%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[width=\textwidth]{topologia}
+	}
+	\caption{Visão da topologia - Formato A3}
+	\label{fig1}
+\end{figure}
+
+%Retornar ao formato A4
+\clearpage
+\KOMAoptions{paper=a4, paper=portrait, DIV=15}
+\recalctypearea
+%-- reinicio em A4 
+
 
 \subsection{Encaminhamento}
-Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
+
+Pela laje, serão instalados eletrodutos de PVC, de bitola de 2 polegadas. São vendidos em unidades de 3 metros. O sistema X de canaletas possui duas categorias, X1 e X2. A categoria X1 se destina à passagem de no máximo 2 cabos por segmento, enquanto que a categoria X2 comporta até 6 cabos de rede. Canaletas do sistema X são vendidas em unidades de 2 metros.
+
+Abaixo, uma tabela de quantidade de canaletas necessárias para o cabeamento posterior ao \textit{backbone}.
+\\
+
+% =======================================
+% TABELA DE ENCAMINHAMENTO
+% =======================================
+
+
+\begin{center}
+
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Tipo}       & \textbf{Fabricante} & \multicolumn{1}{l|}{\textbf{Metros}} & \multicolumn{1}{l|}{\textbf{Unidades}} \\ \hline
+		Tubo PVC 2"         & Tigre               & 30                                   & 10                                     \\ \hline
+		Canaleta X2         & Alumbra             & 200                                  & 20                                     \\ \hline
+		Canaleta X1         & Alumbra             & 200                                  & 20                                     \\ \hline
+		Acabamentos X1 e X2 & Alumbra             & N/D                                  & 10                                     \\ \hline
+	\end{tabular}
+    	
+\end{center}
+
+
+
+
+% =======================================
+% FIM DA TABELA
+% =======================================
+
 
 \subsection{Memorial descritivo}
 
-Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
+Relação de todos os equipamentos passivos que serão utilizados. (Os valores são aproximados e serão recalculados no final do projeto.) 
+\\
+
+
+
+
+% =======================================
+% TABELA DE PASSIVOS
+% =======================================
+
+
+	
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Equipamento Passivo}      & \textbf{Fabricante} & \multicolumn{1}{l|}{\textbf{Quantidade}} \\ \hline
+		Rack 44 U Fechado                 & Lextron             & 1 unidade                                \\ \hline
+		Patch Panel 48 Portas CAT 6       & Optictrade          & 1 unidade                                \\ \hline
+		Organizadores de cabos            & Lextron             & 2 unidades                               \\ \hline
+		Cabo UTP CAT 6                    & Furkuawa            & 500 metros                               \\ \hline
+		Patch Cords CAT 6 - 1,5 m (Azul)  & AMP                 & 48 unidades                              \\ \hline
+		Patch Cords CAT 6 - 1,5 m (Cinza) & AMP                 & 48 unidades                              \\ \hline
+		Patch Cords CAT 6 - 3,0 m (Cinza) & AMP                 & 20 unidades                              \\ \hline
+		Outlets de keystones              & Nexans              & 50 unidades                              \\ \hline
+		Keystones CAT 6                   & Nexans              & 50 unidades                              \\ \hline
+	\end{tabular}
+\end{center}	
+% =======================================
+% FIM DA TABELA
+% =======================================
 
 \subsection{Identificação dos cabos}
 Explique como os cabos serão identificados em seu projeto. Coloque uma relação dos cabos instalados e identificados.
@@ -508,13 +624,32 @@ Revisões periódicas na rede, emissão de certificados para novos pontos.
 Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as extremidades da rede? 
 
 \section{Risco}
-Enumerar e explicar os riscos do projeto.
+O projeto não demanda, de forma incisiva, condicionamento de ar no cômodo SEQ, pela pouca quantidade de equipamentos presentes. Porém, há um risco inerente de interferência eletromagnética com possíveis cabos de rede que fiquem menos que 30 cm de distância de linhas de energia. A norma estabelece o mínimo de 30 cm de distância dessas linhas, pois o eletromagnetismo provindo desses cabos podem gerar ruídos na rede.
+\\
+
+Não obstante, visa-se que o custo do cabo blindado e de conectores, não se faz imperativo nessa instalação de escritório, pois o custo destes cabos é extremamente elevado, podendo tal valor ser mais compensador gastos com passagem de uma única fibra óptica e a instalação de seus conversores de mídia, na camada 1 e 2. A fibra óptica não captura nenhuma interferência de eletricidade. Ver mais sobre o cancelamento de eletromagnetismo na seção \textbf{Recomendações.}
+\\
+
 
 \section{Orçamento}
 Crie uma relação de orçamentos baseado na seções anteriores.
 
 \section{Recomendações}
-Observações e recomendações para o cliente.
+
+\subsection{Cancelamento do eletromagnetismo}
+
+Muitas vezes, técnicos da elétrica sequer possuem um conhecimento sólido de como se deve ter em mente o \textit{cancelamento} do eletromagnetismo gerado por fios de cobre. Geralmente, temos que os elétrons viajam como que na forma de uma espiral, pelo cobre, com determinada força em uma direção específica. Quando a corrente de um fio de energia recebe o sinal pelo negativo, e volta por outro condutor do mesmo cordão de força, temos que as duas forças serão opostas, causando a repulsa dos dois condutores --- gerando uma interferência para além do cordão. 
+\\
+
+Se o condutor do mesmo cordão de força tivermos a corrente indo na mesma direção, então as forças serão atrativas, causando a atração dos dois condutores --- gerando uma interferência para dentro do núcleo do cordão. Desta forma, podemos pensar que não é sem lógica que cordões de força possuem filamentos de cobre trançados: para evitar o cancelamento. O mesmo ocorre com os filamentos de fios de rede --- a trança do par ajuda a haver um \textit{cancelamento} da interferência entre filamentos de cobre.
+\\
+
+É de extrema importância, num projeto que não contempla cabos blindados  que vão passar perto de cabos de energia 110V/220V, a observação sobre o \textit{cancelamento} de campos eletromagnéticos. Instalações que possuem condicionadores de ar que utilizam muita amperagem da concessionária, demandam alguma considerável amperagem que pode causar grande inteferência se estiverem bem próximos aos cabos de uma rede.  
+\\
+
+(ADICIONAR FIGURAS EXPLICATIVAS)
+
+\subsection{Ativos de Rede}
 
 \section{Referências bibliográficas}
 Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
@@ -587,12 +722,6 @@ Não se preocupe o local em que a figura será renderizada em seu texto. Preocup
 
 Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
 
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
 
 
 
