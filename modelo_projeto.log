@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.19)  21 OCT 2019 09:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.19)  23 OCT 2019 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -840,24 +840,6 @@ LaTeX Warning: Label `fig1' multiply defined.
 LaTeX Warning: Label `fig1' multiply defined.
 
 
-LaTeX Warning: Label `tab1' multiply defined.
-
-
-LaTeX Warning: Label `tab2' multiply defined.
-
-
-LaTeX Warning: Label `tab3' multiply defined.
-
-
-LaTeX Warning: Label `tab4' multiply defined.
-
-
-LaTeX Warning: Label `tab5' multiply defined.
-
-
-LaTeX Warning: Label `tab6' multiply defined.
-
-
 LaTeX Warning: Label `fig1' multiply defined.
 
 )
@@ -1179,28 +1161,9 @@ Package typearea Info: Using dirty hack to recalculate internal output
 <planta_01.png, id=48, 1932.4998pt x 1041.77205pt>
 File: planta_01.png Graphic file (type png)
 <use planta_01.png>
-Package pdftex.def Info: planta_01.png  used on input line 395.
+Package pdftex.def Info: planta_01.png  used on input line 396.
 (pdftex.def)             Requested size: 1015.76349pt x 547.59026pt.
 [11 <./planta_01.png>]
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 15
-(typearea)             BCOR = 0.0pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 478.00635pt
-(typearea)              DIV departure   = -13%
-(typearea)              \evensidemargin = -12.5192pt
-(typearea)              \oddsidemargin  = -12.5192pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 679.0pt
-(typearea)              \topmargin      = -55.80853pt
-(typearea)              \headheight     = 18.125pt
-(typearea)              \headsep        = 21.75pt
-(typearea)              \topskip        = 12.0pt
-(typearea)              \footskip       = 50.75pt
-(typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 402.
-Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 402.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1220,28 +1183,47 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 403.
 Package typearea Info: Using dirty hack to recalculate internal output
 (typearea)             dimensions of LaTeX on input line 403.
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 15
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 478.00635pt
+(typearea)              DIV departure   = -13%
+(typearea)              \evensidemargin = -12.5192pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 679.0pt
+(typearea)              \topmargin      = -55.80853pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 404.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 404.
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
+Underfull \hbox (badness 10000) in paragraph at lines 414--416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--418
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
+Underfull \hbox (badness 10000) in paragraph at lines 420--422
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--424
+Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
  []
 
@@ -1273,9 +1255,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 430.
+(typearea)              on input line 431.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 430.
+(typearea)             dimensions of LaTeX on input line 431.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 146%
@@ -1300,34 +1282,15 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 431.
+(typearea)              on input line 432.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 431.
+(typearea)             dimensions of LaTeX on input line 432.
 <planta_02.png, id=58, 1878.2973pt x 1041.77205pt>
 File: planta_02.png Graphic file (type png)
 <use planta_02.png>
-Package pdftex.def Info: planta_02.png  used on input line 438.
+Package pdftex.def Info: planta_02.png  used on input line 439.
 (pdftex.def)             Requested size: 1015.76349pt x 563.39102pt.
 [13 <./planta_02.png>]
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 15
-(typearea)             BCOR = 0.0pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 478.00635pt
-(typearea)              DIV departure   = -13%
-(typearea)              \evensidemargin = -12.5192pt
-(typearea)              \oddsidemargin  = -12.5192pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 679.0pt
-(typearea)              \topmargin      = -55.80853pt
-(typearea)              \headheight     = 18.125pt
-(typearea)              \headsep        = 21.75pt
-(typearea)              \topskip        = 12.0pt
-(typearea)              \footskip       = 50.75pt
-(typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 445.
-Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 445.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1347,23 +1310,42 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 446.
 Package typearea Info: Using dirty hack to recalculate internal output
 (typearea)             dimensions of LaTeX on input line 446.
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 15
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 478.00635pt
+(typearea)              DIV departure   = -13%
+(typearea)              \evensidemargin = -12.5192pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 679.0pt
+(typearea)              \topmargin      = -55.80853pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 447.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 447.
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--490
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--493
+Underfull \hbox (badness 10000) in paragraph at lines 492--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--496
+Underfull \hbox (badness 10000) in paragraph at lines 495--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--499
+Underfull \hbox (badness 10000) in paragraph at lines 498--500
 
  []
 
@@ -1395,9 +1377,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 506.
+(typearea)              on input line 507.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 506.
+(typearea)             dimensions of LaTeX on input line 507.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 146%
@@ -1422,37 +1404,18 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 507.
+(typearea)              on input line 508.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 507.
+(typearea)             dimensions of LaTeX on input line 508.
 <topologia.png, id=66, 428.3202pt x 303.0522pt>
 File: topologia.png Graphic file (type png)
 <use topologia.png>
-Package pdftex.def Info: topologia.png  used on input line 514.
+Package pdftex.def Info: topologia.png  used on input line 515.
 (pdftex.def)             Requested size: 1015.76349pt x 718.6975pt.
 
-LaTeX Warning: Float too large for page by 19.79749pt on input line 517.
+LaTeX Warning: Float too large for page by 19.79749pt on input line 518.
 
 [15 <./topologia.png (PNG copy)>]
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 15
-(typearea)             BCOR = 0.0pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 478.00635pt
-(typearea)              DIV departure   = -13%
-(typearea)              \evensidemargin = -12.5192pt
-(typearea)              \oddsidemargin  = -12.5192pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 679.0pt
-(typearea)              \topmargin      = -55.80853pt
-(typearea)              \headheight     = 18.125pt
-(typearea)              \headsep        = 21.75pt
-(typearea)              \topskip        = 12.0pt
-(typearea)              \footskip       = 50.75pt
-(typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 521.
-Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 521.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1472,13 +1435,32 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 522.
 Package typearea Info: Using dirty hack to recalculate internal output
 (typearea)             dimensions of LaTeX on input line 522.
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 15
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 478.00635pt
+(typearea)              DIV departure   = -13%
+(typearea)              \evensidemargin = -12.5192pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 679.0pt
+(typearea)              \topmargin      = -55.80853pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 523.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 523.
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--532
+Underfull \hbox (badness 10000) in paragraph at lines 531--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--564
+Underfull \hbox (badness 10000) in paragraph at lines 563--565
 
  []
 
@@ -1486,37 +1468,128 @@ Underfull \hbox (badness 10000) in paragraph at lines 562--564
 
 
 ]
-Overfull \hbox (61.71268pt too wide) in paragraph at lines 607--612
-[]\OT1/cmr/m/n/12 (-20) Segue uma rela^^Xc~ao de fer-ra-men-tas: http://asana.c
-om/, https://trello.com/, http://www.ganttproject.biz/,
- []
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
+ine 597.
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2019/02/01 v3.26b KOMA-Script font size class option (11p
+t)
+)
 
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 164%
+(typearea)                larger than the heuristically estimated maximum
+(typearea)                limit of typographical good line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 20
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 1195.01587pt
+(typearea)              \textwidth      = 1015.76349pt
+(typearea)              DIV departure   = -164%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 731.80032pt
+(typearea)              \topmargin      = -67.41766pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 597.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 597.
 
- []
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 164%
+(typearea)                larger than the heuristically estimated maximum
+(typearea)                limit of typographical good line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
 
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 20
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 1195.01587pt
+(typearea)              \textwidth      = 1015.76349pt
+(typearea)              DIV departure   = -164%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 731.80032pt
+(typearea)              \topmargin      = -67.41766pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 598.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 598.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 657.
+[17
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--632
+]
 
- []
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 22%
+(typearea)                larger than the heuristically estimated maximum
+(typearea)                limit of typographical good line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 641--643
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 15
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 478.00635pt
+(typearea)              DIV departure   = -22%
+(typearea)              \evensidemargin = -12.5192pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 677.4003pt
+(typearea)              \topmargin      = -53.33354pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 658.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 658.
 
- []
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 22%
+(typearea)                larger than the heuristically estimated maximum
+(typearea)                limit of typographical good line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
 
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 15
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 478.00635pt
+(typearea)              DIV departure   = -22%
+(typearea)              \evensidemargin = -12.5192pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 677.4003pt
+(typearea)              \topmargin      = -53.33354pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 659.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 659.
+[18
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--646
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--649
-
- []
-
-(./modelo_projeto.bbl
+] (./modelo_projeto.bbl
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -1525,34 +1598,26 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-[18]) (./tab2.tex
+) [19]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 747.
+ (./tab2.tex)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `fig10' on page 20 undefined on input line 771.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-
-LaTeX Warning: Reference `fig10' on page 19 undefined on input line 704.
-
-[19]
-<fig1.png, id=83, 608.2725pt x 423.5825pt>
+<fig1.png, id=86, 608.2725pt x 423.5825pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 710.
+Package pdftex.def Info: fig1.png  used on input line 777.
 (pdftex.def)             Requested size: 478.00635pt x 332.87494pt.
-<fig2.png, id=85, 214.8025pt x 516.93124pt>
+<fig2.png, id=88, 214.8025pt x 516.93124pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 718.
+Package pdftex.def Info: fig2.png  used on input line 785.
 (pdftex.def)             Requested size: 214.80197pt x 516.92998pt.
- 
+
 AED: lastpage setting LastPage
-[20] [21 <./fig1.png>] [22 <./fig2.png>] (./modelo_projeto.aux)
+[20] [21 <./fig1.png>] [22 <./fig2.png>] [23] (./modelo_projeto.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1561,13 +1626,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21805 strings out of 494533
- 391596 string characters out of 6176595
- 695455 words of memory out of 5000000
- 25064 multiletter control sequences out of 15000+600000
- 558229 words of font info for 145 fonts, out of 8000000 for 9000
+ 21870 strings out of 494533
+ 392610 string characters out of 6176595
+ 717452 words of memory out of 5000000
+ 25095 multiletter control sequences out of 15000+600000
+ 563831 words of font info for 172 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 54i,12n,121p,9093b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,11n,121p,9093b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
@@ -1575,18 +1640,21 @@ f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on modelo_projeto.pdf (22 pages, 1644126 bytes).
+ts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
+uhvro8a.pfb>
+Output written on modelo_projeto.pdf (23 pages, 1691969 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 162 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 29215 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 35871 words of extra memory for PDF output out of 42996 (max. 10000000)
 
