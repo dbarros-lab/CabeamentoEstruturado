@@ -245,14 +245,6 @@ Um bom cabeamento poderá ser rendido à completa subutilização se a rede esti
 \subsection{WiFi - Padrão IEEE 802.11ac implementado}
 Este protocolo permite velocidades médias de 600Mbps nos pontos de acesso, ou seja, na data atual, uma referência muito boa para os padrões de Wi-Fi. (INSERIR REFERÊNCIA) Não é o escopo do projeto de cabeamento, mas a referência ao ponto de acesso correto certamente resultará em um sistema sem fio altamente eficiente.
 
-\subsection{Normas ABNT NBR 14565 - Listadas algumas como prioritárias}
-\begin{itemize}
-	\item Dois pontos de rede por área de trabalho. \cite{abnt14565}
-	\item Aterramento isolado e proteção contra surtos. \cite{abnt14565}
-	\item Manutenção. \cite{abnt14565}
-	
-\end{itemize}
-
 
 \section{Usuários e Aplicativos}
 O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio; e, usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada uma VLAN para dispositivos sem fio dos eventuais visitantes. No que se refere a cabeamento, a rede projetada deverá conter 2 pontos por área de trabalho (ATR), outros dois pontos nas áreas de impressora, incluindo pontos extras. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas trabalhando, não há projeto de expansibilidade de imediato, no entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par (04 vias) trançado. Sobre os equipamentos ativos, haverá a recomendação das marcas. Porém, a rede lógica fica a critério do departamento de T.I., em forma, aqui, de recomendações.
@@ -348,20 +340,14 @@ Nas estações de trabalho, impera-se pelo uso do sistema operacional \textbf{Mi
 O sistema RouterOS, incorporado no roteador \textit{Mikrotik}, equivalente ao CISCO IOS, totalmente operado pela linha de comando e de extremo poder a um custo relativamente acessível e muito melhor que roteadores domésticos convencionais, até mesmo superior às linhas domésticas da CISCO (Linksys). Fornecerá o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de internet e balancear esta carga, caso um dos links torne-se indisponível. Mais sobre este roteador na tabela recomendação de equipamentos ativos.
 \\
 
-Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP, nem DNS, para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas, daí a desnecessidade de preocupar-se com serviços de DHCP e DNS neste servidor, providos pelo sistema operacional. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas, devido à melhor segurança. 
-\\
-
-No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa, e será armazenado neste servidor Windows.
+Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP, nem DNS, para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas, daí a desnecessidade de preocupar-se com serviços de DHCP e DNS neste servidor, providos pelo sistema operacional. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas, devido à melhor segurança. No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa, e será armazenado neste servidor Windows.
 
 
 \section{Estrutura predial existente}
 
 Trata-se de escritório de 9 cômodos, considerando também como cômodo, a área de circulação que é a área de ingresso ao andar. Situa-se numa edificação de um 01 térreo e 01 andar. O escritório em si é o 1º andar. O telhado da edificação é de fácil acesso físico, visto que a edificação é construída com bom madeiramento e telhas cerâmicas. A parte elétrica bem isolada, sem emaranhados de fios, o que facilita a retirada de algumas telhas para a travessia de alguns eletrodutos que comportarão os cabos, interligando o \textit{switch} e cada setor especificado. \\
 
-As restrições de instalação são quebras da alvenaria mínimas e nova feitura de conduítes com argamassa. Nesse caso, utilizar-se-á pedaços de conduítes laranja (reforçado) entre laje e descida aos pontos de rede, em cada cômodo. Somente um único cabo por conduíte laranja reforçado, devido ao fato de que a passagem de dois cabos pode causar ferimentos em sua proteção se entrarem diretamente num ponto de atrito.
-\\
-
-Os cabos deverão sofrer curvaturas de no máximo 45 graus e de volta em posição retilínea, seja ela vertical ou horizontal. As saídas dos pontos de rede deverão apresentar sua respectiva tomada externa, que deverão ser posicionadas à 40 centímetros do piso. Canaletas deverão ser utilizadas para a acomodação e boa visibilidade das instalações.
+As restrições de instalação são quebras da alvenaria mínimas. Os cabos deverão sofrer curvaturas de no máximo 45 graus e de volta em posição retilínea, seja ela vertical ou horizontal. As saídas dos pontos de rede deverão apresentar sua respectiva tomada externa, que deverão ser posicionadas à 40 centímetros do piso. Canaletas deverão ser utilizadas para a acomodação e boa visibilidade das instalações.
 \\
 
 Temos a área total de 109,12 metros quadrados, fragmentada em:
@@ -383,11 +369,12 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 
 
 %inicio dos comandos para criar uma nova pagina A3 horizontal
-\clearpage
+\clearpage 
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
 \recalctypearea
 
 %\subsection{Planta Física com Mobília}
+
 
 \begin{figure}
 	%	\centering
@@ -525,10 +512,14 @@ Dentro dos tubos azuis, e das linhas vermelhas, é esperado uma determinada popu
 
 
 \subsection{Encaminhamento}
+\vspace{14pt}
+Pela laje, serão instalados eletrodutos de PVC, de bitola de 2 polegadas. São vendidos em unidades de 3 metros. O sistema X2 de canaletas é versátil por ser adesivado, com alta aderência, e pode comportar até 12 cabos numa única canaleta (4 cabos por segmento, sendo 3 segmentos dentro da canaleta). Canaletas do sistema X são vendidas em unidades de 2 metros.
+\\
 
-Pela laje, serão instalados eletrodutos de PVC, de bitola de 2 polegadas. São vendidos em unidades de 3 metros. O sistema X de canaletas possui duas categorias, X1 e X2. A categoria X1 se destina à passagem de no máximo 2 cabos por segmento, enquanto que a categoria X2 comporta até 6 cabos de rede. Canaletas do sistema X são vendidas em unidades de 2 metros.
+Os acabamentos X2 trata-se de peças que se acoplam nas canaletas, tais como: cantos, curvas, e terminações onde não se é possível realizar manobras perigosas como a sobra massiva de cabos. Os acabamentos podem ser de diversas formas plásticas, mas aqui o ideal é que se pareçam com uma pequena caixa de inspeção nos cantos, para que os cabos possam ter ângulo suficiente de desvio, sem prejudicar as características físicas e mecânicas do CAT 6.
+\\
 
-Abaixo, uma tabela de quantidade de canaletas necessárias para o cabeamento posterior ao \textit{backbone}.
+Abaixo, uma tabela de quantidade de material de encaminhamento necessário para o cabeamento posterior ao \textit{backbone}.
 \\
 
 % =======================================
@@ -543,26 +534,52 @@ Abaixo, uma tabela de quantidade de canaletas necessárias para o cabeamento pos
 		\hline
 		\textbf{Tipo}       & \textbf{Fabricante} & \multicolumn{1}{l|}{\textbf{Metros}} & \multicolumn{1}{l|}{\textbf{Unidades}} \\ \hline
 		Tubo PVC 2"         & Tigre               & 30                                   & 10                                     \\ \hline
-		Canaleta X2         & Alumbra             & 200                                  & 20                                     \\ \hline
-		Canaleta X1         & Alumbra             & 200                                  & 20                                     \\ \hline
-		Acabamentos X1 e X2 & Alumbra             & N/D                                  & 10                                     \\ \hline
+		Canaleta X2 Adesivada         & Dutoplast             & 57,49                                  & 29                                     \\ \hline
+		Acabamentos X2 & Dutoplast             & N/D                                  & 23                                     \\ \hline
+			Dutos de passagem alvenaria & Tigre             & N/D                                  & 6                                     \\ \hline
 	\end{tabular}
     	
 \end{center}
 
+\subsubsection{Calculo detalhado do encaminhamento}
+\vspace{14pt}
 
+% TABELA X2
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|c|c|c|c|}
+	\hline
+	\multicolumn{5}{|c|}{\textbf{Canaletas X2 (em metros)}}                                                                                                 \\ \hline
+	Trajeto da Canaleta & \multicolumn{1}{l|}{Trajeto A} & \multicolumn{1}{l|}{Trajeto B} & \multicolumn{1}{l|}{Trajeto C} & \multicolumn{1}{l|}{Trajeto D} \\ \hline
+	Horizontal          & 9,90                           & 13,00                          & 10,80                          & 5,56                           \\ \hline
+	Vertical            & 2,60                           & 5,20                           & 5,20                           & 5,20                           \\ \hline
+	Subtotal (m)        & 12,50                          & 18,90                          & 16,40                          & 10,76                          \\ \hline
+	\textbf{Total (m)}  & \multicolumn{4}{c|}{\textbf{52,29}}                                                                                               \\ \hline
+\end{tabular}
+\end{center}
+\vspace{14pt}
 
-
+% TABELA ELETRODUTOS
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|c|c|c|c|}
+	\hline
+	\multicolumn{5}{|c|}{\textbf{Eletrodutos A/D}}                                                                            \\ \hline
+	Trajeto do Eletroduto & \multicolumn{1}{l|}{A} & \multicolumn{1}{l|}{B} & \multicolumn{1}{l|}{C} & \multicolumn{1}{l|}{D} \\ \hline
+	Horizontal            & 9,90                   & 13,00                  & 10,80                  & 5,56                   \\ \hline
+	Vertical              & ---                    & ---                    & ---                    & ---                    \\ \hline
+	\textbf{Total (m)}    & \multicolumn{4}{c|}{\textbf{52,29}}                                                               \\ \hline
+\end{tabular}
+\end{center}
 % =======================================
 % FIM DA TABELA
 % =======================================
 
 
-\subsection{Memorial descritivo}
+\subsection{Memorial descritivo (Passivos)}
 
-Relação de todos os equipamentos passivos que serão utilizados. (Os valores são aproximados e serão recalculados no final do projeto.) 
+Relação de todos os equipamentos passivos que serão utilizados, seguidos das tabelas com o respectivo custo destes passivos, bem como o custo do encaminhamento. Opta-se veementemente pelo uso de um \textit{rack} fechado, pois o local não tem a segurança adequada de um \textit{datacenter}. O cabo a ser orçado é da empresa Furukawa, líder no ramo. A peça 23400174 consiste da segunda linha, porém, superior ao cabo "comum" CAT 5e. A primeira linha, Gigalan, é de alto custo para o projeto, não compensando este investimento, mesmo em longo prazo. Os \textit{patch cords} são os elementos mais onerosos do projeto --- todos da marca Furukawa --- mas o sucesso da implementação depende de \textit{patch cords} de qualidade. A pequena variação de marca observa-se somente pelo conjunto de caixas de sobrepor e \textit{keystones}, mais econômicos, mas de qualidade, das marcas, respectivamente Central Network e AMP.
 \\
-
 
 
 
@@ -575,29 +592,41 @@ Relação de todos os equipamentos passivos que serão utilizados. (Os valores s
 
 \begin{center}
 	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\textbf{Equipamento Passivo}      & \textbf{Fabricante} & \multicolumn{1}{l|}{\textbf{Quantidade}} \\ \hline
-		Rack 44 U Fechado                 & Lextron             & 1 unidade                                \\ \hline
-		Patch Panel 48 Portas CAT 6       & Optictrade          & 1 unidade                                \\ \hline
-		Organizadores de cabos            & Lextron             & 2 unidades                               \\ \hline
-		Cabo UTP CAT 6                    & Furkuawa            & 500 metros                               \\ \hline
-		Patch Cords CAT 6 - 1,5 m (Azul)  & AMP                 & 48 unidades                              \\ \hline
-		Patch Cords CAT 6 - 1,5 m (Cinza) & AMP                 & 48 unidades                              \\ \hline
-		Patch Cords CAT 6 - 3,0 m (Cinza) & AMP                 & 20 unidades                              \\ \hline
-		Outlets de keystones              & Nexans              & 50 unidades                              \\ \hline
-		Keystones CAT 6                   & Nexans              & 50 unidades                              \\ \hline
+		Rack 44 U Fechado                 & Lextron             & 1                                \\ \hline
+		Patch Panel 24 Portas CAT 6 GigaLan 35030162     & Furukawa          & 2                                \\ \hline
+		Organizador 1 U 80 cm            & Lextron             & 2                               \\ \hline
+		Cabo UTP CAT 6 Part 23400174 305 m                  & Furukawa            & 3        \\ \hline
+			Cabo UTP CAT 6 Part 23400174 70 m                  & Furukawa            & 1        \\ \hline
+	
+		Patch Cords CAT 6 - 1,5 m (Cinza) & Furukawa                 & 38                            \\ \hline
+		Patch Cords CAT 6 - 2,5 m (Cinza) & Furukawa                 & 22                             \\ \hline
+		Caixa de Sobrepor 1 Porta              & Central Network              & 40                             \\ \hline
+		Keystone 375055-1
+		 CAT 6                   & AMP              & 40                             \\ \hline
 	\end{tabular}
 \end{center}	
 % =======================================
 % FIM DA TABELA
 % =======================================
+
+\vspace{1cm}
+
+\subsubsection{Calculo detalhado do cabeamento e considerações sobre emendas}
+
+Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é estimado para que se saia do \textit{patch panel} e chegue-se até o ponto da área de trabalho, sem nenhuma emenda sequer. Uma coisa que se deve evitar quando se lida com cabos de cobre é a emenda. A emenda só pode ocorrer quando a situação for extremamente urgente: um serviço indisponível pelo rompimento de um cabo; uma situação de manutenção provisória. Seja qual for o tipo de emenda, mesmo que de caráter a long prazo, ela precisa ser executada com muita habilidade e precisão, com as ferramentas e conectores corretos --- até mesmo gel, que é usado para emendas de cabo de telefonia, dependendo do caso. As emendas causam atenuações no sinal. Um erro comum dos \textit{curiosos} é soldar a emenda --- seja ela de fio de telefonia ou de rede. A solda com a combinação "estanho/chumbo", também chamada de 60/40, causa um ponto de resistência de elétrons e não é recomendado o uso em cabos de cobre, nem mesmo em cabos de energia. (CITAR REFERENCIA) 
+
+
+
+
 \clearpage
 
 \KOMAoptions{paper=a3, paper=landscape, fontsize=11pt, DIV=20}
 \recalctypearea
 
-\centering
+{\centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 	\hline
 	\multicolumn{9}{|c|}{\textbf{Metragem do cabeamento - detalhada - em metros.}}                                                                                                                                                                                                                                                                                                                                        \\ \hline
@@ -653,6 +682,8 @@ Relação de todos os equipamentos passivos que serão utilizados. (Os valores s
 	\multicolumn{2}{|c|}{\textbf{Subtotal}} & 96                                                   & 435,94                                      & 124,8                                         & 8                                             & 295,21                                           & 16,8                                            & 976,75                                                            \\ \hline
 	\multicolumn{2}{|c|}{\textbf{Total}}    & \multicolumn{7}{c|}{976,75}                                                                                                                                                                                                                                                                                                                                                 \\ \hline
 \end{tabular}
+}
+
 %Retornar ao formato A4
 \clearpage
 \KOMAoptions{paper=a4, paper=portrait, DIV=15}
@@ -660,9 +691,36 @@ Relação de todos os equipamentos passivos que serão utilizados. (Os valores s
 %-- reinicio em A4 
 
 \subsection{Identificação dos cabos}
-Explique como os cabos serão identificados em seu projeto. Coloque uma relação dos cabos instalados e identificados.
+
+Os cabos serão identificados pela seguinte nomenclatura:
+\\
+
+\textbf{PT} = Ponto da \textbf{Área de Trabalho.}
+\\
+
+\textbf{A} = Letra indicadora do \textbf{Eletroduto de Cabos} / Grupo de Portas.
+\\
+
+\textbf{1} = Número do cabo.
+\\
+
+\textbf{R} = Letra indicadora de \textbf{Cabo Reserva}.
+\\
+
+\textbf{1} = Número após o R indica o cabo reserva em questão.
+\\
+
+Os cabos reservas passam pelos eletrodutos, porém eles não descem pelas canaletas de distribuição. A sobra destes condutores ficam armazenadas numa caixa protegida em cima da própria laje, sem adentrar o duto de passagem vertical, especialmente no começo dos pontos de descida dos cabos. Porém, eles ficam suspensos até o \textit{rack}, na origem do sinal: assim caso algum cabo venha a estar danificado na certificação, a manobra para substituir aquele por outro cabo já passado resumir-se-á apenas pela prensagem deste no \textit{patch panel} e na outra extremidade, sim, a recuperação da sobra, pela laje.
+\\
+
+Os \textit{patch cords} são identificados com etiquetadoras, bem como os cabos que saem com uma pequena sobra salvaguarda das canaletas.
 
 \section{Implantação}
+
+\textbf{\begin{center}
+		FAZER AQUI URGENTE
+\end{center}}
+
 Estabeleça um cronograma de implantação:
 Remoção de equipamentos existentes (destino para descarte), instalação dos condutores, instalação dos cabos, 
 identificação dos cabos, montagem dos racks, certificação, etc... Crie atividades e estabeleça o tempo de execução. Se for um projeto real, indique também quais os responsáveis pela execução do projeto e de cada uma das etapas.
@@ -678,19 +736,30 @@ http://www.ganttproject.biz/,
 http://www.orangescrum.org/. 
 
 \section{Plano de certificação}
+\textbf{\begin{center}
+		FAZER AQUI URGENTE
+\end{center}}
 Quais seriam as etapas para a certificação? 
 Quais os locais e horários para execução da certificação na rede? Toda rede será certificada?
 Como os testes seriam executados?
 Quais relatórios de certificação serão (ou deveriam ser) entregues? 
 
 \section{Plano de manutenção}
-
+\textbf{\begin{center}
+		FAZER AQUI URGENTE
+\end{center}}
 Revisões periódicas na rede, emissão de certificados para novos pontos.
 
 \subsection{Plano de expansão}
+\textbf{\begin{center}
+		FAZER AQUI URGENTE
+\end{center}}
 Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as extremidades da rede? 
 
 \section{Risco}
+\textbf{\begin{center}
+		FAZER AQUI URGENTE
+\end{center}}
 O projeto não demanda, de forma incisiva, condicionamento de ar no cômodo SEQ, pela pouca quantidade de equipamentos presentes. Porém, há um risco inerente de interferência eletromagnética com possíveis cabos de rede que fiquem menos que 30 cm de distância de linhas de energia. A norma estabelece o mínimo de 30 cm de distância dessas linhas, pois o eletromagnetismo provindo desses cabos podem gerar ruídos na rede.
 \\
 
@@ -699,7 +768,30 @@ Não obstante, visa-se que o custo do cabo blindado e de conectores, não se faz
 
 
 \section{Orçamento}
-Crie uma relação de orçamentos baseado na seções anteriores.
+Tabela de de custo dos equipamentos passivos.
+\vspace{0.5cm}
+
+%passivos custo
+
+	\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	\textbf{Equipamento Passivo}                 & \textbf{Fabricante} & \textbf{ Unitário (R\$)} & \multicolumn{1}{l|}{\textbf{Total (R\$)}} \\ \hline
+	Rack 44 U Fechado                            & Lextron             & 1.899,00                         & 1.899,00                                           \\ \hline
+	Patch Panel 24 Portas CAT 6 GigaLan  & Furukawa            & 699,00                           & 1.398,00                                           \\ \hline
+	Organizadore de cabos 1U 80 cm               & Lextron             & 30,00                            & 60,00                                              \\ \hline
+	Cabo UTP CAT 6  305 m           & Furukawa            & 592,92                           & 1.967,76                                           \\ \hline
+	Cabo UTP CAT 6  70 m            & Furukawa            & 189,00                           & 189,00                                             \\ \hline
+	Patch Cords CAT 6 - 1,5 m (Cinza)            & Furukawa            & 32,00                            & 1.114,00                                           \\ \hline
+	Patch Cords CAT 6 - 2,5 m (Cinza)            & Furukawa            & 39,00                            & 858,00                                             \\ \hline
+	Caixa de Sobrepor 1 Porta                          & C. Network                & 4,80                             & 120,00                                             \\ \hline
+	Keystone 375055-1
+	CAT 6                             & AMP                 & 19,00                            & 760,00                                             \\ \hline
+	\multicolumn{3}{|c|}{\textbf{Total em R\$}}                                                           & \textbf{8.365,76}                                  \\ \hline
+\end{tabular}
+
+
+\pagebreak
 
 \section{Recomendações}
 
@@ -714,87 +806,22 @@ Se o condutor do mesmo cordão de força tivermos a corrente indo na mesma dire�
 É de extrema importância, num projeto que não contempla cabos blindados  que vão passar perto de cabos de energia 110V/220V, a observação sobre o \textit{cancelamento} de campos eletromagnéticos. Instalações que possuem condicionadores de ar que utilizam muita amperagem da concessionária, demandam alguma considerável amperagem que pode causar grande interferência se estiverem bem próximos aos cabos de uma rede.  
 \\
 
-(ADICIONAR FIGURAS EXPLICATIVAS)
+\subsection{Aterramento}
+
+Falar sobre aterramento. 
 
 \subsection{Ativos de Rede}
 
+Recomendar roteador.
+Recomentar switch.
+Recomendar access points.
+
+\pagebreak
 \section{Referências bibliográficas}
-Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
-
-Exemplo: Redes de computadores, segundo \cite{t2013} é considerada..... Já \cite{kurose2010} apresenta uma versão...
-
-Analisando os pressupostos de \cite{ref3} e \cite{ref4} concluimos que....
 
 
 \renewcommand\refname{} %%Referências bibliográficas}  
 \bibliographystyle{ieeetr}
 \bibliography{referencias}  
-
-%% ***********************************************************************
-%% === remover daqui =====================================================
-%% ***********************************************************************
-=================================================
-\section{Elementos textuais - Alguns exemplos}
-
-Esta seção apresenta exemplos de elementos textuais. \textbf{Remova-a da versão final do texto}.
-
-
-\subsection{Colocar elementos em itens}
-
-Texto antes da lista
-
-\begin{itemize}
-	\item First item in a list 
-	\item Second item in a list 
-	\item Third item in a list
-\end{itemize}
-
-\subsubsection{Uma subseção de terceiro nivel}
-
-Exemplo de uma subseção
-
-\subsection{Tabelas}
-
-Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho.
-Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
-
-\input{tab2}
-
-Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab2} temos a relação de ....
-
-
-Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
-
-\subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig10} apresenta.....
-
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{fig1}
-\caption{Exemplo de figura com escala horizontal}
-\label{fig1}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[]{fig2}
-	\caption{Exemplo de figura sem escala}
-	\label{fig2}
-\end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-
-
-
-
-%% ***********************************************************************
-%% === ate aqui    =====  ================================================
-%% ***********************************************************************
 
 \end{document}
