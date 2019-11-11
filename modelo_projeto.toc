@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2}Requisitos}{5}% 
 \contentsline {subsection}{\numberline {2.1}Velocidade real contratada e percebida}{5}% 
 \contentsline {subsection}{\numberline {2.2}Extin\IeC {\c c}\IeC {\~a}o de conectores manualmente prensados com alicate}{5}% 
-\contentsline {subsection}{\numberline {2.3}Toler\IeC {\^a}ncia \IeC {\`a} falha - Redund\IeC {\^a}ncia contra quedas no servi\IeC {\c c}o}{5}% 
+\contentsline {subsection}{\numberline {2.3}Toler\IeC {\^a}ncia \IeC {\`a} falha - Redund\IeC {\^a}ncia contra quedas no servi\IeC {\c c}o}{6}% 
 \contentsline {subsection}{\numberline {2.4}Cobre de alta qualidade}{6}% 
 \contentsline {subsection}{\numberline {2.5}Todos os equipamentos ativos e passivos na base 1000}{6}% 
 \contentsline {subsection}{\numberline {2.6}WiFi - Padr\IeC {\~a}o IEEE 802.11ac implementado}{6}% 
@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {5.2}Topologia}{13}% 
 \contentsline {subsection}{\numberline {5.3}Encaminhamento}{15}% 
 \contentsline {subsubsection}{\numberline {5.3.1}Calculo detalhado do encaminhamento}{15}% 
-\contentsline {subsection}{\numberline {5.4}Memorial descritivo (Passivos)}{16}% 
+\contentsline {subsection}{\numberline {5.4}Memorial descritivo (Passivos)}{15}% 
 \contentsline {subsubsection}{\numberline {5.4.1}Calculo detalhado do cabeamento e considera\IeC {\c c}\IeC {\~o}es sobre emendas}{16}% 
 \contentsline {subsection}{\numberline {5.5}Identifica\IeC {\c c}\IeC {\~a}o dos cabos}{18}% 
 \contentsline {section}{\numberline {6}Implanta\IeC {\c c}\IeC {\~a}o}{18}% 
@@ -27,9 +27,11 @@
 \contentsline {section}{\numberline {8}Plano de manuten\IeC {\c c}\IeC {\~a}o}{19}% 
 \contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{19}% 
 \contentsline {section}{\numberline {9}Risco}{19}% 
-\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{19}% 
+\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{20}% 
 \contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{21}% 
 \contentsline {subsection}{\numberline {11.1}Cancelamento do eletromagnetismo}{21}% 
 \contentsline {subsection}{\numberline {11.2}Aterramento}{21}% 
-\contentsline {subsection}{\numberline {11.3}Ativos de Rede}{21}% 
+\contentsline {subsection}{\numberline {11.3}Equipamentos que causem danos}{21}% 
+\contentsline {subsection}{\numberline {11.4}Manuten\IeC {\c c}\IeC {\~a}o da energia em caso de queda}{21}% 
+\contentsline {subsection}{\numberline {11.5}Ativos de Rede}{21}% 
 \contentsline {section}{\numberline {12}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{22}% 

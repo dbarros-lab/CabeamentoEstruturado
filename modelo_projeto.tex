@@ -189,31 +189,7 @@ Em se tratando de projeto fictício, não há organizações envolvidas. Para fi
 % TABELINHA DE PROFISSIONAIS E ÓRGÃOS
 % =======================================
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{2.0}
-	\begin{tabular}{|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Profissional / Empresa}} &	 \multicolumn{1}{|c|}{\textbf{Serviço}}                                 		  \\ \hline		Provedor de Internet 1                                
-		& Serviço de acesso à Internet                                              \\ \hline
-	    Provedor de Internet 2                               
-	    & Serviço de acesso à Internet para redundância            					\\ \hline
-		Engenheiro Elétrico                                  
-		& Instalações elétricas relacionadas e não relacionadas à rede          \\ \hline
-		Analista de Compras 
-        & Orçamentos e compras de equipamentos          \\ \hline
-		Projetista da Rede                                   
-		& Projeta, configura e coloca em operação a rede lógica    \\ \hline
-		Instalador da Rede                                   
-		& Profissional ou equipe que instala a rede física           \\ \hline
-		Telecom Local                                        
-		& Instala/remaneja os troncos telefônicos         \\ \hline
-		Empresa de Telefonia                                    
-		& Profissional para instalar PABX e cabos telefônicos    \\ \hline
-		ANATEL                                  
-		& Órgão credenciador para certificação de redes \\ \hline
-	\end{tabular}
-\end{table}
+\input{tab1}
 
 % =======================================
 % FIM DA TABELA
@@ -257,23 +233,7 @@ Nesta seção será descrita a tabela de todos os profissionais atuantes na edif
 % TABELA DE FUNCIONÁRIOS
 % =======================================
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{2.0}
-	\begin{tabular}{|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Usuário}} &	 \multicolumn{1}{|c|}{\textbf{Aplicativos mais utilizados}}                                 		  \\ \hline		Diretor                                
-		& Windows e Microsoft Office                                              \\ \hline
-		Recepcionista                               
-		& Windows e Microsoft Outlook            					\\ \hline
-		Analista de T.I.                                  
-		& Windows Server, SQL Server, RouterOS (MikroTik)          \\ \hline
-		Adminstrador 1 a 4 
-		& Windows e Microsoft Office         \\ \hline
-		Contador 1 e 2                                  
-		& Windows, Microsoft Office e programas fiscais    \\ \hline
-	\end{tabular}
-\end{table}
+\input{tab2}
 
 % =======================================
 % FIM DA TABELA
@@ -301,24 +261,7 @@ Nesta seção será descrita a tabela de aplicativos e suas funções críticas 
 % TABELA DE APLICATIVOS
 % =======================================
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{2.0}
-	\begin{tabular}{|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Aplicativo/Sistema}} &	 \multicolumn{1}{|c|}{\textbf{Descrição  de aplicativo}}                                 		  \\ \hline
-		Windows Server 2016*                               
-		& Servidor: File Server*, SQL Server*.                                               \\ \hline
-		Windows 10                             
-		& Sistema operacional das estações           					\\ \hline
-		SQL Server                                  
-		& Serviço do Windows Server*         \\ \hline
-		RouterOS
-		& Sistema operacional do roteador*        \\ \hline
-		Microsoft Office                                  
-		& Suite com aplicativos de escritório   \\ \hline
-	\end{tabular}
-\end{table}
+\input{tab3}
 
 % =======================================
 % FIM DA TABELA
@@ -337,10 +280,10 @@ Nas estações de trabalho, impera-se pelo uso do sistema operacional \textbf{Mi
 
 
 
-O sistema RouterOS, incorporado no roteador \textit{Mikrotik}, equivalente ao CISCO IOS, totalmente operado pela linha de comando e de extremo poder a um custo relativamente acessível e muito melhor que roteadores domésticos convencionais, até mesmo superior às linhas domésticas da CISCO (Linksys). Fornecerá o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de internet e balancear esta carga, caso um dos links torne-se indisponível. Mais sobre este roteador na tabela recomendação de equipamentos ativos.
+Conforme recomendação, é bom que o roteador utilize um sistema operacional com linha de comando, a exemplo dos modelos \textit{Mikrotik} ou CISCO. Esses sistemas fornecem o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de internet e balancear esta carga, caso um dos \textit{links} torne-se indisponível. Mais sobre estes equipamentos na seção {Recomendações}.
 \\
 
-Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP, nem DNS, para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas, daí a desnecessidade de preocupar-se com serviços de DHCP e DNS neste servidor, providos pelo sistema operacional. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas, devido à melhor segurança. No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa, e será armazenado neste servidor Windows.
+Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP, nem DNS, para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas. No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa.
 
 
 \section{Estrutura predial existente}
@@ -452,22 +395,7 @@ A topologia de rede segue o modelo top-down e indica-se os elementos da maneira 
 % TABELA DE PORTAS DO SWITCH
 % =======================================
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{2.0}
-	\begin{tabular}{|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Letra do \textit{Backbone}}} &	 \multicolumn{1}{|c|}{\textbf{Portas}}                                 		  \\ \hline		A                                
-		& 01, 02, 03, 04, 05, 06, 07, 08, 09*, 10*, 11*, 12*, 13*, 14*.                                             \\ \hline
-		B                               
-		& 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25*, 26*, 27*, 28*.         					\\ \hline
-		C                                  
-		& 29, 30, 31, 32, 33, 34, 35*, 36*, 37*, 38*.          \\ \hline
-		D 
-		& 39, 40, 41, 42, 43, 44, 45*, 46*, 47*, 48*.         \\ \hline
-		
-	\end{tabular}
-\end{table}
+\input{tab4}
 
 % =======================================
 % FIM DA TABELA
@@ -512,65 +440,26 @@ Dentro dos tubos azuis, e das linhas vermelhas, é esperado uma determinada popu
 
 
 \subsection{Encaminhamento}
-\vspace{14pt}
-Pela laje, serão instalados eletrodutos de PVC, de bitola de 2 polegadas. São vendidos em unidades de 3 metros. O sistema X2 de canaletas é versátil por ser adesivado, com alta aderência, e pode comportar até 12 cabos numa única canaleta (4 cabos por segmento, sendo 3 segmentos dentro da canaleta). Canaletas do sistema X são vendidas em unidades de 2 metros.
-\\
 
-Os acabamentos X2 trata-se de peças que se acoplam nas canaletas, tais como: cantos, curvas, e terminações onde não se é possível realizar manobras perigosas como a sobra massiva de cabos. Os acabamentos podem ser de diversas formas plásticas, mas aqui o ideal é que se pareçam com uma pequena caixa de inspeção nos cantos, para que os cabos possam ter ângulo suficiente de desvio, sem prejudicar as características físicas e mecânicas do CAT 6.
-\\
+Pela laje, serão instalados eletrodutos de PVC, de bitola de 2 polegadas. São vendidos em unidades de 3 metros. O sistema X2 de canaletas é versátil por ser adesivado, com alta aderência, e pode comportar até 12 cabos numa única canaleta (4 cabos por segmento, sendo 3 segmentos dentro da canaleta). Canaletas do sistema X são vendidas em unidades de 2 metros. Os acabamentos X2 trata-se de peças que se acoplam nas canaletas, tais como: cantos, curvas, e terminações onde não se é possível realizar manobras perigosas como a sobra massiva de cabos. Os acabamentos podem ser de diversas formas plásticas, mas aqui o ideal é que se pareçam com uma pequena caixa de inspeção nos cantos, para que os cabos possam ter ângulo suficiente de desvio, sem prejudicar as características físicas e mecânicas do CAT 6. Abaixo, uma tabela de quantidade de material de encaminhamento necessário para o cabeamento posterior ao \textit{backbone}.
 
-Abaixo, uma tabela de quantidade de material de encaminhamento necessário para o cabeamento posterior ao \textit{backbone}.
-\\
 
 % =======================================
 % TABELA DE ENCAMINHAMENTO
 % =======================================
 
 
-\begin{center}
-
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\textbf{Tipo}       & \textbf{Fabricante} & \multicolumn{1}{l|}{\textbf{Metros}} & \multicolumn{1}{l|}{\textbf{Unidades}} \\ \hline
-		Tubo PVC 2"         & Tigre               & 30                                   & 10                                     \\ \hline
-		Canaleta X2 Adesivada         & Dutoplast             & 57,49                                  & 29                                     \\ \hline
-		Acabamentos X2 & Dutoplast             & N/D                                  & 23                                     \\ \hline
-			Dutos de passagem alvenaria & Tigre             & N/D                                  & 6                                     \\ \hline
-	\end{tabular}
-    	
-\end{center}
+\input{tab5}
 
 \subsubsection{Calculo detalhado do encaminhamento}
-\vspace{14pt}
 
 % TABELA X2
-\begin{center}
-	\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|l|c|c|c|c|}
-	\hline
-	\multicolumn{5}{|c|}{\textbf{Canaletas X2 (em metros)}}                                                                                                 \\ \hline
-	Trajeto da Canaleta & \multicolumn{1}{l|}{Trajeto A} & \multicolumn{1}{l|}{Trajeto B} & \multicolumn{1}{l|}{Trajeto C} & \multicolumn{1}{l|}{Trajeto D} \\ \hline
-	Horizontal          & 9,90                           & 13,00                          & 10,80                          & 5,56                           \\ \hline
-	Vertical            & 2,60                           & 5,20                           & 5,20                           & 5,20                           \\ \hline
-	Subtotal (m)        & 12,50                          & 18,90                          & 16,40                          & 10,76                          \\ \hline
-	\textbf{Total (m)}  & \multicolumn{4}{c|}{\textbf{52,29}}                                                                                               \\ \hline
-\end{tabular}
-\end{center}
-\vspace{14pt}
+
+\input{tab6}
+
 
 % TABELA ELETRODUTOS
-\begin{center}
-	\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|l|c|c|c|c|}
-	\hline
-	\multicolumn{5}{|c|}{\textbf{Eletrodutos A/D}}                                                                            \\ \hline
-	Trajeto do Eletroduto & \multicolumn{1}{l|}{A} & \multicolumn{1}{l|}{B} & \multicolumn{1}{l|}{C} & \multicolumn{1}{l|}{D} \\ \hline
-	Horizontal            & 9,90                   & 13,00                  & 10,80                  & 5,56                   \\ \hline
-	Vertical              & ---                    & ---                    & ---                    & ---                    \\ \hline
-	\textbf{Total (m)}    & \multicolumn{4}{c|}{\textbf{52,29}}                                                               \\ \hline
-\end{tabular}
-\end{center}
+\input{tab7}
 % =======================================
 % FIM DA TABELA
 % =======================================
@@ -579,44 +468,20 @@ Abaixo, uma tabela de quantidade de material de encaminhamento necessário para 
 \subsection{Memorial descritivo (Passivos)}
 
 Relação de todos os equipamentos passivos que serão utilizados, seguidos das tabelas com o respectivo custo destes passivos, bem como o custo do encaminhamento. Opta-se veementemente pelo uso de um \textit{rack} fechado, pois o local não tem a segurança adequada de um \textit{datacenter}. O cabo a ser orçado é da empresa Furukawa, líder no ramo. A peça 23400174 consiste da segunda linha, porém, superior ao cabo "comum" CAT 5e. A primeira linha, Gigalan, é de alto custo para o projeto, não compensando este investimento, mesmo em longo prazo. Os \textit{patch cords} são os elementos mais onerosos do projeto --- todos da marca Furukawa --- mas o sucesso da implementação depende de \textit{patch cords} de qualidade. A pequena variação de marca observa-se somente pelo conjunto de caixas de sobrepor e \textit{keystones}, mais econômicos, mas de qualidade, das marcas, respectivamente Central Network e AMP.
-\\
-
-
 
 % =======================================
 % TABELA DE PASSIVOS
 % =======================================
 
+\input{tab8}
 
-	
-
-\begin{center}
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		\textbf{Equipamento Passivo}      & \textbf{Fabricante} & \multicolumn{1}{l|}{\textbf{Quantidade}} \\ \hline
-		Rack 44 U Fechado                 & Lextron             & 1                                \\ \hline
-		Patch Panel 24 Portas CAT 6 GigaLan 35030162     & Furukawa          & 2                                \\ \hline
-		Organizador 1 U 80 cm            & Lextron             & 2                               \\ \hline
-		Cabo UTP CAT 6 Part 23400174 305 m                  & Furukawa            & 3        \\ \hline
-			Cabo UTP CAT 6 Part 23400174 70 m                  & Furukawa            & 1        \\ \hline
-	
-		Patch Cords CAT 6 - 1,5 m (Cinza) & Furukawa                 & 38                            \\ \hline
-		Patch Cords CAT 6 - 2,5 m (Cinza) & Furukawa                 & 22                             \\ \hline
-		Caixa de Sobrepor 1 Porta              & Central Network              & 40                             \\ \hline
-		Keystone 375055-1
-		 CAT 6                   & AMP              & 40                             \\ \hline
-	\end{tabular}
-\end{center}	
 % =======================================
 % FIM DA TABELA
 % =======================================
 
-\vspace{1cm}
-
 \subsubsection{Calculo detalhado do cabeamento e considerações sobre emendas}
 
-Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é estimado para que se saia do \textit{patch panel} e chegue-se até o ponto da área de trabalho, sem nenhuma emenda sequer. Uma coisa que se deve evitar quando se lida com cabos de cobre é a emenda. A emenda só pode ocorrer quando a situação for extremamente urgente: um serviço indisponível pelo rompimento de um cabo; uma situação de manutenção provisória. Seja qual for o tipo de emenda, mesmo que de caráter a long prazo, ela precisa ser executada com muita habilidade e precisão, com as ferramentas e conectores corretos --- até mesmo gel, que é usado para emendas de cabo de telefonia, dependendo do caso. As emendas causam atenuações no sinal. Um erro comum dos \textit{curiosos} é soldar a emenda --- seja ela de fio de telefonia ou de rede. A solda com a combinação "estanho/chumbo", também chamada de 60/40, causa um ponto de resistência de elétrons e não é recomendado o uso em cabos de cobre, nem mesmo em cabos de energia. (CITAR REFERENCIA) 
+Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é estimado para que se saia do \textit{patch panel} e chegue-se até o ponto da área de trabalho. Uma coisa que se deve evitar quando se lida com cabos de cobre é a emenda. A emenda só pode ocorrer quando a situação for extremamente urgente: um serviço indisponível pelo rompimento de um cabo; uma situação de manutenção provisória. Seja qual for o tipo de emenda, precisa ser executada com muita habilidade e precisão: com as ferramentas e conectores corretos. As emendas causam atenuações no sinal. A prática de soldar emendas com a combinação estanho/chumbo, causa um ponto de resistência de elétrons e deve ser "abominada" num projeto, até mesmo por projetos de elétrica. (CITAR REFERENCIA) 
 
 
 
@@ -627,61 +492,7 @@ Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é e
 \recalctypearea
 
 {\centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-	\hline
-	\multicolumn{9}{|c|}{\textbf{Metragem do cabeamento - detalhada - em metros.}}                                                                                                                                                                                                                                                                                                                                        \\ \hline
-	\textbf{Porta}     & \textbf{Ponto}     & \multicolumn{1}{l|}{\textbf{Do Patch Panel ao Teto}} & \multicolumn{1}{l|}{\textbf{No Eletroduto}} & \multicolumn{1}{l|}{\textbf{Descida do teto}} & \multicolumn{1}{l|}{\textbf{Subida até o AP}} & \multicolumn{1}{l|}{\textbf{Caminho horizontal}} & \multicolumn{1}{l|}{\textbf{Sobra Salvaguarda}} & \multicolumn{1}{l|}{\textbf{Total do Cabo Cortado Ponto a Ponto}} \\ \hline
-	01                 & PTA1               & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 6,63                                             & 0,35                                            & 17,98                                                             \\ \hline
-	02                 & PTA2               & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 7,25                                             & 0,35                                            & 18,60                                                             \\ \hline
-	03                 & PTA3               & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 6,62                                             & 0,35                                            & 17,97                                                             \\ \hline
-	04                 & PTA4               & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 7,23                                             & 0,35                                            & 18,58                                                             \\ \hline
-	05                 & PTA5               & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 8,24                                             & 0,35                                            & 19,59                                                             \\ \hline
-	06                 & PTA6               & 2                                                    & 6,4                                         & 2,6                                           & 2                                             & 8,86                                             & 0,35                                            & 20,21                                                             \\ \hline
-	07                 & PTA7               & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 0,25                                             & 0,35                                            & 11,60                                                             \\ \hline
-	08                 & PTA8               & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 0,88                                             & 0,35                                            & 12,23                                                             \\ \hline
-	09                 & PTA R1             & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 8,9                                              & 0,35                                            & 20,25                                                             \\ \hline
-	10                 & PTA R2             & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 8,9                                              & 0,35                                            & 20,25                                                             \\ \hline
-	11                 & PTA R3             & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 8,9                                              & 0,35                                            & 20,25                                                             \\ \hline
-	12                 & PTA R4             & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 8,9                                              & 0,35                                            & 20,25                                                             \\ \hline
-	13                 & PTA R5             & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 8,9                                              & 0,35                                            & 20,25                                                             \\ \hline
-	14                 & PTA R6             & 2                                                    & 6,4                                         & 2,6                                           & ---                                           & 8,9                                              & 0,35                                            & 20,25                                                             \\ \hline
-	15                 & PTB1               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 8,92                                             & 0,35                                            & 22,23                                                             \\ \hline
-	16                 & PTB2               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 8,27                                             & 0,35                                            & 21,68                                                             \\ \hline
-	17                 & PTB3               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 3,58                                             & 0,35                                            & 16,99                                                             \\ \hline
-	18                 & PTB4               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 2,94                                             & 0,35                                            & 16,35                                                             \\ \hline
-	19                 & PTB5               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 0,97                                             & 0,35                                            & 14,38                                                             \\ \hline
-	20                 & PTB6               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 0,36                                             & 0,35                                            & 13,77                                                             \\ \hline
-	21                 & PTB7               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 0,14                                             & 0,35                                            & 13,55                                                             \\ \hline
-	22                 & PTB8               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 0,82                                             & 0,35                                            & 14,23                                                             \\ \hline
-	23                 & PTB9               & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 3,49                                             & 0,35                                            & 16,90                                                             \\ \hline
-	24                 & PTB10              & 2                                                    & 8,46                                        & 2,6                                           & 2                                             & 4,09                                             & 0,35                                            & 17,50                                                             \\ \hline
-	25                 & PTB R1             & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 9                                                & 0,35                                            & 22,41                                                             \\ \hline
-	26                 & PTB R2             & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 9                                                & 0,35                                            & 22,41                                                             \\ \hline
-	27                 & PTB R3             & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 9                                                & 0,35                                            & 22,41                                                             \\ \hline
-	28                 & PTB R4             & 2                                                    & 8,46                                        & 2,6                                           & ---                                           & 9                                                & 0,35                                            & 22,41                                                             \\ \hline
-	29                 & PTC1               & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 2,77                                             & 0,35                                            & 18,64                                                             \\ \hline
-	30                 & PTC2               & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 2,15                                             & 0,35                                            & 18,02                                                             \\ \hline
-	31                 & PTC3               & 2                                                    & 10,92                                       & 2,6                                           & 2                                             & 7,98                                             & 0,35                                            & 23,85                                                             \\ \hline
-	32                 & PTC4               & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 8,58                                             & 0,35                                            & 24,45                                                             \\ \hline
-	33                 & PTC5               & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 11,04                                            & 0,35                                            & 26,91                                                             \\ \hline
-	34                 & PTC6               & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 11,66                                            & 0,35                                            & 27,53                                                             \\ \hline
-	35                 & PTC R1             & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 12                                               & 0,35                                            & 27,87                                                             \\ \hline
-	36                 & PTC R2             & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 12                                               & 0,35                                            & 27,87                                                             \\ \hline
-	37                 & PTC R3             & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 12                                               & 0,35                                            & 27,87                                                             \\ \hline
-	38                 & PTC R4             & 2                                                    & 10,92                                       & 2,6                                           & ---                                           & 12                                               & 0,35                                            & 27,87                                                             \\ \hline
-	39                 & PTD1               & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 1,05                                             & 0,35                                            & 17,87                                                             \\ \hline
-	40                 & PTD2               & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 0,38                                             & 0,35                                            & 17,20                                                             \\ \hline
-	41                 & PTD3               & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 2,62                                             & 0,35                                            & 19,44                                                             \\ \hline
-	42                 & PTD4               & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 3,24                                             & 0,35                                            & 20,06                                                             \\ \hline
-	43                 & PTD5               & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 3,88                                             & 0,35                                            & 20,70                                                             \\ \hline
-	44                 & PTD6               & 2                                                    & 11,87                                       & 2,6                                           & 2                                             & 4,52                                             & 0,35                                            & 21,34                                                             \\ \hline
-	45                 & PTD R1             & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 4,6                                              & 0,35                                            & 21,42                                                             \\ \hline
-	46                 & PTD R2             & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 4,6                                              & 0,35                                            & 21,42                                                             \\ \hline
-	47                 & PTD R3             & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 4,6                                              & 0,35                                            & 21,42                                                             \\ \hline
-	48                 & PTD R4             & 2                                                    & 11,87                                       & 2,6                                           & ---                                           & 4,6                                              & 0,35                                            & 21,42                                                             \\ \hline
-	\multicolumn{2}{|c|}{\textbf{Subtotal}} & 96                                                   & 435,94                                      & 124,8                                         & 8                                             & 295,21                                           & 16,8                                            & 976,75                                                            \\ \hline
-	\multicolumn{2}{|c|}{\textbf{Total}}    & \multicolumn{7}{c|}{976,75}                                                                                                                                                                                                                                                                                                                                                 \\ \hline
-\end{tabular}
+\input{tab9}
 }
 
 %Retornar ao formato A4
@@ -745,27 +556,40 @@ Como os testes seriam executados?
 Quais relatórios de certificação serão (ou deveriam ser) entregues? 
 
 \section{Plano de manutenção}
-\textbf{\begin{center}
-		FAZER AQUI URGENTE
-\end{center}}
-Revisões periódicas na rede, emissão de certificados para novos pontos.
+
+Caberá ao setor de T.I. averiguar o estado dos passivos e realizar testes de rede ocasionalmente, incluindo velocidades do \textit{link} contratado de Internet e sinal da rede \textit{wireless}. Também se faz necessário verificar presença de intempéries tais como infiltrações, se ocorrerem, pois é comum que infiltrações por chuva causem danos ao cabeamento. 
+\\
+
+Como prática mensal o administrador da rede deverá gerar relatórios de tráfego e buscar a otimização da rede lógica, com a criação de VLANs, para reduzir tráfego e diminuir o domínio de \textit{broadcast}, aumentando a segurança. Verificações ocasionais nos relatórios do servidor do roteador para verificar acesso indevido ou tentativa de acesso indevido por parte de funcionário ou ataque externo.
+\\
+
+O setor de T.I. deverá criar políticas de segurança para o escritório, tais como acesso ao SEQ e a proteção física dos ativos. É recomendado também a instalação de detectores de fumaça (fora do escopo deste projeto) para a percepção de incêndio.
 
 \subsection{Plano de expansão}
-\textbf{\begin{center}
-		FAZER AQUI URGENTE
-\end{center}}
-Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as extremidades da rede? 
+
+Obviamente que neste projeto de baixa complexidade, já é considerado esgotado o recurso em termos de cabeamento de cobre dedicado ponto a ponto (em que cada ponto da área de trabalho é um ponto em uma porta do \textit{switch}). Para expandir os pontos existentes, pode-se adotar a seguinte estratégia:
+\\
+
+\begin{itemize}
+	\item Transformar os cabos existentes em links de tronco.
+	\\
+	\item Abandonar o cabeamento de cobre em favor da passagem de fibra óptica pelos eletrodutos, com os devidos \textit{switches} dedicados e separados por duto.
+	\\
+	\item Substituição dos pontos a serem instalados por MUTOAs, permitindo mais cabos.
+	\\
+	\item Agregamento de mais canaletas X2, em paralelo, com existentes, para abrigar mais cabos.
+\end{itemize}
+
 
 \section{Risco}
-\textbf{\begin{center}
-		FAZER AQUI URGENTE
-\end{center}}
+
 O projeto não demanda, de forma incisiva, condicionamento de ar no cômodo SEQ, pela pouca quantidade de equipamentos presentes. Porém, há um risco inerente de interferência eletromagnética com possíveis cabos de rede que fiquem menos que 30 cm de distância de linhas de energia. A norma estabelece o mínimo de 30 cm de distância dessas linhas, pois o eletromagnetismo provindo desses cabos podem gerar ruídos na rede.
 \\
 
 Não obstante, visa-se que o custo do cabo blindado e de conectores, não se faz imperativo nessa instalação de escritório, pois o custo destes cabos é extremamente elevado, podendo tal valor ser mais compensador gastos com passagem de uma única fibra óptica e a instalação de seus conversores de mídia, na camada 1 e 2. A fibra óptica não captura nenhuma interferência de eletricidade. Ver mais sobre o cancelamento de eletromagnetismo na seção \textbf{Recomendações.}
 \\
 
+\pagebreak
 
 \section{Orçamento}
 Tabela de de custo dos equipamentos passivos.
@@ -773,23 +597,17 @@ Tabela de de custo dos equipamentos passivos.
 
 %passivos custo
 
-	\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|c|c|c|c|}
-	\hline
-	\textbf{Equipamento Passivo}                 & \textbf{Fabricante} & \textbf{ Unitário (R\$)} & \multicolumn{1}{l|}{\textbf{Total (R\$)}} \\ \hline
-	Rack 44 U Fechado                            & Lextron             & 1.899,00                         & 1.899,00                                           \\ \hline
-	Patch Panel 24 Portas CAT 6 GigaLan  & Furukawa            & 699,00                           & 1.398,00                                           \\ \hline
-	Organizadore de cabos 1U 80 cm               & Lextron             & 30,00                            & 60,00                                              \\ \hline
-	Cabo UTP CAT 6  305 m           & Furukawa            & 592,92                           & 1.967,76                                           \\ \hline
-	Cabo UTP CAT 6  70 m            & Furukawa            & 189,00                           & 189,00                                             \\ \hline
-	Patch Cords CAT 6 - 1,5 m (Cinza)            & Furukawa            & 32,00                            & 1.114,00                                           \\ \hline
-	Patch Cords CAT 6 - 2,5 m (Cinza)            & Furukawa            & 39,00                            & 858,00                                             \\ \hline
-	Caixa de Sobrepor 1 Porta                          & C. Network                & 4,80                             & 120,00                                             \\ \hline
-	Keystone 375055-1
-	CAT 6                             & AMP                 & 19,00                            & 760,00                                             \\ \hline
-	\multicolumn{3}{|c|}{\textbf{Total em R\$}}                                                           & \textbf{8.365,76}                                  \\ \hline
-\end{tabular}
 
+\input{tab10}
+
+
+
+
+\input{tab11}
+
+
+O total valor total de orçamento para os equipamentos passivos e encaminhamento necessário, excluindo eventuais peças de urgência, é de \textbf{R\$ 11.759,76}.
+Preço na data de 10 de novembro de 2019.
 
 \pagebreak
 
@@ -808,7 +626,16 @@ Se o condutor do mesmo cordão de força tivermos a corrente indo na mesma dire�
 
 \subsection{Aterramento}
 
-Falar sobre aterramento. 
+Contra choques elétricos, é essencial que o pino central da tomada padrão atual, seja ligado a um ponto terra. Note-se que este aterramento não protege os equipamentos de descargas elétricas na rede de distribuição de energia --- fazendo-se necessário o uso de filtros de linha com proteção contra surtos, se a edificação não dispor de um sistema de para-raios que ocasione a equipotencialização para o terra.
+
+\subsection{Equipamentos que causem danos}
+
+Um equipamento que geralmente causa danos aos ativos é o chamado "estabilizador de energia". Na verdade, o famigerado "estabilizador de energia" é um chaveador automático, que prejudica a senoidal da rede de energia de corrente alternada --- sendo entregue de forma distorcida ao equipamento ativo e causando dano irreversível ou mau funcionamento. É recomendado que seja \textit{"banido"} tal equipamento, por não haver base científica sobre sua capacidade de "estabilizar" a energia.
+
+\subsection{Manutenção da energia em caso de queda}
+
+Para equipamentos em que se precise de manutenção da energia mesmo após a queda da concessionária, é recomendado o uso de um \textit{no-break} do tipo \textit{on-line} de dupla conversão, que faça a entrega de senoide sem distorções --- e evitar o uso de outros tipos de \textit{no-break} que entregam a senoide distorcida: apesar de funcionarem e serem bastante adquiridos no mercado por um preço razoável, são equipamentos perigosos para o circuito receptor da onda.
+
 
 \subsection{Ativos de Rede}
 
