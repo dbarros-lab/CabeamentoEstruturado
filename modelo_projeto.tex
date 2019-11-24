@@ -79,7 +79,7 @@
      				\color{DarkBlue}
      				{\textsf{#1}}}{}}
 
-
+\usepackage{pdfpages}
 
 %%% Title, author and date metadata
 \usepackage{titling}															% For custom titles
@@ -528,32 +528,60 @@ Os \textit{patch cords} são identificados com etiquetadoras, bem como os cabos 
 
 \section{Implantação}
 
-\textbf{\begin{center}
-		FAZER AQUI URGENTE
-\end{center}}
+O cronograma de implantação caracteriza-se pela fase sequencial de atividades. Temos que \textbf{DB}, o projetista que executa as tarefas e \textbf{EP}, empresa privada que auxilia o projetista na execução de determinados passos da implantação; e, logo após a implantação, a certificação. Note-se que por vezes, o executor da tarefa de determinado dia é iniciado ou por \textbf{DB}, ou por \textbf{EP}. No caso que questão, o que inicia é o que tem a liderança da respectiva tarefa, e o que vem por segundo é o auxiliar da tarefa.
+\\
 
-Estabeleça um cronograma de implantação:
-Remoção de equipamentos existentes (destino para descarte), instalação dos condutores, instalação dos cabos, 
-identificação dos cabos, montagem dos racks, certificação, etc... Crie atividades e estabeleça o tempo de execução. Se for um projeto real, indique também quais os responsáveis pela execução do projeto e de cada uma das etapas.
+A maior parte da execução da implantação concentra-se no período da primeira quinzena de dezembro. A quinzena final de novembro destina-se à aquisição dos equipamentos passivos e ativos: tarefa que demanda tempo e busca pelos componentes, ou até mesmo ainda o recebimento destes por transportadora ou Correios, dependendo do tipo de compra, por isto dá-se um considerável prazo para apenas a juntada de todos os passivos e encaminhamentos.
+\\
 
-Defina marcas (e padrões) e fornecedores se for o caso. Atenção a contratados e subcontratados para a realização das atividades. Estabeleça a responsabilidade de execução da atividade e também da validação dela.
+O cronograma de certificação está incluído na tabela da próxima página, porém, esta etapa está mais dependente da empresa privada do que do projetista e é esta empresa que faz a homologação final da certificação. Estipulou-se uma janela de 1 mês com uso operacional da rede para proceder-se à certificação em si, documentada. O mês de fevereiro de 2020 é escolhido para realizar-se a certificação da rede.
+\\
 
-Utilize algum software para gerear o cronograma. Excel,etc. O fundamental é dividir em etapas, descrever e estimar o tempo de cada uma delas.
+Muito importante notar no cronograma de implantação que há um plantão de 24 horas para chamado diretamente ao projetista, para que este solucione todo os problemas assim que for solicitado, pois a rede ainda não estará certificada, mas pequenos problemas poderão ser solucionados neste plantão semanal de 24 horas. Isso faz parte da garantia do contrato.
 
-Segue uma relação de ferramentas:
-http://asana.com/, 
-https://trello.com/, 
-http://www.ganttproject.biz/, 
-http://www.orangescrum.org/. 
+
+\includepdf[page={1}]{cronograma} 
+
 
 \section{Plano de certificação}
-\textbf{\begin{center}
-		FAZER AQUI URGENTE
-\end{center}}
-Quais seriam as etapas para a certificação? 
-Quais os locais e horários para execução da certificação na rede? Toda rede será certificada?
-Como os testes seriam executados?
-Quais relatórios de certificação serão (ou deveriam ser) entregues? 
+
+A certificação deverá acontecer após a finalização da instalação da rede, e devidamente em estado operacional. O escopo do projeto será apenas apresentar o cronograma de certificação e determinar quais testes devem ser realizados.
+\\
+
+Como dito anteriormente, numa rede certificada, deve-se evitar ao extremo o uso de cabos feitos manualmente, com a chamada ``crimpagem''. Para cada ponto, deverá ser utilizada a ferramenta de inserção, e dali o seu respectivo \textit{patch-cord} injetado será conectado.
+
+Recomenda-se usar o certificador da marca \textit{Fluke}, modelo \textbf{DTX-1800 
+}ou compatível.
+\\
+
+Para a certificação, aponta-se 10 elementos essenciais para o relatório, dos quais os principais estão explanados em síntese.
+\\
+\subsection{NEXT - Near End Cross Talk --- ou Paradiafonia}
+A definição de \textit{crosstalk} (diafonia) é o fenômeno ocorrente de um sinal que causa uma interferência não-intencional em outro sinal próximo. O parâmetro \textbf{NEXT} refere-se à capacidade de detectar essa interferência, partindo do ponto de saída do cabo, ou seja, na posição em que estamos: perto do cabo. Na figura abaixo temos o exemplo gráfico de um exame \textbf{NEXT} bem sucedido --- as linhas precisam estar uniformes e não se deve observar nenhuma linha muito abaixo da linha base.
+
+\subsection{FEXT - Far End Cross Talk --- ou Telediafonia}
+Vimos que o NEXT é o fenômeno que o ocorre no início do cabeamento, o ponto de partida. O \textbf{FEXT} seria o mesmo fenômeno, só que fazendo \textbf{o caminho inverso}: partindo do ponto de chegada do cabo, ou seja, na posição em que o cabo termina. O \textbf{FEXT} em si constitui-se num problema menos grave que o \textbf{NEXT}, pois os sinais de interferência são mais fracos, e além disso, atenuados. Não obstante, um ponto de falha pode gerar um pico no gráfico, como que para o fim da linha, cabendo ao técnico a detecção física da falha. Na figura abaixo temos um exemplo de detecção de \textbf{FEXT}. Geralmente se opta por mensurar o parâmetro ELFEXT (\textit{Equal Level Far End Crosstalk}) que é a diferença entre FEXT e a Inserção de Perda (também chamado simplesmente de ``Atenuação'' ou ACR).
+
+\subsection{ACR - Attenuation To Cross Talk Ratio --- ou Insertion Loss / Inserção de Perda}
+Atenuação é definida pela diminuição gradual do fluxo de intensidade de um sinal, dentro de um meio, como o cobre, por exemplo. Com a inserção de perda, é possível verificar a resiliência do material em situação de ``estresse''. Nas figuras abaixo temos os respectivos exemplo de gráfico ACR.
+
+\subsection{Os onze itens de uma rede certificada}
+Nesta seção estão listadas os 10 itens que compõem, os 10 testes primários, para conformidade com os padrões TIA/EIA.
+
+\begin{itemize}
+\item Mapa de fios - verifica continuidade de fios e revela a pinagem. 
+\item ACR - verifica a atenuação dentro dos padrões do cabo.
+\item NEXT - verifica o \textit{crosstalk} do ponto de partida.
+\item FEXT - verifica o \textit{crosstalk} do ponto de chegada.
+\item PSNEXT - calculo de NEXT somado à FEXT.
+\item ELFEXT - diferença de ACR e FEXT.
+\item PSELFEXT - soma dos valores individuais de FEXT.
+\item Retorno de perda - encontra diferenças de impedância.
+\item Atraso da propagação - tempo levado para a origem atingir o destino.
+\item Comprimento do cabo - afere o comprimento do cabo.
+\item Atraso da inclinação - diferença do par que apresenta maior atraso de propagação com o que apresenta menor atraso.
+\end{itemize}
+
 
 \section{Plano de manutenção}
 
@@ -639,9 +667,44 @@ Para equipamentos em que se precise de manutenção da energia mesmo após a que
 
 \subsection{Ativos de Rede}
 
-Recomendar roteador.
-Recomentar switch.
-Recomendar access points.
+
+Como recomendação de ativos é algo importante, dada a considerável massiva presença de roteadores, \textit{switches} e pontos de acesso de baixíssima qualidade revendidos no varejo brasileiro. Cita-se as marcas D-Link e TP-Link como produtos que se deve evitar a aquisição. No caso entre de dilema dessas marcas, ficar com produtos D-Link por possuírem melhor construção física do que TP-Link. 
+\\
+
+Como recomendação de uma implementação com equipamentos de qualidade, 100\% configuráveis, não há restrição por outras marcas, porém, a recomendação deste projeto segue-se da seguinte forma,  segue-se o seguinte:
+
+\subsubsection{Roteador}
+
+Roteador com interfaces para dois serviços de Internet, \textit{Gigabit Ethernet}, configurável via sistema operacional. Recomenda-se roteadores empresariais da marca \textit{Cisco} ou \textit{Mikrotik}. Por exemplo:
+
+\begin{itemize}
+\item{Cisco 1000 Series Integrated Services --- ISR 1000}. Equipado com o Cisco IOS e acesso ao console do dispositivo para administração.
+\item{Mikrotik Ethernet Router - RB2011iL}. Equipado com o RouterOS, totalmente configurável pela linha de comando ou pelo WinBox. Pode receber até 05 WANs de uma única vez para criar-se muita redundância com disponibilidade de Internet. 
+\end{itemize}
+
+\subsubsection{\textit{Switch}}
+
+\textit{Switch} com interfaces \textit{Gigabit Ethernet}, gerenciável por linha de comando, com suporte a VLAN, ACL, modo de tronco e modo de acesso. Recomenda-se roteadores empresariais da marca \textit{Cisco} ou \textit{Mikrotik}. Por exemplo:
+
+\begin{itemize}
+	\item{Cisco Catalyst 2960-L Series}. Equipado com o Cisco IOS e acesso ao console do dispositivo para administração. Este equipamento tem 48 portas para a LAN.
+	\item{Mikrotik Switch - CSS326-24G-2S+RM}. Equipado com o SwOS, totalmente configurável pela linha de comando, ocupa 1U no rack No caso da escolha pelo Mikrotik, duas unidades devem ser adquiridas para o projeto, pois este \textit{switch} possui apenas 24 portas. 
+\end{itemize}
+
+\subsubsection{Ponto de acesso sem fio}
+\begin{itemize}
+	\item{Cisco Aironet 1815i Access Point}. Ponto de acesso com frequências em 2,4 e 5 GHz, com suporte ao padrão 802.11ac.
+	\item{Mikrotik Access Point - hAP ac}. Equipado com o RouterOS, totalmente configurável pela linha de comando, discreto  na instalação, com antenas internas de 2,4 e 5 GHz. Possui suporte ao novo protocolo de \textit{wireless} 802.11ac.  
+\end{itemize}
+
+\subsubsection{Servidor}
+\begin{itemize}
+	\item Processador com 8 núcleos reais.
+	\item Fonte redundante.
+	\item 1 TB de disco (duas unidades).
+	\item 64 GB de RAM.
+	\item Duas interfaces de rede.
+\end{itemize}
 
 \pagebreak
 \section{Referências bibliográficas}

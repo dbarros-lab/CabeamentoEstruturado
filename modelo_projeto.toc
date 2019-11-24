@@ -1,37 +1,45 @@
 \babel@toc {brazil}{}
-\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{4}% 
-\contentsline {subsection}{\numberline {1.1}Escopo do Projeto}{4}% 
-\contentsline {subsection}{\numberline {1.2}Benef\IeC {\'\i }cios}{4}% 
-\contentsline {subsection}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~o}es Envolvidas}{5}% 
-\contentsline {section}{\numberline {2}Requisitos}{5}% 
-\contentsline {subsection}{\numberline {2.1}Velocidade real contratada e percebida}{5}% 
-\contentsline {subsection}{\numberline {2.2}Extin\IeC {\c c}\IeC {\~a}o de conectores manualmente prensados com alicate}{5}% 
-\contentsline {subsection}{\numberline {2.3}Toler\IeC {\^a}ncia \IeC {\`a} falha - Redund\IeC {\^a}ncia contra quedas no servi\IeC {\c c}o}{6}% 
-\contentsline {subsection}{\numberline {2.4}Cobre de alta qualidade}{6}% 
-\contentsline {subsection}{\numberline {2.5}Todos os equipamentos ativos e passivos na base 1000}{6}% 
-\contentsline {subsection}{\numberline {2.6}WiFi - Padr\IeC {\~a}o IEEE 802.11ac implementado}{6}% 
-\contentsline {section}{\numberline {3}Usu\IeC {\'a}rios e Aplicativos}{6}% 
-\contentsline {subsection}{\numberline {3.1}Usu\IeC {\'a}rios}{7}% 
-\contentsline {subsection}{\numberline {3.2}Aplicativos}{8}% 
-\contentsline {section}{\numberline {4}Estrutura predial existente}{9}% 
-\contentsline {section}{\numberline {5}Planta L\IeC {\'o}gica - Elementos estruturados}{11}% 
-\contentsline {subsection}{\numberline {5.1}Vis\IeC {\~a}o do cabeamento}{11}% 
-\contentsline {subsection}{\numberline {5.2}Topologia}{13}% 
-\contentsline {subsection}{\numberline {5.3}Encaminhamento}{15}% 
-\contentsline {subsubsection}{\numberline {5.3.1}Calculo detalhado do encaminhamento}{15}% 
-\contentsline {subsection}{\numberline {5.4}Memorial descritivo (Passivos)}{15}% 
-\contentsline {subsubsection}{\numberline {5.4.1}Calculo detalhado do cabeamento e considera\IeC {\c c}\IeC {\~o}es sobre emendas}{16}% 
-\contentsline {subsection}{\numberline {5.5}Identifica\IeC {\c c}\IeC {\~a}o dos cabos}{18}% 
-\contentsline {section}{\numberline {6}Implanta\IeC {\c c}\IeC {\~a}o}{18}% 
-\contentsline {section}{\numberline {7}Plano de certifica\IeC {\c c}\IeC {\~a}o}{18}% 
-\contentsline {section}{\numberline {8}Plano de manuten\IeC {\c c}\IeC {\~a}o}{19}% 
-\contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{19}% 
-\contentsline {section}{\numberline {9}Risco}{19}% 
-\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{20}% 
-\contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{21}% 
-\contentsline {subsection}{\numberline {11.1}Cancelamento do eletromagnetismo}{21}% 
-\contentsline {subsection}{\numberline {11.2}Aterramento}{21}% 
-\contentsline {subsection}{\numberline {11.3}Equipamentos que causem danos}{21}% 
-\contentsline {subsection}{\numberline {11.4}Manuten\IeC {\c c}\IeC {\~a}o da energia em caso de queda}{21}% 
-\contentsline {subsection}{\numberline {11.5}Ativos de Rede}{21}% 
-\contentsline {section}{\numberline {12}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{22}% 
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{5}% 
+\contentsline {subsection}{\numberline {1.1}Escopo do Projeto}{5}% 
+\contentsline {subsection}{\numberline {1.2}Benef\IeC {\'\i }cios}{5}% 
+\contentsline {subsection}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~o}es Envolvidas}{6}% 
+\contentsline {section}{\numberline {2}Requisitos}{6}% 
+\contentsline {subsection}{\numberline {2.1}Velocidade real contratada e percebida}{6}% 
+\contentsline {subsection}{\numberline {2.2}Extin\IeC {\c c}\IeC {\~a}o de conectores manualmente prensados com alicate}{6}% 
+\contentsline {subsection}{\numberline {2.3}Toler\IeC {\^a}ncia \IeC {\`a} falha - Redund\IeC {\^a}ncia contra quedas no servi\IeC {\c c}o}{7}% 
+\contentsline {subsection}{\numberline {2.4}Cobre de alta qualidade}{7}% 
+\contentsline {subsection}{\numberline {2.5}Todos os equipamentos ativos e passivos na base 1000}{7}% 
+\contentsline {subsection}{\numberline {2.6}WiFi - Padr\IeC {\~a}o IEEE 802.11ac implementado}{7}% 
+\contentsline {section}{\numberline {3}Usu\IeC {\'a}rios e Aplicativos}{7}% 
+\contentsline {subsection}{\numberline {3.1}Usu\IeC {\'a}rios}{8}% 
+\contentsline {subsection}{\numberline {3.2}Aplicativos}{9}% 
+\contentsline {section}{\numberline {4}Estrutura predial existente}{10}% 
+\contentsline {section}{\numberline {5}Planta L\IeC {\'o}gica - Elementos estruturados}{12}% 
+\contentsline {subsection}{\numberline {5.1}Vis\IeC {\~a}o do cabeamento}{12}% 
+\contentsline {subsection}{\numberline {5.2}Topologia}{14}% 
+\contentsline {subsection}{\numberline {5.3}Encaminhamento}{16}% 
+\contentsline {subsubsection}{\numberline {5.3.1}Calculo detalhado do encaminhamento}{16}% 
+\contentsline {subsection}{\numberline {5.4}Memorial descritivo (Passivos)}{16}% 
+\contentsline {subsubsection}{\numberline {5.4.1}Calculo detalhado do cabeamento e considera\IeC {\c c}\IeC {\~o}es sobre emendas}{17}% 
+\contentsline {subsection}{\numberline {5.5}Identifica\IeC {\c c}\IeC {\~a}o dos cabos}{19}% 
+\contentsline {section}{\numberline {6}Implanta\IeC {\c c}\IeC {\~a}o}{19}% 
+\contentsline {section}{\numberline {7}Plano de certifica\IeC {\c c}\IeC {\~a}o}{21}% 
+\contentsline {subsection}{\numberline {7.1}NEXT - Near End Cross Talk --- ou Paradiafonia}{21}% 
+\contentsline {subsection}{\numberline {7.2}FEXT - Far End Cross Talk --- ou Telediafonia}{21}% 
+\contentsline {subsection}{\numberline {7.3}ACR - Attenuation To Cross Talk Ratio --- ou Insertion Loss / Inser\IeC {\c c}\IeC {\~a}o de Perda}{21}% 
+\contentsline {subsection}{\numberline {7.4}Os onze itens de uma rede certificada}{21}% 
+\contentsline {section}{\numberline {8}Plano de manuten\IeC {\c c}\IeC {\~a}o}{22}% 
+\contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{22}% 
+\contentsline {section}{\numberline {9}Risco}{23}% 
+\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{24}% 
+\contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{25}% 
+\contentsline {subsection}{\numberline {11.1}Cancelamento do eletromagnetismo}{25}% 
+\contentsline {subsection}{\numberline {11.2}Aterramento}{25}% 
+\contentsline {subsection}{\numberline {11.3}Equipamentos que causem danos}{25}% 
+\contentsline {subsection}{\numberline {11.4}Manuten\IeC {\c c}\IeC {\~a}o da energia em caso de queda}{25}% 
+\contentsline {subsection}{\numberline {11.5}Ativos de Rede}{25}% 
+\contentsline {subsubsection}{\numberline {11.5.1}Roteador}{26}% 
+\contentsline {subsubsection}{\numberline {11.5.2}\textit {Switch}}{26}% 
+\contentsline {subsubsection}{\numberline {11.5.3}Ponto de acesso sem fio}{26}% 
+\contentsline {subsubsection}{\numberline {11.5.4}Servidor}{26}% 
+\contentsline {section}{\numberline {12}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{27}% 
