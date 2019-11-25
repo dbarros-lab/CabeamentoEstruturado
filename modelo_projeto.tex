@@ -368,7 +368,7 @@ Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, b
 		\includegraphics[width=\textwidth]{planta_02}
 	}
 	\caption{Planta lógica da visão do cabeamento - Formato A3}
-	\label{fig1}
+	\label{fig2}
 \end{figure}
 
 %Retornar ao formato A4
@@ -429,7 +429,7 @@ Dentro dos tubos azuis, e das linhas vermelhas, é esperado uma determinada popu
 		\includegraphics[width=\textwidth]{topologia}
 	}
 	\caption{Visão da topologia - Formato A3}
-	\label{fig1}
+	\label{fig3}
 \end{figure}
 
 %Retornar ao formato A4
@@ -558,6 +558,17 @@ Para a certificação, aponta-se 10 elementos essenciais para o relatório, dos 
 \\
 \subsection{NEXT - Near End Cross Talk --- ou Paradiafonia}
 A definição de \textit{crosstalk} (diafonia) é o fenômeno ocorrente de um sinal que causa uma interferência não-intencional em outro sinal próximo. O parâmetro \textbf{NEXT} refere-se à capacidade de detectar essa interferência, partindo do ponto de saída do cabo, ou seja, na posição em que estamos: perto do cabo. Na figura abaixo temos o exemplo gráfico de um exame \textbf{NEXT} bem sucedido --- as linhas precisam estar uniformes e não se deve observar nenhuma linha muito abaixo da linha base.
+
+
+\begin{figure}[H]
+	%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[width=\textwidth]{next-final}
+	}
+	\caption{Exemplo de \textbf{NEXT} aprovado. -- CITAR A FONTE}
+	\label{fig4}
+\end{figure}
+
 
 \subsection{FEXT - Far End Cross Talk --- ou Telediafonia}
 Vimos que o NEXT é o fenômeno que o ocorre no início do cabeamento, o ponto de partida. O \textbf{FEXT} seria o mesmo fenômeno, só que fazendo \textbf{o caminho inverso}: partindo do ponto de chegada do cabo, ou seja, na posição em que o cabo termina. O \textbf{FEXT} em si constitui-se num problema menos grave que o \textbf{NEXT}, pois os sinais de interferência são mais fracos, e além disso, atenuados. Não obstante, um ponto de falha pode gerar um pico no gráfico, como que para o fim da linha, cabendo ao técnico a detecção física da falha. Na figura abaixo temos um exemplo de detecção de \textbf{FEXT}. Geralmente se opta por mensurar o parâmetro ELFEXT (\textit{Equal Level Far End Crosstalk}) que é a diferença entre FEXT e a Inserção de Perda (também chamado simplesmente de ``Atenuação'' ou ACR).

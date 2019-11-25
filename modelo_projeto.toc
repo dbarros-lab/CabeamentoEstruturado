@@ -25,11 +25,11 @@
 \contentsline {section}{\numberline {6}Implanta\IeC {\c c}\IeC {\~a}o}{19}% 
 \contentsline {section}{\numberline {7}Plano de certifica\IeC {\c c}\IeC {\~a}o}{21}% 
 \contentsline {subsection}{\numberline {7.1}NEXT - Near End Cross Talk --- ou Paradiafonia}{21}% 
-\contentsline {subsection}{\numberline {7.2}FEXT - Far End Cross Talk --- ou Telediafonia}{21}% 
-\contentsline {subsection}{\numberline {7.3}ACR - Attenuation To Cross Talk Ratio --- ou Insertion Loss / Inser\IeC {\c c}\IeC {\~a}o de Perda}{21}% 
-\contentsline {subsection}{\numberline {7.4}Os onze itens de uma rede certificada}{21}% 
+\contentsline {subsection}{\numberline {7.2}FEXT - Far End Cross Talk --- ou Telediafonia}{22}% 
+\contentsline {subsection}{\numberline {7.3}ACR - Attenuation To Cross Talk Ratio --- ou Insertion Loss / Inser\IeC {\c c}\IeC {\~a}o de Perda}{22}% 
+\contentsline {subsection}{\numberline {7.4}Os onze itens de uma rede certificada}{22}% 
 \contentsline {section}{\numberline {8}Plano de manuten\IeC {\c c}\IeC {\~a}o}{22}% 
-\contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{22}% 
+\contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{23}% 
 \contentsline {section}{\numberline {9}Risco}{23}% 
 \contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{24}% 
 \contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{25}% 
