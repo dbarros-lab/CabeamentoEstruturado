@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.19)  24 NOV 2019 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.19)  1 DEC 2019 00:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,25 +1064,25 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 16
 \tf@toc=\write5
 \openout5 = `modelo_projeto.toc'.
 
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+ [4] [5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-[5
-
-] (./tab1.tex
+(./tab1.tex
 Overfull \hbox (5.20277pt too wide) in paragraph at lines 6--27
  [][] 
  []
 
 ) [6]
-Underfull \hbox (badness 10000) in paragraph at lines 211--215
+Underfull \hbox (badness 10000) in paragraph at lines 212--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--215
+Underfull \hbox (badness 10000) in paragraph at lines 212--216
 
  []
 
@@ -1092,48 +1092,48 @@ Overfull \hbox (10.20407pt too wide) in paragraph at lines 6--19
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 242--251
+Underfull \hbox (badness 10000) in paragraph at lines 243--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--251
+Underfull \hbox (badness 10000) in paragraph at lines 243--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--251
+Underfull \hbox (badness 10000) in paragraph at lines 243--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--251
+Underfull \hbox (badness 10000) in paragraph at lines 243--252
 
  []
 
-[8] (./tab3.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+[8] [9] (./tab3.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 274.
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
 [10]
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
+
+ []
+
+[11]
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 146%
@@ -1158,9 +1158,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 316.
+(typearea)              on input line 318.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 316.
+(typearea)             dimensions of LaTeX on input line 318.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 146%
@@ -1185,15 +1185,15 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 317.
+(typearea)              on input line 319.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 317.
-<planta_01.png, id=50, 1932.4998pt x 1041.77205pt>
+(typearea)             dimensions of LaTeX on input line 319.
+<planta_01.png, id=53, 1932.4998pt x 1041.77205pt>
 File: planta_01.png Graphic file (type png)
 <use planta_01.png>
-Package pdftex.def Info: planta_01.png  used on input line 326.
+Package pdftex.def Info: planta_01.png  used on input line 328.
 (pdftex.def)             Requested size: 1015.76349pt x 547.59026pt.
-[11 <./planta_01.png>]
+[12 <./planta_01.png>]
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1210,9 +1210,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 333.
+(typearea)              on input line 335.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 333.
+(typearea)             dimensions of LaTeX on input line 335.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1229,35 +1229,35 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 334.
+(typearea)              on input line 336.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 334.
+(typearea)             dimensions of LaTeX on input line 336.
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--343
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--346
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--349
+Underfull \hbox (badness 10000) in paragraph at lines 346--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
+Underfull \hbox (badness 10000) in paragraph at lines 349--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--355
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
 
  []
 
-[12
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
+
+ []
+
+[13
 
 
 ]
@@ -1285,9 +1285,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 361.
+(typearea)              on input line 366.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 361.
+(typearea)             dimensions of LaTeX on input line 366.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 146%
@@ -1312,15 +1312,15 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 362.
+(typearea)              on input line 368.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 362.
-<planta_02.png, id=58, 1878.2973pt x 1041.77205pt>
+(typearea)             dimensions of LaTeX on input line 368.
+<planta_02.png, id=62, 1878.2973pt x 1041.77205pt>
 File: planta_02.png Graphic file (type png)
 <use planta_02.png>
-Package pdftex.def Info: planta_02.png  used on input line 369.
+Package pdftex.def Info: planta_02.png  used on input line 375.
 (pdftex.def)             Requested size: 1015.76349pt x 563.39102pt.
-[13 <./planta_02.png>]
+[14 <./planta_02.png>]
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1337,9 +1337,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 376.
+(typearea)              on input line 382.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 376.
+(typearea)             dimensions of LaTeX on input line 382.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1356,20 +1356,10 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 377.
+(typearea)              on input line 383.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 377.
+(typearea)             dimensions of LaTeX on input line 383.
  (./tab4.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 410--412
 
  []
@@ -1379,7 +1369,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--415
 
  []
 
-[14
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+
+ []
+
+[15
 
 
 ]
@@ -1407,9 +1407,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 422.
+(typearea)              on input line 429.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 422.
+(typearea)             dimensions of LaTeX on input line 429.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 146%
@@ -1434,18 +1434,18 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 423.
+(typearea)              on input line 430.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 423.
-<topologia.png, id=66, 428.3202pt x 303.0522pt>
+(typearea)             dimensions of LaTeX on input line 430.
+<topologia.png, id=69, 428.3202pt x 303.0522pt>
 File: topologia.png Graphic file (type png)
 <use topologia.png>
-Package pdftex.def Info: topologia.png  used on input line 430.
+Package pdftex.def Info: topologia.png  used on input line 437.
 (pdftex.def)             Requested size: 1015.76349pt x 718.6975pt.
 
-LaTeX Warning: Float too large for page by 19.79749pt on input line 433.
+LaTeX Warning: Float too large for page by 19.79749pt on input line 440.
 
-[15 <./topologia.png (PNG copy)>]
+[16 <./topologia.png (PNG copy)>]
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1462,9 +1462,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 437.
+(typearea)              on input line 444.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 437.
+(typearea)             dimensions of LaTeX on input line 444.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 15
 (typearea)             BCOR = 0.0pt
@@ -1481,19 +1481,19 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 438.
+(typearea)              on input line 445.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 438.
+(typearea)             dimensions of LaTeX on input line 445.
  (./tab5.tex) (./tab6.tex) (./tab7.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [16
+) [17
 
 
-] (./tab8.tex) [17]
+] (./tab8.tex) [18]
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
-ine 491.
+ine 498.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
 File: scrsize11pt.clo 2019/02/01 v3.26b KOMA-Script font size class option (11p
@@ -1523,9 +1523,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 491.
+(typearea)              on input line 498.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 491.
+(typearea)             dimensions of LaTeX on input line 498.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 164%
@@ -1550,9 +1550,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 492.
+(typearea)              on input line 499.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 492.
+(typearea)             dimensions of LaTeX on input line 499.
 (./tab9.tex
 
 LaTeX Warning: Float too large for page by 5.59889pt on input line 59.
@@ -1560,10 +1560,7 @@ LaTeX Warning: Float too large for page by 5.59889pt on input line 59.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 499.
- [18]
+) [19]
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 22%
@@ -1588,9 +1585,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 500.
+(typearea)              on input line 507.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 500.
+(typearea)             dimensions of LaTeX on input line 507.
 
 Package typearea Warning: Bad type area settings!
 (typearea)                The detected line width is about 22%
@@ -1615,41 +1612,36 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 501.
+(typearea)              on input line 508.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 501.
+(typearea)             dimensions of LaTeX on input line 508.
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 509--511
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--514
+Underfull \hbox (badness 10000) in paragraph at lines 516--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--517
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--520
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--523
+Underfull \hbox (badness 10000) in paragraph at lines 525--527
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--526
+Underfull \hbox (badness 10000) in paragraph at lines 528--530
 
  []
 
@@ -1659,12 +1651,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 531--533
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--536
+Underfull \hbox (badness 10000) in paragraph at lines 538--540
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--539
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--546
 
  []
 
@@ -1673,127 +1670,134 @@ Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<cronograma.pdf, id=82, 597.19106pt x 845.07718pt>
+<cronograma.pdf, id=83, 597.19106pt x 845.07718pt>
 File: cronograma.pdf Graphic file (type pdf)
 <use cronograma.pdf>
-Package pdftex.def Info: cronograma.pdf  used on input line 543.
+Package pdftex.def Info: cronograma.pdf  used on input line 550.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 File: cronograma.pdf Graphic file (type pdf)
 <use cronograma.pdf>
-Package pdftex.def Info: cronograma.pdf  used on input line 543.
+Package pdftex.def Info: cronograma.pdf  used on input line 550.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
-<cronograma.pdf, id=85, page=1, 597.19106pt x 845.07718pt>
+<cronograma.pdf, id=86, page=1, 597.19106pt x 845.07718pt>
 File: cronograma.pdf Graphic file (type pdf)
 <use cronograma.pdf, page 1>
-Package pdftex.def Info: cronograma.pdf , page1 used on input line 543.
+Package pdftex.def Info: cronograma.pdf , page1 used on input line 550.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 File: cronograma.pdf Graphic file (type pdf)
 <use cronograma.pdf, page 1>
-Package pdftex.def Info: cronograma.pdf , page1 used on input line 543.
+Package pdftex.def Info: cronograma.pdf , page1 used on input line 550.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
-[19
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 550.
+[20
 
 
 ]
 File: cronograma.pdf Graphic file (type pdf)
 <use cronograma.pdf, page 1>
-Package pdftex.def Info: cronograma.pdf , page1 used on input line 543.
+Package pdftex.def Info: cronograma.pdf , page1 used on input line 550.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: cronograma.pdf Graphic file (type pdf)
 <use cronograma.pdf, page 1>
-Package pdftex.def Info: cronograma.pdf , page1 used on input line 543.
+Package pdftex.def Info: cronograma.pdf , page1 used on input line 550.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: cronograma.pdf Graphic file (type pdf)
 <use cronograma.pdf, page 1>
-Package pdftex.def Info: cronograma.pdf , page1 used on input line 543.
+Package pdftex.def Info: cronograma.pdf , page1 used on input line 550.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
- [20 <./cronograma.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 548--550
+ [21 <./cronograma.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--556
+Underfull \hbox (badness 10000) in paragraph at lines 560--563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--559
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
 
  []
 
-<next-final.png, id=213, 294.8616pt x 186.4566pt>
+<next-final.png, id=216, 294.8616pt x 186.4566pt>
 File: next-final.png Graphic file (type png)
 <use next-final.png>
-Package pdftex.def Info: next-final.png  used on input line 567.
+Package pdftex.def Info: next-final.png  used on input line 574.
 (pdftex.def)             Requested size: 478.00635pt x 302.28564pt.
-[21 <./next-final.png>]
+[22 <./next-final.png>]
+<acr.png, id=222, 773.54321pt x 460.49428pt>
+File: acr.png Graphic file (type png)
+<use acr.png>
+Package pdftex.def Info: acr.png  used on input line 590.
+(pdftex.def)             Requested size: 478.00635pt x 284.56192pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 583.
-
-Underfull \hbox (badness 10000) in paragraph at lines 599--601
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 602--604
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 609--611
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 600.
+ [23 <./acr.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--615
+Underfull \hbox (badness 10000) in paragraph at lines 619--621
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--617
+Underfull \hbox (badness 10000) in paragraph at lines 626--628
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--619
+Underfull \hbox (badness 10000) in paragraph at lines 630--632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--627
+Underfull \hbox (badness 10000) in paragraph at lines 632--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 628--630
-
- []
-
-[23] (./tab10.tex) (./tab11.tex) [24]
-Underfull \hbox (badness 10000) in paragraph at lines 657--659
+Underfull \hbox (badness 10000) in paragraph at lines 634--636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--662
+Underfull \hbox (badness 10000) in paragraph at lines 642--644
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
+
+ []
+
+[25] (./tab10.tex) (./tab11.tex) [26]
+Underfull \hbox (badness 10000) in paragraph at lines 669--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--665
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 682--684
+Underfull \hbox (badness 10000) in paragraph at lines 675--677
 
  []
 
-[25]
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--694
+
+ []
+
+[27]
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 696.
- [26] (./modelo_projeto.bbl
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 706.
+ [28] (./modelo_projeto.bbl
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -1802,19 +1806,15 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-
-LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
-               before end of `thebibliography' environment on input line 3.
-
 ) 
 AED: lastpage setting LastPage
-[27] (./modelo_projeto.aux) ) 
+[29] (./modelo_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 22746 strings out of 494533
- 406541 string characters out of 6176595
- 733675 words of memory out of 5000000
- 25881 multiletter control sequences out of 15000+600000
- 566993 words of font info for 192 fonts, out of 8000000 for 9000
+ 22757 strings out of 494533
+ 406627 string characters out of 6176595
+ 732713 words of memory out of 5000000
+ 25889 multiletter control sequences out of 15000+600000
+ 567105 words of font info for 193 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  54i,18n,121p,9093b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
@@ -1835,10 +1835,10 @@ m/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on modelo_projeto.pdf (27 pages, 1870444 bytes).
+Output written on modelo_projeto.pdf (29 pages, 2121833 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 304 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 36910 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 36915 words of extra memory for PDF output out of 42996 (max. 10000000)
 

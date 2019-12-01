@@ -1,3 +1,32 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{next}
+F.~Corporation, ``Next (near-end crosstalk) troubleshooting,'' [entre 2006 e
+  2019].
+
+\bibitem{acr}
+F.~Corporation, ``Attenuation to crosstalk ratio near-end (acr-n) - dtx
+  cableanalyzer,'' [entre 2006 e 2019].
+
+\bibitem{t2013}
+A.~Tanenbaum and D.~Wetherall, ``Computer networks: Pearson new international
+  edition,'' 2013.
+
+\bibitem{perahia2013next}
+E.~Perahia and R.~Stacey, ``Next generation wireless lans: 802.11n and
+  802.11ac,'' 2013.
+
+\bibitem{abnt14565}
+A.~B. D.~N. TÉCNICAS, {\em NBR 14565: Procedimento básico para elaboração
+  de projetos de cabeamento de telecomunicações para rede interna
+  estruturada}, 2000.
+
+\bibitem{understading}
+F.~Corporation, ``Cable testing 101: Understanding near and far end
+  crosstalk,'' 2016.
+
+\bibitem{abnt5410}
+A.~B. D.~N. TÉCNICAS, {\em NBR 5410: Instalações elétricas de baixa
+  tensão}, 2004.
 
 \end{thebibliography}

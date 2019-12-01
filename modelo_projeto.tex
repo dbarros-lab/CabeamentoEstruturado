@@ -170,7 +170,8 @@
 %% ====================================
 \section{Introdução}
 
-Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa o cliente de que os "500 megas" contratados poderá ser subutilizado caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps (devido ao \textit{overhead} do roteador) e associa a baixa velocidade a um problema com o serviço do provedor de internet. Este vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (FastEthernet).
+Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa o cliente de que os "500 megas" contratados poderá ser subutilizado caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps (devido ao \textit{overhead} do roteador) e associa a baixa velocidade a um problema com o serviço do provedor de internet. Este vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (\textit{Fast Ethernet}). Nisso, previu Tanenbaum e Wetherall \cite{t2013}, p. 185, que é difícil conceber uma empresa realizar uma instalação com cabeamento e compras com material do nível \textit{Gigabit Ethernet} para serem conectados à equipamentos obsoletos e observar colisões na rede. Situação já observada pela demanda acima de 100 Mbps, sendo entregue pelos provedores de Internet em 2019, no Brasil.
+
 \bigskip
 
 Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente prestar-se atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (Gigabit) e possa beneficiar-se ainda mais do custo-benefício do par metálico, com fornecimento do serviço de fibra óptica. Há detalhes importantes: desde um pequeno conector e seu banhamento metálico de ouro, até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
@@ -209,21 +210,21 @@ O roteador principal do escritório deverá receber dois sinais de WAN em duas i
 
 \subsection{Cobre de alta qualidade}
 Para garantir uma boa longevidade da estrutura de instalação, sendo instalação nova, é preferível somente o uso de cabos de rede Categoria 6 (CAT6), por 03 motivos: \\ \\
-(a) Geralmente possuem bitola maior no cobre;\\
-(b) Possuem um septo separador que isola cada par trançado. Este separador fornece resistência física ao cabo e diminui aumenta o fenômeno chamado de \textit{cancelamento}, que ocorre nas correntes eletromagnéticas. Mais sobre \textit{cancelamento} é explicado na última subseção.\\
-(c) São um bom custo benefício para redes Gigabit.\\
+(a) Geralmente possuem bitola maior;\\
+(b) Possuem um septo separador que isola cada par trançado. Este separador fornece resistência física ao cabo e aumenta o fenômeno chamado de \textit{cancelamento}, que ocorre nas correntes eletromagnéticas. Mais sobre \textit{cancelamento} é explicado na última seção \textbf{Recomendações}.\\
+(c) São um bom custo benefício para redes \textit{Gigabit}.\\
 
 Em se tratando de cobre de alta qualidade, também se pensa em conectores corretos da Categoria 6, pois o uso de conectores da Categoria 5e poderão causar problemas de incompatibilidade pelas características físicas entre estas categorias. Eis que o conector CAT6 tem um melhor banho metálico em seus terminais.
 
 \subsection{Todos os equipamentos ativos e passivos na base 1000}
-Um bom cabeamento poderá ser rendido à completa subutilização se a rede estiver interligada à dispositivos que operam somente na base 10/100. Proritariamente, a compra de equipamentos --- roteadores, \textit{switches} e \textit{access points} --- deverá observar as características de que tais operam na base 10/100/1000, suportando as velocidades Gigabit.
+Um bom cabeamento poderá ser rendido à completa subutilização se a rede estiver interligada à dispositivos que operam somente na base 10/100. Proritariamente, a compra de equipamentos --- roteadores, \textit{switches} e \textit{access points} --- deverá observar as características de que tais operam na base 10/100/1000, suportando as velocidades da especificação \textit{Gigabit}.
 
-\subsection{WiFi - Padrão IEEE 802.11ac implementado}
-Este protocolo permite velocidades médias de 600Mbps nos pontos de acesso, ou seja, na data atual, uma referência muito boa para os padrões de Wi-Fi. (INSERIR REFERÊNCIA) Não é o escopo do projeto de cabeamento, mas a referência ao ponto de acesso correto certamente resultará em um sistema sem fio altamente eficiente.
+\subsection{WiFi - Padrão IEEE 802.11ac pronto para ser acolhido}
+Este protocolo permite velocidades em \textit{single-link} de no mínimo 500Mbps, segundo Perahia e Stacey \cite{perahia2013next}, p. 18. Nos pontos de acesso, ou seja, na data atual, o padrão IEEE 802.11ac é praticamente mandatório em redes \textit{Gigabit Ethernet}, se quer ter-se um o total aproveitamento da rede e deixar para trás equipamentos legados que, com o tempo, causarão colisões. Não é o escopo do projeto de cabeamento estruturado lidar com a parte \textit{wireless}, mas a implementação correta certamente resultará em um sistema sem fio altamente eficiente em conjunto com o cabeamento \textit{Gigabit Ethernet}.
 
 
 \section{Usuários e Aplicativos}
-O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio; e, usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada uma VLAN para dispositivos sem fio dos eventuais visitantes. No que se refere a cabeamento, a rede projetada deverá conter 2 pontos por área de trabalho (ATR), outros dois pontos nas áreas de impressora, incluindo pontos extras. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas trabalhando, não há projeto de expansibilidade de imediato, no entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par (04 vias) trançado. Sobre os equipamentos ativos, haverá a recomendação das marcas. Porém, a rede lógica fica a critério do departamento de T.I., em forma, aqui, de recomendações.
+O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio; e, usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada uma VLAN para dispositivos sem fio dos eventuais visitantes. No que se refere a cabeamento, a rede projetada deverá conter 2 pontos por área de trabalho (ATR), conforme disciplina a norma \cite{abnt14565}, p. 11, outros dois pontos nas áreas de impressora, incluindo pontos extras. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas trabalhando, não há projeto de expansibilidade de imediato, no entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par (04 vias) trançado. Sobre os equipamentos ativos, haverá a recomendação das marcas. Porém, a rede lógica fica a critério do departamento de T.I., em forma, aqui, de recomendações.
 
 \subsection{Usuários}
 
@@ -250,7 +251,7 @@ Serão 04 funcionários atrelados à administração da empresa, \textbf{adminis
 Parte crítica da empresa e importantes funções são a de \textbf{contador}, em número de 02 pessoas. Além do uso do sistema operacional Windows, intenso uso do Microsoft Office, mais especificamente o aplicativo Excel e de programas fiscais exigidos pela Receita Federal. Fazem uso intensivo do banco de dados SQL Server, registrando empenhos e demais atividades de contabilidade considerados operações muito críticas.
 
 
-
+\pagebreak
 \subsection{Aplicativos}
 
 Nesta seção será descrita a tabela de aplicativos e suas funções críticas no negócio. As aplicações críticas levam à frente um asterisco (*).
@@ -285,7 +286,7 @@ Conforme recomendação, é bom que o roteador utilize um sistema operacional co
 
 Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP, nem DNS, para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas. No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa.
 
-
+\pagebreak
 \section{Estrutura predial existente}
 
 Trata-se de escritório de 9 cômodos, considerando também como cômodo, a área de circulação que é a área de ingresso ao andar. Situa-se numa edificação de um 01 térreo e 01 andar. O escritório em si é o 1º andar. O telhado da edificação é de fácil acesso físico, visto que a edificação é construída com bom madeiramento e telhas cerâmicas. A parte elétrica bem isolada, sem emaranhados de fios, o que facilita a retirada de algumas telhas para a travessia de alguns eletrodutos que comportarão os cabos, interligando o \textit{switch} e cada setor especificado. \\
@@ -313,6 +314,7 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 
 %inicio dos comandos para criar uma nova pagina A3 horizontal
 \clearpage 
+\thispagestyle{empty}
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
 \recalctypearea
 
@@ -338,27 +340,31 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 \section{Planta Lógica - Elementos estruturados}
 
 \subsection{Visão do cabeamento}
-A planta lógica é apresentada na Figura 2. Conforme determina a norma, é necessário observar algumas coisas neste projeto. Primeiro, a variedade de plantas excedem por muitas vezes a própria norma, sendo impossível de se ter um padrão seguindo à risca. Segundo porque a própria norma torna opcional determinadas feituras num projeto, tal como a identificação por código de cor, quando uma edificação não tem mais que um pavimento.
+A planta lógica é apresentada na Figura 2. Há uma variedade de diagramas de plantas que por muitas vezes excedem a própria norma, sendo impossível de se ter um padrão uniforme e universal. A norma torna muitas coisas opcionais, desde que seja seguido algum critério. Exemplo disso é a identificação por código de cor, quando uma edificação não tem mais do que um pavimento.
 \\
 
-Para a simplificação da planta lógica, foram divididos, do \textit{switch}, portas que compreendem as numerações A, B, C e D. Sendo estas, \textbf{A: Portas 1-10}; \textbf{B: Portas 11-20}; \textbf{C: Portas 21-30} e \textbf{D: Portas 31-40}. Oito portas restantes ficam como suplementares em eventuais problemas com as portas utilizadas. As letras também indicam os eletrodutos que correm pela laje e descem por canaletas, passagens e posteriormente seguindo para e calhas verticais. 
+Para a simplificação da planta lógica, foram divididos, do \textit{switch}, portas que compreendem as numerações A, B, C e D. Sendo estas, \textbf{A: Portas 1-10}; \textbf{B: Portas 11-20}; \textbf{C: Portas 21-30} e \textbf{D: Portas 31-40}. Oito portas restantes ficam como suplementares em eventuais problemas com as portas utilizadas. As letras também indicam os eletrodutos que correm pela laje e descem por canaletas, passagens e posteriormente seguindo para e canaletas verticais. 
 \\
 
-Observe-se que é importante neste agrupamento, meios de assegurar a melhor organização possível. No que tange às áreas de trabalho, são recomendados, no mínimo, 2 pontos por ATR, sendo pontos opcionais permitidos. Denominadas de ATR, as áreas de trabalho são pequenos espaços de trabalho, de um funcionário ou de dispositivos utilizados por funcionários, como impressoras e outros equipamentos. Os pontos RJ45 devem ser etiquetados com iniciação PT. Não é o caso de termos mais do que 01 \textit{switch} operando nesta rede, então foi simplificado o etiquetamento das saídas, como PT, duto de origem e/o grupo de portas com numeração.
+Observe-se que é importante neste agrupamento, meios de assegurar a melhor organização possível. No que tange às áreas de trabalho, são recomendados, no mínimo, 2 pontos por ATR, sendo pontos opcionais permitidos. Denominadas de ATR, as áreas de trabalho são pequenos espaços de trabalho, de um funcionário ou de dispositivos utilizados por funcionários, como impressoras e outros equipamentos. A norma define com ATR, uma área de 10 metros quadrados --- o que evidencia que no projeto, há abundância de pontos por determinar-se ATRs de área menor. Os pontos RJ45 devem ser etiquetados com iniciação PT. Não é o caso de termos mais do que 01 \textit{switch} operando nesta rede (dependendo do modelo), então foi simplificado o etiquetamento das saídas, como PT, duto de origem e/o grupo de portas com numeração.
 \\
 
-A Sala de Equipamentos (SEQ) é o local em que residirá o \textit{rack} da rede, comportando um \textit{switch} de 48 portas, e demais equipamentos ativos. Todos os equipamentos ativos, suportando o padrão Gigabit. Dá-se a subida dos cabos pela laje, pelo cômodo SEQ, com todos os cabos distribuídos em 04 caminhos, até o ponto de descida, indicados pelos \textit{spots} verdes, na figura. Na descida, encaminhar-se-ão por eletrocalhas fechadas e canaletas, até os \textit{keystones}, evitando ao máximo, que se prense conectores às terminações dos cabos. 
+A Sala de Equipamentos (SEQ) é o local em que residirá o \textit{rack} da rede, comportando um \textit{switch} de 48 portas, e demais equipamentos ativos. Todos os equipamentos ativos, suportando o padrão \textit{Gigabit}. Dá-se a subida dos cabos pela laje, pelo cômodo SEQ, com todos os cabos distribuídos em 04 caminhos, até o ponto de descida, indicados pelos \textit{spots} verdes, na figura. Na descida, encaminhar-se-ão por canaletas, até os \textit{keystones}, que recebem as terminações de cobre dos pares. 
 \\
 
-Na planta, é possível observar que temos indicações de número de cabos dentro da canaleta ou, da calha. Em certos pontos, temos por certo que recebemos em torno de 8 cabos; e, com a ligação sequencial dos PTs, a quantidade de cabos vai diminuindo. É por isso que temos certas indicações como "4 x UTP" e "2 x UTP" na sequência: pois está contando em 02, tendo-se 02 cabos já tem previsão de estarem devidamente instalados, de 04 possíveis, naquele segmento. Importante observar que o manuseio dos cabos UTP sejam o mais cuidadoso possível: nenhuma dobra abaixo de 90, para que o cabo não perca suas características físicas e mecânicas de transmissão --- uma única dobra incorreta pode comprometer aquele ponto na rede. 
+Na planta, é possível observar que temos indicações de número de cabos dentro da canaleta. Em certos pontos, temos por certo que recebemos em torno de 8 cabos; e, com a ligação sequencial dos PTs, a quantidade de cabos vai diminuindo. É por isso que temos certas indicações como ``4 x UTP'' e ``2 x UTP'' na sequência: pois está contando em 02, tendo-se 02 cabos já tem previsão de estarem devidamente instalados, de 04 possíveis, naquele segmento. Importante observar que o manuseio dos cabos UTP sejam o mais cuidadoso possível: nenhuma dobra abaixo de 90, para que o cabo não perca suas características físicas e mecânicas de transmissão --- uma única dobra incorreta pode comprometer aquele ponto na rede. 
 \\
 
-Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, bem como as impressoras de rede (\textit{Wi-Fi} 01 a 04), sendo posicionados para uma cobertura razoável de sinal sem fio. O QG, a entrada das comunicações, é o armário da edificação que comporta as entradas dos troncos telefônicos e da fibra óptica. Não é parte do projeto a estrutura de cabeamento telefônico, porém, vale dizer que é neste armário que está posicionada a Central de PABX híbrida. Caso ocorra alguma atualização dos equipamentos de telefonia, a rede já está preparada para suportar uma demanda de VoIP. 
+Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, bem como as impressoras de rede (\textit{Wi-Fi} 01 a 04), sendo posicionados para uma cobertura razoável de sinal sem fio. O QG, a entrada das comunicações, é o armário da edificação que comporta as entradas dos troncos telefônicos e da fibra óptica, valendo dizer que é neste armário que está posicionada a Central de PABX híbrida. Tudo pré-preparado para VoIP (\textit{Voice Over IP}), no futuro.
+
+
 
 
 %inicio dos comandos para criar uma nova pagina A3 horizontal
 \clearpage
+\thispagestyle{empty}
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
+
 \recalctypearea
 %\subsection{Planta Física Cabeada}
 
@@ -419,6 +425,7 @@ Dentro dos tubos azuis, e das linhas vermelhas, é esperado uma determinada popu
 
 %inicio dos comandos para criar uma nova pagina A3 horizontal
 \clearpage
+\thispagestyle{empty}
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
 \recalctypearea
 %\subsection{Topologia}
@@ -481,13 +488,13 @@ Relação de todos os equipamentos passivos que serão utilizados, seguidos das 
 
 \subsubsection{Calculo detalhado do cabeamento e considerações sobre emendas}
 
-Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é estimado para que se saia do \textit{patch panel} e chegue-se até o ponto da área de trabalho. Uma coisa que se deve evitar quando se lida com cabos de cobre é a emenda. A emenda só pode ocorrer quando a situação for extremamente urgente: um serviço indisponível pelo rompimento de um cabo; uma situação de manutenção provisória. Seja qual for o tipo de emenda, precisa ser executada com muita habilidade e precisão: com as ferramentas e conectores corretos. As emendas causam atenuações no sinal. A prática de soldar emendas com a combinação estanho/chumbo, causa um ponto de resistência de elétrons e deve ser "abominada" num projeto, até mesmo por projetos de elétrica. (CITAR REFERENCIA) 
+Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é estimado para que se saia do \textit{patch panel} e chegue-se até o ponto da área de trabalho. Uma coisa que se deve evitar quando se lida com cabos de cobre é a emenda. A emenda só pode ocorrer quando a situação for extremamente urgente: um serviço indisponível pelo rompimento de um cabo; uma situação de manutenção provisória. Seja qual for o tipo de emenda, precisa ser executada com muita habilidade e precisão: com as ferramentas e conectores corretos. As emendas causam atenuações no sinal. A norma \cite{abnt14565}, p. 11, condena a emenda e recomenda que não haja em possibilidade alguma.
 
 
 
 
 \clearpage
-
+\thispagestyle{empty}
 \KOMAoptions{paper=a3, paper=landscape, fontsize=11pt, DIV=20}
 \recalctypearea
 
@@ -565,23 +572,33 @@ A definição de \textit{crosstalk} (diafonia) é o fenômeno ocorrente de um si
 	\noindent\makebox[\textwidth][c]{
 		\includegraphics[width=\textwidth]{next-final}
 	}
-	\caption{Exemplo de \textbf{NEXT} aprovado. -- CITAR A FONTE}
+	\caption{Exemplo de \textbf{NEXT} aprovado. \cite{next}}
 	\label{fig4}
 \end{figure}
 
 
 \subsection{FEXT - Far End Cross Talk --- ou Telediafonia}
-Vimos que o NEXT é o fenômeno que o ocorre no início do cabeamento, o ponto de partida. O \textbf{FEXT} seria o mesmo fenômeno, só que fazendo \textbf{o caminho inverso}: partindo do ponto de chegada do cabo, ou seja, na posição em que o cabo termina. O \textbf{FEXT} em si constitui-se num problema menos grave que o \textbf{NEXT}, pois os sinais de interferência são mais fracos, e além disso, atenuados. Não obstante, um ponto de falha pode gerar um pico no gráfico, como que para o fim da linha, cabendo ao técnico a detecção física da falha. Na figura abaixo temos um exemplo de detecção de \textbf{FEXT}. Geralmente se opta por mensurar o parâmetro ELFEXT (\textit{Equal Level Far End Crosstalk}) que é a diferença entre FEXT e a Inserção de Perda (também chamado simplesmente de ``Atenuação'' ou ACR).
+Vimos que o NEXT é o fenômeno que o ocorre no início do cabeamento, o ponto de partida. O \textbf{FEXT} seria o mesmo fenômeno, só que fazendo \textbf{o caminho inverso}: partindo do ponto de chegada do cabo, ou seja, na posição em que o cabo termina. O \textbf{FEXT} em si constitui-se num problema menos grave que o \textbf{NEXT}, pois os sinais de interferência são mais fracos, e além disso, atenuados. De acordo com a fabricante Fluke, FEXT não nos diz muito sobre os sinais pois eles são atenuados conforme a distância \cite{understading}. Para melhores resultados, a atenuação é removida da medida FEXT e renomeada para ELFEXT (Equal Level Far End Crosstalk). Atualmente, esta terminologia foi rebatizada para ACRF. 
 
-\subsection{ACR - Attenuation To Cross Talk Ratio --- ou Insertion Loss / Inserção de Perda}
-Atenuação é definida pela diminuição gradual do fluxo de intensidade de um sinal, dentro de um meio, como o cobre, por exemplo. Com a inserção de perda, é possível verificar a resiliência do material em situação de ``estresse''. Nas figuras abaixo temos os respectivos exemplo de gráfico ACR.
+\subsection{ACR-N - Attenuation To Cross Talk Ratio Near End --- ou Atenuação relativa à Diafonia}
+Atenuação relativa à diafonia é definida pela diminuição gradual do fluxo de intensidade de um sinal, dentro de um meio, como o cobre, por exemplo. Como já mencionado, o FEXT não nos traz resultados efetivos na certificação, pois com a atenuação, seus valores não são de confiabilidade devido à atenuação. Com a inserção de perda, é possível verificar a resiliência do material em situação de ``estresse''. Nas figuras abaixo temos os respectivos exemplo de gráfico ACR-N.
+
+\begin{figure}[H]
+	%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[width=\textwidth]{acr}
+	}
+	\caption{Exemplo de \textbf{ACR-N} aprovado. Gráfico híbrido criado com propósito educacional \cite{acr}}
+	\label{fig5}
+\end{figure}
+
 
 \subsection{Os onze itens de uma rede certificada}
-Nesta seção estão listadas os 10 itens que compõem, os 10 testes primários, para conformidade com os padrões TIA/EIA.
+Nesta seção estão listadas os 10 itens que compõem, os 10 testes primários, para conformidade com os padrões TIA/EIA, sendo alguns deles listados, para entendimento legado.
 
 \begin{itemize}
 \item Mapa de fios - verifica continuidade de fios e revela a pinagem. 
-\item ACR - verifica a atenuação dentro dos padrões do cabo.
+\item ACR-N - verifica a atenuação dentro dos padrões do cabo.
 \item NEXT - verifica o \textit{crosstalk} do ponto de partida.
 \item FEXT - verifica o \textit{crosstalk} do ponto de chegada.
 \item PSNEXT - calculo de NEXT somado à FEXT.
@@ -636,14 +653,9 @@ Tabela de de custo dos equipamentos passivos.
 
 %passivos custo
 
-
 \input{tab10}
 
-
-
-
 \input{tab11}
-
 
 O total valor total de orçamento para os equipamentos passivos e encaminhamento necessário, excluindo eventuais peças de urgência, é de \textbf{R\$ 11.759,76}.
 Preço na data de 10 de novembro de 2019.
@@ -665,7 +677,7 @@ Se o condutor do mesmo cordão de força tivermos a corrente indo na mesma dire�
 
 \subsection{Aterramento}
 
-Contra choques elétricos, é essencial que o pino central da tomada padrão atual, seja ligado a um ponto terra. Note-se que este aterramento não protege os equipamentos de descargas elétricas na rede de distribuição de energia --- fazendo-se necessário o uso de filtros de linha com proteção contra surtos, se a edificação não dispor de um sistema de para-raios que ocasione a equipotencialização para o terra.
+Contra choques elétricos, é essencial que o pino central da tomada padrão atual, seja ligado a um ponto terra. Note-se que este aterramento não protege os equipamentos de descargas elétricas na rede de distribuição de energia --- fazendo-se necessário o uso de filtros de linha com proteção contra surtos, se a edificação não dispor de uma implementação que ocasione a equipotencialização principal \cite{abnt5410}, p. 145.
 
 \subsection{Equipamentos que causem danos}
 
@@ -675,14 +687,12 @@ Um equipamento que geralmente causa danos aos ativos é o chamado "estabilizador
 
 Para equipamentos em que se precise de manutenção da energia mesmo após a queda da concessionária, é recomendado o uso de um \textit{no-break} do tipo \textit{on-line} de dupla conversão, que faça a entrega de senoide sem distorções --- e evitar o uso de outros tipos de \textit{no-break} que entregam a senoide distorcida: apesar de funcionarem e serem bastante adquiridos no mercado por um preço razoável, são equipamentos perigosos para o circuito receptor da onda.
 
-
 \subsection{Ativos de Rede}
-
 
 Como recomendação de ativos é algo importante, dada a considerável massiva presença de roteadores, \textit{switches} e pontos de acesso de baixíssima qualidade revendidos no varejo brasileiro. Cita-se as marcas D-Link e TP-Link como produtos que se deve evitar a aquisição. No caso entre de dilema dessas marcas, ficar com produtos D-Link por possuírem melhor construção física do que TP-Link. 
 \\
 
-Como recomendação de uma implementação com equipamentos de qualidade, 100\% configuráveis, não há restrição por outras marcas, porém, a recomendação deste projeto segue-se da seguinte forma,  segue-se o seguinte:
+Como recomendação de uma implementação com equipamentos de qualidade, 100\% configuráveis, não há restrição por outras marcas, porém, a recomendação deste projeto segue-se da seguinte forma:
 
 \subsubsection{Roteador}
 
@@ -719,7 +729,6 @@ Roteador com interfaces para dois serviços de Internet, \textit{Gigabit Etherne
 
 \pagebreak
 \section{Referências bibliográficas}
-
 
 \renewcommand\refname{} %%Referências bibliográficas}  
 \bibliographystyle{ieeetr}
