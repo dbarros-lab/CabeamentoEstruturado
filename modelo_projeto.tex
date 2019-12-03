@@ -21,7 +21,7 @@
 \usepackage{subfig}							% Subfigures
 \usepackage{booktabs}		% Nicer tables
 \usepackage{float}
-									
+							
 \usepackage{fix-cm}													% Custom fontsizes
 \usepackage[utf8]{inputenc}
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
@@ -174,11 +174,11 @@ Um novo serviço de internet é contratado por uma pequena empresa. O provedor d
 
 \bigskip
 
-Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente prestar-se atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (Gigabit) e possa beneficiar-se ainda mais do custo-benefício do par metálico, com fornecimento do serviço de fibra óptica. Há detalhes importantes: desde um pequeno conector e seu banhamento metálico de ouro, até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
+Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente prestar-se atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (\textit{Gigabit}) e possa beneficiar-se ainda mais do custo-benefício do par metálico, com fornecimento do serviço de fibra óptica. Há detalhes importantes: desde um pequeno conector e seu banhamento metálico de ouro, até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
 \bigskip
 
 \subsection{Escopo do Projeto}
-O escopo deste projeto é a projeção de todos os componentes passivos de um cabeamento estruturado que será equipado com 25 computadores de mesa, 01 servidor, 01 roteador, 01 \textit{switch} e 04 pontos de acesso sem fio. Também se prevê redundância no acesso à Internet, com a contratação de dois provedores de serviços de internet. Apesar de o escopo não ser equipamentos ativos, serão descritos mais adiante uma recomendação para equipamentos ativos.
+O escopo deste projeto é a projeção de todos os componentes passivos de um cabeamento estruturado que será equipado com 25 computadores de mesa, 01 servidor, 01 roteador, 01 \textit{switch} de 48 portas ou 02 de 24 portas; e, 04 pontos de acesso sem fio. Também se recomenda redundância no acesso à Internet, com a contratação de dois provedores de serviços de internet. Apesar de o escopo não ser equipamentos ativos e contratação destes serviços, será apresentado oportunamente na seção \textbf{Recomendações}.
 
 \subsection{Benefícios}
 Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas de até 100 Mbps. A maioria dos roteadores de escritórios e/ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: gargalos na velocidade, má conexão devido à conectores prensados manualmente com alicates, conectores velhos, cabos dobrados indevidamente em determinado segmento do cabeamento. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure muitos anos.
@@ -208,11 +208,14 @@ Talvez um dos sintomas mais simples de um nó da rede que está apresentando fal
 \subsection{Tolerância à falha - Redundância contra quedas no serviço}
 O roteador principal do escritório deverá receber dois sinais de WAN em duas interfaces, e deverá priorizar a mais veloz como a principal WAN; ao passo que, havendo um eventual blecaute e falta do sinal, o segundo provedor de internet assume o fornecimento de acesso, sem que o usuário final perceba que ocorreu um problema. Esta prática passou a ser mais comum devido à demanda das pequenas empresas realizarem operações de transferências de dados remotas com diversos fornecedores e clientes.
 
+\subsection{Cabo UTP Categoria 6}
+Um excelente custo benefício, se aplicado da forma correta. Superior ao CAT 5e, para atender redes \textit{Gigabit}. No entanto, a instalação deverá atentar-se com respeito a aproximação de fontes de energia (corrente alternada). Segundo Astiazara, Boque e Hahn \cite{utp}, p. 2, a grande vantagem do par trançado é o  baixo custo e alta flexibilidade, porém, uma desvantagem é a baixa imunidade à interferência eletromagnética --- coisa que pode ser amenizada com o tipo de cabo e suas técnicas de cancelamento, a ponto de o cabeamento não requerer nenhum tratamento especial na instalação. 
+
 \subsection{Cobre de alta qualidade}
 Para garantir uma boa longevidade da estrutura de instalação, sendo instalação nova, é preferível somente o uso de cabos de rede Categoria 6 (CAT6), por 03 motivos: \\ \\
 (a) Geralmente possuem bitola maior;\\
 (b) Possuem um septo separador que isola cada par trançado. Este separador fornece resistência física ao cabo e aumenta o fenômeno chamado de \textit{cancelamento}, que ocorre nas correntes eletromagnéticas. Mais sobre \textit{cancelamento} é explicado na última seção \textbf{Recomendações}.\\
-(c) São um bom custo benefício para redes \textit{Gigabit}.\\
+(c) São um bom custo benefício para redes \textit{Gigabit Ethernet}.\\
 
 Em se tratando de cobre de alta qualidade, também se pensa em conectores corretos da Categoria 6, pois o uso de conectores da Categoria 5e poderão causar problemas de incompatibilidade pelas características físicas entre estas categorias. Eis que o conector CAT6 tem um melhor banho metálico em seus terminais.
 
@@ -314,7 +317,8 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 
 %inicio dos comandos para criar uma nova pagina A3 horizontal
 \clearpage 
-\thispagestyle{empty}
+\thispagestyle{plain}
+
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
 \recalctypearea
 
@@ -362,7 +366,7 @@ Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, b
 
 %inicio dos comandos para criar uma nova pagina A3 horizontal
 \clearpage
-\thispagestyle{empty}
+\thispagestyle{plain}
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
 
 \recalctypearea
@@ -425,7 +429,7 @@ Dentro dos tubos azuis, e das linhas vermelhas, é esperado uma determinada popu
 
 %inicio dos comandos para criar uma nova pagina A3 horizontal
 \clearpage
-\thispagestyle{empty}
+\thispagestyle{plain}
 \KOMAoptions{paper=a3, paper=landscape, DIV=20}
 \recalctypearea
 %\subsection{Topologia}
@@ -494,7 +498,8 @@ Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é e
 
 
 \clearpage
-\thispagestyle{empty}
+\thispagestyle{plain}
+
 \KOMAoptions{paper=a3, paper=landscape, fontsize=11pt, DIV=20}
 \recalctypearea
 
@@ -643,13 +648,11 @@ O projeto não demanda, de forma incisiva, condicionamento de ar no cômodo SEQ,
 \\
 
 Não obstante, visa-se que o custo do cabo blindado e de conectores, não se faz imperativo nessa instalação de escritório, pois o custo destes cabos é extremamente elevado, podendo tal valor ser mais compensador gastos com passagem de uma única fibra óptica e a instalação de seus conversores de mídia, na camada 1 e 2. A fibra óptica não captura nenhuma interferência de eletricidade. Ver mais sobre o cancelamento de eletromagnetismo na seção \textbf{Recomendações.}
-\\
 
-\pagebreak
+
 
 \section{Orçamento}
 Tabela de de custo dos equipamentos passivos.
-\vspace{0.5cm}
 
 %passivos custo
 
@@ -664,7 +667,7 @@ Preço na data de 10 de novembro de 2019.
 
 \section{Recomendações}
 
-\subsection{Cancelamento do eletromagnetismo}
+\subsection{Cancelamento do eletromagnetismo --- uma explicação}
 
 Muitas vezes, técnicos da elétrica sequer possuem um conhecimento sólido de como se deve ter em mente o \textit{cancelamento} do eletromagnetismo gerado por fios de cobre. Geralmente, temos que os elétrons viajam como que na forma de uma espiral, pelo cobre, com determinada força em uma direção específica. Quando a corrente de um fio de energia recebe o sinal pelo negativo, e volta por outro condutor do mesmo cordão de força, temos que as duas forças serão opostas, causando a repulsa dos dois condutores --- gerando uma interferência para além do cordão. 
 \\
@@ -672,8 +675,19 @@ Muitas vezes, técnicos da elétrica sequer possuem um conhecimento sólido de c
 Se o condutor do mesmo cordão de força tivermos a corrente indo na mesma direção, então as forças serão atrativas, causando a atração dos dois condutores --- gerando uma interferência para dentro do núcleo do cordão. Desta forma, podemos pensar que não é sem lógica que cordões de força possuem filamentos de cobre trançados: para causar o cancelamento. O mesmo ocorre com os filamentos de fios de rede --- a trança do par ajuda a haver um \textit{cancelamento} da interferência entre filamentos de cobre.
 \\
 
-É de extrema importância, num projeto que não contempla cabos blindados  que vão passar perto de cabos de energia 110V/220V, a observação sobre o \textit{cancelamento} de campos eletromagnéticos. Instalações que possuem condicionadores de ar que utilizam muita amperagem da concessionária, demandam alguma considerável amperagem que pode causar grande interferência se estiverem bem próximos aos cabos de uma rede.  
+A ilustração abaixo demonstra tecnicamente o cancelamento da pela trança do par. Com o trançamento do par, faz-se a alternação de do polo positivo e negativo, sendo a força zero a intermediária coadjuvante no cancelamento.
 \\
+
+\begin{figure}[H]
+	%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[width=\textwidth]{twist}
+	}
+	\caption{A diafonia do cabo UTP alterna-se entre \textbf{positivo} e \textbf{negativo} à medida que o par é trançado. \cite{cancel}}
+	\label{fig6}
+\end{figure}
+
+
 
 \subsection{Aterramento}
 
@@ -681,7 +695,7 @@ Contra choques elétricos, é essencial que o pino central da tomada padrão atu
 
 \subsection{Equipamentos que causem danos}
 
-Um equipamento que geralmente causa danos aos ativos é o chamado "estabilizador de energia". Na verdade, o famigerado "estabilizador de energia" é um chaveador automático, que prejudica a senoidal da rede de energia de corrente alternada --- sendo entregue de forma distorcida ao equipamento ativo e causando dano irreversível ou mau funcionamento. É recomendado que seja \textit{"banido"} tal equipamento, por não haver base científica sobre sua capacidade de "estabilizar" a energia.
+Um equipamento que geralmente causa danos aos ativos é o chamado ``estabilizador de energia''. Na verdade, o famigerado ``estabilizador de energia'' é um chaveador automático, que prejudica a senoidal da rede de energia de corrente alternada --- sendo entregue de forma distorcida ao equipamento ativo e causando dano irreversível ou mau funcionamento. É recomendado que seja \textit{``banido''} tal equipamento, por não haver base científica sobre sua capacidade de ``estabilizar'' a energia.
 
 \subsection{Manutenção da energia em caso de queda}
 

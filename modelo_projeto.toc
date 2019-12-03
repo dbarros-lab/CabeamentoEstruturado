@@ -7,10 +7,11 @@
 \contentsline {subsection}{\numberline {2.1}Velocidade real contratada e percebida}{6}% 
 \contentsline {subsection}{\numberline {2.2}Extin\IeC {\c c}\IeC {\~a}o de conectores manualmente prensados com alicate}{6}% 
 \contentsline {subsection}{\numberline {2.3}Toler\IeC {\^a}ncia \IeC {\`a} falha - Redund\IeC {\^a}ncia contra quedas no servi\IeC {\c c}o}{7}% 
-\contentsline {subsection}{\numberline {2.4}Cobre de alta qualidade}{7}% 
-\contentsline {subsection}{\numberline {2.5}Todos os equipamentos ativos e passivos na base 1000}{7}% 
-\contentsline {subsection}{\numberline {2.6}WiFi - Padr\IeC {\~a}o IEEE 802.11ac pronto para ser acolhido}{7}% 
-\contentsline {section}{\numberline {3}Usu\IeC {\'a}rios e Aplicativos}{7}% 
+\contentsline {subsection}{\numberline {2.4}Cabo UTP Categoria 6}{7}% 
+\contentsline {subsection}{\numberline {2.5}Cobre de alta qualidade}{7}% 
+\contentsline {subsection}{\numberline {2.6}Todos os equipamentos ativos e passivos na base 1000}{7}% 
+\contentsline {subsection}{\numberline {2.7}WiFi - Padr\IeC {\~a}o IEEE 802.11ac pronto para ser acolhido}{7}% 
+\contentsline {section}{\numberline {3}Usu\IeC {\'a}rios e Aplicativos}{8}% 
 \contentsline {subsection}{\numberline {3.1}Usu\IeC {\'a}rios}{8}% 
 \contentsline {subsection}{\numberline {3.2}Aplicativos}{10}% 
 \contentsline {section}{\numberline {4}Estrutura predial existente}{11}% 
@@ -31,15 +32,15 @@
 \contentsline {section}{\numberline {8}Plano de manuten\IeC {\c c}\IeC {\~a}o}{24}% 
 \contentsline {subsection}{\numberline {8.1}Plano de expans\IeC {\~a}o}{24}% 
 \contentsline {section}{\numberline {9}Risco}{25}% 
-\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{26}% 
-\contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{27}% 
-\contentsline {subsection}{\numberline {11.1}Cancelamento do eletromagnetismo}{27}% 
+\contentsline {section}{\numberline {10}Or\IeC {\c c}amento}{25}% 
+\contentsline {section}{\numberline {11}Recomenda\IeC {\c c}\IeC {\~o}es}{26}% 
+\contentsline {subsection}{\numberline {11.1}Cancelamento do eletromagnetismo --- uma explica\IeC {\c c}\IeC {\~a}o}{26}% 
 \contentsline {subsection}{\numberline {11.2}Aterramento}{27}% 
 \contentsline {subsection}{\numberline {11.3}Equipamentos que causem danos}{27}% 
 \contentsline {subsection}{\numberline {11.4}Manuten\IeC {\c c}\IeC {\~a}o da energia em caso de queda}{27}% 
 \contentsline {subsection}{\numberline {11.5}Ativos de Rede}{27}% 
-\contentsline {subsubsection}{\numberline {11.5.1}Roteador}{28}% 
-\contentsline {subsubsection}{\numberline {11.5.2}\textit {Switch}}{28}% 
+\contentsline {subsubsection}{\numberline {11.5.1}Roteador}{27}% 
+\contentsline {subsubsection}{\numberline {11.5.2}\textit {Switch}}{27}% 
 \contentsline {subsubsection}{\numberline {11.5.3}Ponto de acesso sem fio}{28}% 
 \contentsline {subsubsection}{\numberline {11.5.4}Servidor}{28}% 
 \contentsline {section}{\numberline {12}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{29}% 

@@ -1,32 +1,44 @@
 \begin{thebibliography}{1}
 
 \bibitem{next}
-F.~Corporation, ``Next (near-end crosstalk) troubleshooting,'' [entre 2006 e
-  2019].
+{Fluke Corporation}, {\em NEXT (Near-End Crosstalk) Troubleshooting}, [entre
+  2006 e 2019].
 
 \bibitem{acr}
-F.~Corporation, ``Attenuation to crosstalk ratio near-end (acr-n) - dtx
-  cableanalyzer,'' [entre 2006 e 2019].
+{Fluke Corporation}, {\em Attenuation to Crosstalk Ratio Near-End (ACR-N) - DTX
+  CableAnalyzer}, [entre 2006 e 2019].
+
+\bibitem{cancel}
+H.~Johnson and M.~Graham, {\em High-Speed Signal Propagation: Advanced Black
+  Magic}.
+\newblock Prentice Hall PTR, 2009.
 
 \bibitem{t2013}
-A.~Tanenbaum and D.~Wetherall, ``Computer networks: Pearson new international
-  edition,'' 2013.
+A.~Tanenbaum and D.~Wetherall, {\em Redes de Computadores}.
+\newblock Pearson Education do Brasil, 2011.
+
+\bibitem{utp}
+M.~Astiazara, V.~Boque, and R.~Hahn, ``Cabo de par trançado e cabo coaxial,''
+  Master's thesis, Universidade Luterana do Brasil, RS., Torres, RS., [ca.
+  2002].
 
 \bibitem{perahia2013next}
-E.~Perahia and R.~Stacey, ``Next generation wireless lans: 802.11n and
-  802.11ac,'' 2013.
+E.~Perahia and R.~Stacey, {\em Next Generation Wireless LANs: 802.11n and
+  802.11ac}.
+\newblock Next Generation Wireless LANs: 802.11n and 802.11ac, Cambridge
+  University Press, 2013.
 
 \bibitem{abnt14565}
-A.~B. D.~N. TÉCNICAS, {\em NBR 14565: Procedimento básico para elaboração
-  de projetos de cabeamento de telecomunicações para rede interna
-  estruturada}, 2000.
+{ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS}, {\em NBR 14565: Procedimento
+  básico para elaboração de projetos de cabeamento de telecomunicações
+  para rede interna estruturada}, 2000.
 
 \bibitem{understading}
-F.~Corporation, ``Cable testing 101: Understanding near and far end
-  crosstalk,'' 2016.
+{Fluke Corporation}, {\em Cable Testing 101: Understanding Near and Far End
+  Crosstalk}, 2016.
 
 \bibitem{abnt5410}
-A.~B. D.~N. TÉCNICAS, {\em NBR 5410: Instalações elétricas de baixa
-  tensão}, 2004.
+{ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS}, {\em NBR 5410: Instalações
+  elétricas de baixa tensão}, 2004.
 
 \end{thebibliography}
