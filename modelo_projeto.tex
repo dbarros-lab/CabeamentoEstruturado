@@ -172,7 +172,26 @@
 
 Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa o cliente de que os "500 megas" contratados poderá ser subutilizado caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps (devido ao \textit{overhead} do roteador) e associa a baixa velocidade a um problema com o serviço do provedor de internet. Este vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (\textit{Fast Ethernet}). Nisso, previu Tanenbaum e Wetherall \cite{t2013}, p. 185, que é difícil conceber uma empresa realizar uma instalação com cabeamento e compras com material do nível \textit{Gigabit Ethernet} para serem conectados à equipamentos obsoletos e observar colisões na rede. Situação já observada pela demanda acima de 100 Mbps, sendo entregue pelos provedores de Internet em 2019, no Brasil.
 
-\bigskip
+\subsection{Cabeamento Estruturado}
+
+O cabeamento estruturado continua sendo a forma predominante de instalar-se as redes de computadores, sendo a tecnologia de \textit{wireless} ainda algo complementar, e não substituta à primeira --- do cabo de cobre e da fibra óptica, para redes de alta velocidade.
+
+Segundo Ross \cite{ross2007cabeamento}, p. 5, o cabeamento estruturado deve seguir 03 conceitos básicos para o bom funcionamento da rede:
+
+\begin{itemize}
+
+\item Deve ser universal para tráfego de qualquer sistema.
+\item Deve ter flexibilidade para expansão.
+\item Deve ter uma vida útil de 10 anos.
+
+
+
+\end{itemize}
+
+De acordo com Trulove \cite{trulove2006lan}, p. 13, um sistema Gigabit pode ser perfeitamente construído com cabos CAT 5e, mas para quem pensa em futuras atualizações, pode ser uma boa ideia implementar a rede passiva diretamente com cabo CAT 6 ou 7.
+\\
+
+Inicialmente a velocidade de 1000Mps somente era suportada na fibra óptica e somente em 1999 o rascunho TSB-15 especificou normas para regulamentação dessa velocidade em cabos CAT 5 (\cite{barnett2006cabling}, p.132). Estes autores igualmente recomendam o uso de Categoria 5 ou superior.
 
 Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente prestar-se atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (\textit{Gigabit}) e possa beneficiar-se ainda mais do custo-benefício do par metálico, com fornecimento do serviço de fibra óptica. Há detalhes importantes: desde um pequeno conector e seu banhamento metálico de ouro, até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
 \bigskip
@@ -181,7 +200,7 @@ Este projeto tem como finalidade, estabelecer um modelo de norte para adequadame
 O escopo deste projeto é a projeção de todos os componentes passivos de um cabeamento estruturado que será equipado com 25 computadores de mesa, 01 servidor, 01 roteador, 01 \textit{switch} de 48 portas ou 02 de 24 portas; e, 04 pontos de acesso sem fio. Também se recomenda redundância no acesso à Internet, com a contratação de dois provedores de serviços de internet. Apesar de o escopo não ser equipamentos ativos e contratação destes serviços, será apresentado oportunamente na seção \textbf{Recomendações}.
 
 \subsection{Benefícios}
-Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas de até 100 Mbps. A maioria dos roteadores de escritórios e/ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: gargalos na velocidade, má conexão devido à conectores prensados manualmente com alicates, conectores velhos, cabos dobrados indevidamente em determinado segmento do cabeamento. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure muitos anos.
+Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas de até 100 Mbps. A maioria dos roteadores de escritórios e/ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: gargalos na velocidade, má conexão devido à conectores prensados manualmente com alicates, conectores velhos, cabos dobrados indevidamente em determinado segmento do cabeamento. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure no mínimo 10 anos.
 
 \subsection{Organizações Envolvidas}
 Em se tratando de projeto fictício, não há organizações envolvidas. Para fins de orientação, a seguinte tabela demonstra um conjunto de organizações, empresas ou profissionais que poderão eventualmente participar no envolvimento da implementação de uma rede.\\
@@ -254,7 +273,7 @@ Serão 04 funcionários atrelados à administração da empresa, \textbf{adminis
 Parte crítica da empresa e importantes funções são a de \textbf{contador}, em número de 02 pessoas. Além do uso do sistema operacional Windows, intenso uso do Microsoft Office, mais especificamente o aplicativo Excel e de programas fiscais exigidos pela Receita Federal. Fazem uso intensivo do banco de dados SQL Server, registrando empenhos e demais atividades de contabilidade considerados operações muito críticas.
 
 
-\pagebreak
+
 \subsection{Aplicativos}
 
 Nesta seção será descrita a tabela de aplicativos e suas funções críticas no negócio. As aplicações críticas levam à frente um asterisco (*).
@@ -733,6 +752,7 @@ Roteador com interfaces para dois serviços de Internet, \textit{Gigabit Etherne
 \end{itemize}
 
 \subsubsection{Servidor}
+
 \begin{itemize}
 	\item Processador com 8 núcleos reais.
 	\item Fonte redundante.

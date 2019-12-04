@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{next}
 {Fluke Corporation}, {\em NEXT (Near-End Crosstalk) Troubleshooting}, [entre
@@ -17,10 +17,22 @@ H.~Johnson and M.~Graham, {\em High-Speed Signal Propagation: Advanced Black
 A.~Tanenbaum and D.~Wetherall, {\em Redes de Computadores}.
 \newblock Pearson Education do Brasil, 2011.
 
+\bibitem{ross2007cabeamento}
+J.~Ross, {\em Cabeamento Estruturado}.
+\newblock Antenna, 2007.
+
+\bibitem{trulove2006lan}
+J.~Trulove, {\em LAN Wiring}.
+\newblock McGraw-Hill Education, 2006.
+
+\bibitem{barnett2006cabling}
+D.~Barnett, D.~Groth, and J.~McBee, {\em Cabling: The Complete Guide to Network
+  Wiring}.
+\newblock Wiley, 2006.
+
 \bibitem{utp}
 M.~Astiazara, V.~Boque, and R.~Hahn, ``Cabo de par trançado e cabo coaxial,''
-  Master's thesis, Universidade Luterana do Brasil, RS., Torres, RS., [ca.
-  2002].
+  Master's thesis, Universidade Luterana do Brasil, Torres, RS., [ca. 2002].
 
 \bibitem{perahia2013next}
 E.~Perahia and R.~Stacey, {\em Next Generation Wireless LANs: 802.11n and
