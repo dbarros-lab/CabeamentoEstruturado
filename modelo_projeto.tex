@@ -136,7 +136,7 @@
 %% ====================================
 %% ====================================
 
-\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos componentes passivos. Cada vez mais presentes no mercado, os escritórios \textit{small business} são estruturas simples que possuem falta de infraestrutura e muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, porém subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. O projeto contemplará o levantamento de planta física, elaboração da planta lógica, equipamentos passivos a serem implementados conforme a necessidade, os custos envolvidos para a devida implementação. Trata-se de projeto-modelo fictício para uso em diversas aplicações. No cenário atual em que diversas redes são erroneamente implementadas norteadas por práticas comuns e duvidosas, faz-se necessário um guia prático, pois, a leitura de normas textuais tornam-se praticamente ignoradas por pequenos negócios, seja pela dificuldade técnica de seus textos, falta de mão de obra para sua correta interpretação ou falta de orçamento para o direcionamento correto de custos.}
+\initial{E}\textbf{ste projeto de cabeamento estruturado visa implementar, do zero, uma rede cabeada em um escritório de negócios, sob as normas vigentes com visada às boas práticas de instalação e manutenção dos componentes passivos. Cada vez mais presentes no mercado, os escritórios \textit{small business} são estruturas simples que possuem falta de infraestrutura. Muitos desses locais ainda não estão completamente adaptados para suportar novas velocidades entregues pelos serviços de fibra óptica, disponibilizado na entrada da edificação, porém subutilizada pelo pobre cabeamento de cobre já entrando em fase de obsoletamento. Antes de adentrar o mundo da fibra óptica, ainda se tem por opção aproveitar ao máximo o que é disposto na tecnologia, a um certo custo-benefício: o cabeamento de cobre Categoria 6. Trata-se de projeto-modelo fictício para uso em várias aplicações. No cenário atual em que diversas redes são erroneamente implementadas, norteadas por práticas comuns e duvidosas, faz-se necessário um guia prático, pois a leitura de normas textuais tornam-se praticamente ignoradas por muitos contratados: seja pela imperícia com o texto técnico, a falta de mão de obra qualificada para a correta interpretação ou falta de orçamento prévio para flexibilizar custos.}
 
 
 %% ====================================
@@ -170,40 +170,38 @@
 %% ====================================
 \section{Introdução}
 
-Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa o cliente de que os "500 megas" contratados poderá ser subutilizado caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps (devido ao \textit{overhead} do roteador) e associa a baixa velocidade a um problema com o serviço do provedor de internet. Este vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (\textit{Fast Ethernet}). Nisso, previu Tanenbaum e Wetherall \cite{t2013}, p. 185, que é difícil conceber uma empresa realizar uma instalação com cabeamento e compras com material do nível \textit{Gigabit Ethernet} para serem conectados à equipamentos obsoletos e observar colisões na rede. Situação já observada pela demanda acima de 100 Mbps, sendo entregue pelos provedores de Internet em 2019, no Brasil.
+Um novo serviço de internet é contratado por uma pequena empresa. O provedor de serviços para internet leva até o ponto do cliente o acesso à uma nova tecnologia: uso de fibra óptica. O pessoal que realiza essa instalação não informa ao cliente de que os ``500 megas'' contratados poderá ser subutilizado, caso a rede interna esteja completamente na base 10/100, isto é, suportando velocidades teóricas de, no máximo, 100 Mbps. Depois de um certo tempo, o empresário verifica que sua velocidade não ultrapassa os 92 Mbps (devido à \textit{sobrecarga} do roteador, para realizar suas próprias operações de roteamento) e associa a baixa velocidade ao fornecedor do serviço de Internet. Este cenário vai ser, daqui para frente, o caso típico de muitas pequenas empresas que estão sob cabeamento estruturado obsoleto, utilizando equipamentos também obsoletos, todos operando na base 10/100 (respectivamente, \textit{Ethernet} e \textit{Fast Ethernet}). Nisso, previu Tanenbaum e Wetherall \cite{t2013}, p. 185, que é difícil conceber uma empresa realizar uma instalação com cabeamento e compras com material do nível \textit{Gigabit Ethernet}, só para serem conectados à equipamentos obsoletos e observar colisões na rede. Situação já observada pela demanda acima de 100 Mbps, sendo entregue pelos provedores de Internet, no ano de 2019, no Brasil.
 
 \subsection{Cabeamento Estruturado}
 
-O cabeamento estruturado continua sendo a forma predominante de instalar-se as redes de computadores, sendo a tecnologia de \textit{wireless} ainda algo complementar, e não substituta à primeira --- do cabo de cobre e da fibra óptica, para redes de alta velocidade.
+O cabeamento estruturado continua sendo a forma predominante de instalar-se as redes de computadores, sendo a tecnologia sem fio (\textit{wireless}) ainda algo complementar, e não substituta da primeira: do cabo de cobre e da fibra óptica, para redes de alta velocidade --- ou seja, substituta do cabo.
 
 Segundo Ross \cite{ross2007cabeamento}, p. 5, o cabeamento estruturado deve seguir 03 conceitos básicos para o bom funcionamento da rede:
 
 \begin{itemize}
 
-\item Deve ser universal para tráfego de qualquer sistema.
-\item Deve ter flexibilidade para expansão.
+\item Deve ser universal para tráfego de qualquer sistema de telecomunicação e rede.
+\item Deve ter flexibilidade para modificações rápidas (expansão).
 \item Deve ter uma vida útil de 10 anos.
 
 
 
 \end{itemize}
 
-De acordo com Trulove \cite{trulove2006lan}, p. 13, um sistema Gigabit pode ser perfeitamente construído com cabos CAT 5e, mas para quem pensa em futuras atualizações, pode ser uma boa ideia implementar a rede passiva diretamente com cabo CAT 6 ou 7.
+De acordo com Trulove \cite{trulove2006lan}, p. 13, um sistema \textit{Gigabit} pode ser perfeitamente construído com cabos CAT 5e, mas para quem pensa em futuras atualizações, pode ser uma boa ideia de, inicialmente, implementar a rede passiva com cabo CAT 6 ou 7 (apesar de que o custo desta última categoria é inviável no momento atual).
 \\
 
-Inicialmente a velocidade de 1000Mps somente era suportada na fibra óptica e somente em 1999 o rascunho TSB-15 especificou normas para regulamentação dessa velocidade em cabos CAT 5 (\cite{barnett2006cabling}, p.132). Estes autores igualmente recomendam o uso de Categoria 5 ou superior.
-
-Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente prestar-se atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (\textit{Gigabit}) e possa beneficiar-se ainda mais do custo-benefício do par metálico, com fornecimento do serviço de fibra óptica. Há detalhes importantes: desde um pequeno conector e seu banhamento metálico de ouro, até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
+Inicialmente a velocidade de 1000Mps (1Gbps)  era unicamente suportada sob fibra óptica e somente em 1999 o rascunho TSB-15 (TIA/EIA) especificou normas para regulamentação dessa velocidade em cabos CAT 5 (\cite{barnett2006cabling}, p.132). Estes autores igualmente recomendam o uso de Categoria 5 ou superior. Este projeto tem como finalidade, estabelecer um modelo de norte para adequadamente se prestar a devida atenção nos detalhes de uma nova instalação de cabeamento estruturado que suporte a base 10/100/1000 (\textit{Gigabit Ethernet} e legados) e possa beneficiar-se ainda mais do custo-benefício do par metálico com o fornecimento do serviço de fibra óptica. Há detalhes importantes: desde um pequeno conector e seu banhamento metálico de ouro, até os equipamentos utilizados com finalidade de produzir redundância e alta disponibilidade para a empresa, haja vista que um pequeno negócio sem estar efetivamente \textit{online}, é empresa fadada ao fracasso.
 \bigskip
 
 \subsection{Escopo do Projeto}
-O escopo deste projeto é a projeção de todos os componentes passivos de um cabeamento estruturado que será equipado com 25 computadores de mesa, 01 servidor, 01 roteador, 01 \textit{switch} de 48 portas ou 02 de 24 portas; e, 04 pontos de acesso sem fio. Também se recomenda redundância no acesso à Internet, com a contratação de dois provedores de serviços de internet. Apesar de o escopo não ser equipamentos ativos e contratação destes serviços, será apresentado oportunamente na seção \textbf{Recomendações}.
+O escopo deste projeto é a projeção de todos os componentes passivos de um cabeamento estruturado que será equipado com 25 computadores de mesa, 01 servidor, 01 roteador, 01 \textit{switch} de 48 portas ou 02 de 24 portas; e, 04 pontos de acesso sem fio. Também se recomenda redundância no acesso à Internet, com a contratação de dois provedores de serviços de Internet. Apesar de o escopo não ser equipamentos ativos, será apresentada a recomendação de alguns equipamentos ativos, oportunamente, na seção \textbf{Recomendações}.
 
 \subsection{Benefícios}
-Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas de até 100 Mbps. A maioria dos roteadores de escritórios e/ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: gargalos na velocidade, má conexão devido à conectores prensados manualmente com alicates, conectores velhos, cabos dobrados indevidamente em determinado segmento do cabeamento. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure no mínimo 10 anos.
+Hoje em dia, muitas redes cabeadas estão com capacidade parar suportar apenas velocidades teóricas de até 100 Mbps. A maioria dos roteadores de escritórios e/ou domésticos são comercializados como roteadores que operam na base 10/100. Quando se opta por um serviço de fibra óptica, nem todo micro-empresário ou cliente doméstico está atento à subutilização do serviço devido às condições de instalação do cabeamento atual, podendo ocasionar algumas frustrações, tais como: ``gargalos'' (obstáculos) na velocidade; má conexão devido aos conectores prensados manualmente com alicates; conectores velhos; cabos dobrados indevidamente em determinado segmento do cabeamento. Nem todos os departamentos de T.I. possuem profissionais qualificados o suficiente para dominar todos os detalhes envolvidos numa instalação de cabeamento estruturado moderna. O benefício de ater-se às boas práticas de implementação de cabeamento estruturado é o marco inicial para que se possa realizar uma implementação que dure no mínimo 10 anos.
 
 \subsection{Organizações Envolvidas}
-Em se tratando de projeto fictício, não há organizações envolvidas. Para fins de orientação, a seguinte tabela demonstra um conjunto de organizações, empresas ou profissionais que poderão eventualmente participar no envolvimento da implementação de uma rede.\\
+Em se tratando de projeto fictício, não há organizações envolvidas. Para fins de orientação, a seguinte tabela demonstra um conjunto de organizações, empresas ou profissionais que poderão eventualmente participar no envolvimento da implementação do cabeamento estruturado e suas peculiaridades.\\
 
 % =======================================
 % TABELINHA DE PROFISSIONAIS E ÓRGÃOS
@@ -219,34 +217,35 @@ Em se tratando de projeto fictício, não há organizações envolvidas. Para fi
 \section{Requisitos}
 
 \subsection{Velocidade real contratada e percebida}
-Toda a instalação deverá perceber a velocidade real do provedor de serviços de Internet contratado, acima de 100 Mbps, isto é, os \textit{hosts} deverão suportar as transmissões na base 10/100/1000, sem gargalos, bem como futuras atualizações de velocidade, até 1 Gbps.
+Toda a instalação deverá perceber a velocidade real do provedor de serviços de Internet contratado, acima de 100 Mbps, isto é, os \textit{hosts} deverão suportar as transmissões dentro da faixa 100-1000 Mbps, sem obstáculos.
 
 \subsection{Extinção de conectores manualmente prensados com alicate}
-Talvez um dos sintomas mais simples de um nó da rede que está apresentando falhas, fatalmente é devido a um conector estar manualmente prensado na ponta do fio de rede. Para obter algo próximo de uma rede certificada, é necessário que apenas se utilize a ferramenta de inserção (\textit{punch-down}) e um cordão injetado, comumente chamado de \textit{patch cord}.
+Talvez um dos sintomas mais simples de um nó da rede que vem apresentando falhas, fatalmente é devido a um conector estar manualmente prensado na ponta dos 8 filamentos que compõe o cabo de rede \textit{Ethernet}. Para obter algo próximo de uma rede certificada, é necessário que apenas se utilize a ferramenta de inserção (\textit{punch-down}) e um cordão injetado, comumente chamado de \textit{patch cord}.
 
 \subsection{Tolerância à falha - Redundância contra quedas no serviço}
-O roteador principal do escritório deverá receber dois sinais de WAN em duas interfaces, e deverá priorizar a mais veloz como a principal WAN; ao passo que, havendo um eventual blecaute e falta do sinal, o segundo provedor de internet assume o fornecimento de acesso, sem que o usuário final perceba que ocorreu um problema. Esta prática passou a ser mais comum devido à demanda das pequenas empresas realizarem operações de transferências de dados remotas com diversos fornecedores e clientes.
+Fora do escopo do cabeamento estruturado em si, mas altamente recomendada, é a redundância do serviço de Internet, tendo o roteador principal do escritório recebendo dois sinais de WAN, em duas interfaces; e, deverá priorizar a mais veloz como a WAN principal; ao passo que, havendo um eventual blecaute e falta do sinal, o segundo provedor de Internet assume o fornecimento de acesso para a WAN, sem que o usuário final perceba que ocorreu algum problema. Esta prática passou a ser mais comum devido à demanda das pequenas empresas realizarem operações de transferências de dados remotas, envolvendo diversos fornecedores e clientes, suporte de sistemas à distância, etc.
 
 \subsection{Cabo UTP Categoria 6}
-Um excelente custo benefício, se aplicado da forma correta. Superior ao CAT 5e, para atender redes \textit{Gigabit}. No entanto, a instalação deverá atentar-se com respeito a aproximação de fontes de energia (corrente alternada). Segundo Astiazara, Boque e Hahn \cite{utp}, p. 2, a grande vantagem do par trançado é o  baixo custo e alta flexibilidade, porém, uma desvantagem é a baixa imunidade à interferência eletromagnética --- coisa que pode ser amenizada com o tipo de cabo e suas técnicas de cancelamento, a ponto de o cabeamento não requerer nenhum tratamento especial na instalação. 
+O cabo de Categoria 6 é um excelente custo benefício, se aplicado da forma correta. É considerado superior aos cabos CAT 5 e CAT 5e para atender redes \textit{Gigabit}. No entanto, a instalação deverá atentar-se com respeito à aproximação de fontes de energia (corrente alternada). Segundo Astiazara, Boque e Hahn \cite{utp}, p. 2, a grande vantagem do par trançado é o  baixo custo e a alta flexibilidade, porém, uma desvantagem é a baixa imunidade à interferência eletromagnética --- coisa que pode ser amenizada com o tipo de cabo e suas técnicas de cancelamento, a ponto de o cabeamento não requerer nenhum tratamento especial na instalação. Poderia ser o caso de o projeto contemplar o cabo STP (Shielded Twisted Pair), ou blindado, porém, a um elevado orçamento e maior dificuldade de instalação, haja vista que é preciso de pontos de aterramento em diversos locais. 
 
 \subsection{Cobre de alta qualidade}
-Para garantir uma boa longevidade da estrutura de instalação, sendo instalação nova, é preferível somente o uso de cabos de rede Categoria 6 (CAT6), por 03 motivos: \\ \\
-(a) Geralmente possuem bitola maior;\\
-(b) Possuem um septo separador que isola cada par trançado. Este separador fornece resistência física ao cabo e aumenta o fenômeno chamado de \textit{cancelamento}, que ocorre nas correntes eletromagnéticas. Mais sobre \textit{cancelamento} é explicado na última seção \textbf{Recomendações}.\\
-(c) São um bom custo benefício para redes \textit{Gigabit Ethernet}.\\
+Para garantir uma boa longevidade da estrutura de instalação, sendo instalação nova, é preferível somente o uso de cabos Categoria 6, por 03 motivos: \\ \\
+(a) Geralmente possui bitola maior (mais robustos);\\
+(b) Possui um septo separador que isola cada par trançado. Este separador fornece resistência física ao cabo e aumenta o fenômeno chamado de \textit{cancelamento}, que se aplica na interferência eletromagnética. Mais sobre \textit{cancelamento} é explicado na seção \textbf{Recomendações}.\\
+(c) São um bom custo benefício para redes \textit{Gigabit Ethernet}: não tendo as desvantagens do CAT 5e comum (fragilidade, falta do septo, controle de qualidade duvidoso do fabricante); e, não sendo um investimento que obrigue o uso de tudo relacionado à fibra óptica, elevando os custos demasiadamente.
+\\
 
-Em se tratando de cobre de alta qualidade, também se pensa em conectores corretos da Categoria 6, pois o uso de conectores da Categoria 5e poderão causar problemas de incompatibilidade pelas características físicas entre estas categorias. Eis que o conector CAT6 tem um melhor banho metálico em seus terminais.
+Em se tratando de cobre de alta qualidade, também se pensa em conectores corretos da Categoria 6, pois o uso de conectores da Categoria 5e poderão causar problemas de incompatibilidade pelas características físicas entre estas categorias. Eis que o cabeamento estruturado bem feito preza pela compatibilidade total dos componentes instalados.
 
-\subsection{Todos os equipamentos ativos e passivos na base 1000}
-Um bom cabeamento poderá ser rendido à completa subutilização se a rede estiver interligada à dispositivos que operam somente na base 10/100. Proritariamente, a compra de equipamentos --- roteadores, \textit{switches} e \textit{access points} --- deverá observar as características de que tais operam na base 10/100/1000, suportando as velocidades da especificação \textit{Gigabit}.
+\subsection{Todos os equipamentos ativos e passivos suportando \textit{Gigabit}}
+Um bom cabeamento poderá ser rendido à completa subutilização se a rede estiver interligada à dispositivos que operam somente na base 10/100. Proritariamente, a compra de equipamentos --- roteadores, \textit{switches} e \textit{access points} --- deverá observar as características de que tais operam na base 10/100/1000, suportando as velocidades da especificação \textit{Gigabit Ethernet} e padrões legados.
 
 \subsection{WiFi - Padrão IEEE 802.11ac pronto para ser acolhido}
-Este protocolo permite velocidades em \textit{single-link} de no mínimo 500Mbps, segundo Perahia e Stacey \cite{perahia2013next}, p. 18. Nos pontos de acesso, ou seja, na data atual, o padrão IEEE 802.11ac é praticamente mandatório em redes \textit{Gigabit Ethernet}, se quer ter-se um o total aproveitamento da rede e deixar para trás equipamentos legados que, com o tempo, causarão colisões. Não é o escopo do projeto de cabeamento estruturado lidar com a parte \textit{wireless}, mas a implementação correta certamente resultará em um sistema sem fio altamente eficiente em conjunto com o cabeamento \textit{Gigabit Ethernet}.
+Este protocolo permite velocidades em \textit{single-link} de no mínimo 500Mbps, segundo Perahia e Stacey \cite{perahia2013next}, p. 18. Nos pontos de acesso, ou seja, na data atual, o padrão IEEE 802.11ac é praticamente mandatório em redes \textit{Gigabit Ethernet}, se quer ter-se um o total aproveitamento da banda e obrigatoriamente abandonar o uso de pontos de acesso sem fio padrão 10/100, evitando colisões. Não é o escopo do projeto de cabeamento estruturado lidar com a parte \textit{wireless}, mas a implementação correta e a recomendação certamente resultarão em eficiência.
 
 
 \section{Usuários e Aplicativos}
-O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio; e, usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada uma VLAN para dispositivos sem fio dos eventuais visitantes. No que se refere a cabeamento, a rede projetada deverá conter 2 pontos por área de trabalho (ATR), conforme disciplina a norma \cite{abnt14565}, p. 11, outros dois pontos nas áreas de impressora, incluindo pontos extras. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas trabalhando, não há projeto de expansibilidade de imediato, no entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par (04 vias) trançado. Sobre os equipamentos ativos, haverá a recomendação das marcas. Porém, a rede lógica fica a critério do departamento de T.I., em forma, aqui, de recomendações.
+O projeto visa atender um pequeno escritório que reúne um grupo de 9 profissionais. Não obstante, também considera a presença de dispositivos de rede, tais como impressoras cabeadas, pontos de acesso sem fio (\textit{access points}); e, usuários visitantes. No caso de pessoas não pertencentes ao local de trabalho, deverá ser implementada uma VLAN para dispositivos sem fio. No que se refere ao cabeamento, a rede projetada deverá conter 2 pontos por área de trabalho (ATR), conforme disciplina a norma \cite{abnt14565}, p. 11. Como o modelo é para satisfazer a escritórios de até, no máximo, 10 pessoas, não há projeto de expansibilidade de imediato. No entanto, a projeção de pontos satisfaz uma futura expansibilidade sem demais custos. Os equipamentos a serem comprados são 01 roteador que suporte duas conexões WAN, 01 \textit{switch} de 48 portas, 04 pontos de acesso sem fio e respectivo cabeamento de par trançado (04 vias). No que tange aos equipamentos ativos, haverá a recomendação de marcas, porém, a rede lógica é responsabilidade do departamento de T.I., sendo as devidas sugestões pontuadas durante esta leitura.
 
 \subsection{Usuários}
 
@@ -262,21 +261,21 @@ Nesta seção será descrita a tabela de todos os profissionais atuantes na edif
 % FIM DA TABELA
 % =======================================
 
-O \textbf{diretor da empresa} utilizar-se-á do sistema operacional Windows 10 e da suíte de aplicativos Microsoft Office. Grande parte da função do diretor é comandar a sua empresa, realizando contatos, conferindo planilhas no Servidor de Arquivos e comunicando-se com demais funcionários. É posição estratégica de liderança. Deve compreender que o uso bem empregado da tecnologia alavanque seus negócios, portanto deverá valorizar especialmente o Analista de T.I., pois seu negócio, além de estar disponível na Internet, precisa deste profissional como que na função de um "coringa", sempre apto a socorrê-lo numa situação de indisponibilidade com algum serviço.
+O \textbf{diretor da empresa} utilizar-se-á do sistema operacional \textit{Windows 10} e da suíte de aplicativos \textit{Microsoft Office}. Grande parte da função do diretor é comandar a sua empresa: realizar contatos, conferir planilhas no servidor de arquivos e comunicar-se com demais funcionários. É posição estratégica e de liderança. Deve compreender que o uso bem empregado da tecnologia alavanque o negócio. Portanto, deverá valorizar especialmente o Analista de T.I., pois toda a estrutura instalada faz deste profissional um dos mais importantes, sempre apto a socorrê-lo numa situação de indisponibilidade com algum serviço da rede.
 \\ \\
-O(a) \textbf{recepcionista} faz uso intenso do Microsoft Outlook, agendando compromissos, verificando e-mails a serem repassados e atendendo a telefonemas. Calendário e agendamento de compromissos é a palavra chave aqui. Também é o(a) profissional que é o "cartão de visita" da empresa, por conta do primeiro e subsequentes atendimentos prestados aos clientes.
+O(a) \textbf{recepcionista} faz uso intenso do \textit{Microsoft Outlook}: agendar compromissos, verificar e-mails a serem repassados, atender à telefonemas e atender ao público e clientes. Calendário e agendamento de compromissos são as palavras-chave aqui. Também é o(a) profissional considerado(a) o ``cartão de visita'' da empresa, por conta do primeiro e subsequentes atendimentos prestados.
 \\ \\
-O \textbf{Analista de Tecnologia da Informação} é o profissional que se encarregará de tomar conta da infraestrutura de rede, do servidor físico, da sala de equipamentos (SEQ) --- com acesso restrito --- equipamentos ativos e passivos de rede. Também será responsável pela manutenção de software, sendo os mais importantes o Windows Server e seus serviços críticos como o servidor de arquivos (\textit{File Server}), o servidor de banco de dados, usado pela contabilidade, e o sistema operacional RouterOS (bastante similiar ao CISCO IOS, nos roteadores CISCO). Tais tarefas também incluem rotinas de backup e contato com fornecedores de equipamentos e serviços de T.I.
+O \textbf{Analista de Tecnologia da Informação} é o profissional que se encarregará de tomar conta da infraestrutura de rede, do servidor físico, da sala de equipamentos (SEQ) --- com acesso restrito --- dos equipamentos ativos e passivos de rede. Também será responsável pela manutenção de \textit{software}, sendo os mais importantes o \textit{Windows Server }e seus serviços críticos como o servidor de arquivos (\textit{File Server}), o servidor de banco de dados, usado pela contabilidade, e o sistema operacional vinculado ao roteador e \textit{switch}. Tais tarefas também incluem rotinas de \textit{backup} e contato com fornecedores de equipamentos e serviços de T.I.
 \\ \\
-Serão 04 funcionários atrelados à administração da empresa, \textbf{administradores} com diversas tarefas administrativas: folha de pagamento, impostos, contas a pagar, custos, despesas, compras e atividades bancárias. Disponibilidade de estar \textit{online} é essencial para esses funcionários.
+Serão quatro (4) funcionários atrelados à administração da empresa:  \textbf{administradores} com diversas tarefas administrativas tais como folha de pagamento, impostos, contas a pagar, custos, despesas, compras e atividades bancárias. A disponibilidade de serviço e acesso para atividades \textit{online} são essenciais para esses funcionários.
 \\ \\
-Parte crítica da empresa e importantes funções são a de \textbf{contador}, em número de 02 pessoas. Além do uso do sistema operacional Windows, intenso uso do Microsoft Office, mais especificamente o aplicativo Excel e de programas fiscais exigidos pela Receita Federal. Fazem uso intensivo do banco de dados SQL Server, registrando empenhos e demais atividades de contabilidade considerados operações muito críticas.
+Parte crítica da empresa e importantes funções são a de \textbf{contador}, em número de duas (2) pessoas. Além do uso do sistema operacional \textit{Windows}, intenso uso do \textit{Microsoft Office}, mais especificamente o aplicativo \textit{Microsoft Excel} e de programas fiscais exigidos pela Receita Federal. Fazem uso intensivo do banco de dados \textit{Microsoft SQL Server}, registrando empenhos e demais atividades da contabilidade, consideradas operações de nível crítico.
 
 
 
 \subsection{Aplicativos}
 
-Nesta seção será descrita a tabela de aplicativos e suas funções críticas no negócio. As aplicações críticas levam à frente um asterisco (*).
+Nesta seção será descrita a tabela de aplicativos e suas funções no negócio. As aplicações mais importantes levam à frente um asterisco (*).
 
 
 
@@ -290,7 +289,7 @@ Nesta seção será descrita a tabela de aplicativos e suas funções críticas 
 % FIM DA TABELA
 % =======================================
 
-Nas estações de trabalho, impera-se pelo uso do sistema operacional \textbf{Microsoft Windows 10} (versão atual de compilação número 1930) e \textbf{Microsoft Office Professional 2016}, com as respectivas aplicações incorporadas: \\ 
+Nas estações de trabalho, impera-se pelo uso do sistema operacional \textbf{Microsoft Windows 10} (versão atual de compilação número 1930) e \textbf{Microsoft Office Professional 2016}, com as respectivas aplicações devidamente instaladas: \\ 
 
 \begin{itemize}
 	\item Microsoft Word 2016 
@@ -303,20 +302,21 @@ Nas estações de trabalho, impera-se pelo uso do sistema operacional \textbf{Mi
 
 
 
-Conforme recomendação, é bom que o roteador utilize um sistema operacional com linha de comando, a exemplo dos modelos \textit{Mikrotik} ou CISCO. Esses sistemas fornecem o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de internet e balancear esta carga, caso um dos \textit{links} torne-se indisponível. Mais sobre estes equipamentos na seção {Recomendações}.
+Conforme recomendação, é bom que o roteador e \textit{switch} utilizem um sistema operacional com linha de comando, a exemplo dos modelos \textit{Mikrotik} ou Cisco. Esses sistemas fornecem o serviço DHCP e DNS para todos os \textit{hosts}, além de receber o \textit{link} de dois provedores de Internet e balancear esta carga.
 \\
 
-Windows Server 2016. O sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornece DHCP, nem DNS, para não atrapalhar os serviços providos pelo roteador. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas. No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas e críticas da empresa.
+Windows Server 2016 é o sistema instalado no servidor do \textit{rack}. Opera sem virtualização, mas com RAID em modo de espelhamento (RAID 1) para criar alta redundância de dados. Não fornecerá DHCP, nem DNS: tais serviços de rede deverão ser providos pelo roteador e regras de acesso pelo \textit{switch}. \textit{Active Directory }não será implementado visto que não se trata de um escritório com mais de 50 máquinas. Serviços de hospedagem e nomes de domínio serão fornecidos por empresas de \textit{cloud computing} terceirizadas. No entanto, \textbf{SQL Server} interno deverá ser utilizado para guardar as informações consideradas sigilosas.
 
 \pagebreak
 \section{Estrutura predial existente}
 
-Trata-se de escritório de 9 cômodos, considerando também como cômodo, a área de circulação que é a área de ingresso ao andar. Situa-se numa edificação de um 01 térreo e 01 andar. O escritório em si é o 1º andar. O telhado da edificação é de fácil acesso físico, visto que a edificação é construída com bom madeiramento e telhas cerâmicas. A parte elétrica bem isolada, sem emaranhados de fios, o que facilita a retirada de algumas telhas para a travessia de alguns eletrodutos que comportarão os cabos, interligando o \textit{switch} e cada setor especificado. \\
-
-As restrições de instalação são quebras da alvenaria mínimas. Os cabos deverão sofrer curvaturas de no máximo 45 graus e de volta em posição retilínea, seja ela vertical ou horizontal. As saídas dos pontos de rede deverão apresentar sua respectiva tomada externa, que deverão ser posicionadas à 40 centímetros do piso. Canaletas deverão ser utilizadas para a acomodação e boa visibilidade das instalações.
+Trata-se de escritório de 9 cômodos, considerando também como cômodo, a área de circulação que é a área de ingresso ao andar. Situa-se numa edificação de um 01 térreo e 01 andar. O escritório em si é o 1º andar. O telhado da edificação é de fácil acesso físico, visto que a edificação é construída com bom madeiramento e coberta com telhas cerâmicas. A parte elétrica é bem isolada, sem emaranhados de fios, o que facilita a retirada de algumas telhas para a travessia de alguns eletrodutos que abrigarão os cabos, interligando o \textit{switch} à passagem de cada Caminho de Bandeja (CB, também como referência à \textit{eletroduto}).
 \\
 
-Temos a área total de 109,12 metros quadrados, fragmentada em:
+As restrições de instalação é a mínima quebra de alvenaria. Os cabos não deverão sofrer curvaturas em mais de 45 graus. As saídas dos pontos de rede deverão apresentar sua respectiva tomada externa, que deverão ser posicionadas à 40 centímetros do piso da edificação. Canaletas deverão ser utilizadas para a acomodação dos cabos e boa visibilidade das instalações.
+\\
+
+Temos a área total de 109,12 metros quadrados, dividida no seguinte:
 
 \begin{itemize}
 	\item Sala de Reunião: 12,56.
@@ -349,7 +349,7 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 	\noindent\makebox[\textwidth][c]{
 		\includegraphics[width=\textwidth]{planta_01}
 	}
-	\caption{Planta física com mobília - Formato A3}
+	\caption{Planta física com mobília - Formato A3.}
 	\label{fig1}
 \end{figure}
 
@@ -363,22 +363,22 @@ Temos a área total de 109,12 metros quadrados, fragmentada em:
 \section{Planta Lógica - Elementos estruturados}
 
 \subsection{Visão do cabeamento}
-A planta lógica é apresentada na Figura 2. Há uma variedade de diagramas de plantas que por muitas vezes excedem a própria norma, sendo impossível de se ter um padrão uniforme e universal. A norma torna muitas coisas opcionais, desde que seja seguido algum critério. Exemplo disso é a identificação por código de cor, quando uma edificação não tem mais do que um pavimento.
+A planta lógica é apresentada na Figura 2. Há uma variedade de diagramas de plantas que por muitas vezes excedem a própria norma, sendo impossível de se ter um padrão uniforme e universal. Pelas exemplificações da norma ABNT atual, não é necessário o detalhamento gráfico muito elaborado (tal como o ícone do roteador ou do \textit{switch}), mas pelo excesso de zelo, elaborou-se a visão do cabeamento com esse aspecto visual mais ``lúdico''. A norma torna muitas coisas opcionais, desde que seja seguido algum critério. Exemplo disso é o uso facultativo da identificação por código de cor, nos cabos, quando uma edificação não tem mais do que um pavimento.
 \\
 
-Para a simplificação da planta lógica, foram divididos, do \textit{switch}, portas que compreendem as numerações A, B, C e D. Sendo estas, \textbf{A: Portas 1-10}; \textbf{B: Portas 11-20}; \textbf{C: Portas 21-30} e \textbf{D: Portas 31-40}. Oito portas restantes ficam como suplementares em eventuais problemas com as portas utilizadas. As letras também indicam os eletrodutos que correm pela laje e descem por canaletas, passagens e posteriormente seguindo para e canaletas verticais. 
+Para a simplificação da planta lógica, foram divididos, do \textit{switch}, grupos de portas que compreendem as numerações \textbf{A}, \textbf{B}, \textbf{C} e \textbf{D}. São estas, \textbf{A: Portas 1-10}; \textbf{B: Portas 11-20}; \textbf{C: Portas 21-30} e \textbf{D: Portas 31-40}. \textbf{Oito (8) portas} restantes ficam como portas suplementares. As letras também indicam os CB's que correm pela laje e descem pelas passagens e que adentram as canaletas.
 \\
 
-Observe-se que é importante neste agrupamento, meios de assegurar a melhor organização possível. No que tange às áreas de trabalho, são recomendados, no mínimo, 2 pontos por ATR, sendo pontos opcionais permitidos. Denominadas de ATR, as áreas de trabalho são pequenos espaços de trabalho, de um funcionário ou de dispositivos utilizados por funcionários, como impressoras e outros equipamentos. A norma define com ATR, uma área de 10 metros quadrados --- o que evidencia que no projeto, há abundância de pontos por determinar-se ATRs de área menor. Os pontos RJ45 devem ser etiquetados com iniciação PT. Não é o caso de termos mais do que 01 \textit{switch} operando nesta rede (dependendo do modelo), então foi simplificado o etiquetamento das saídas, como PT, duto de origem e/o grupo de portas com numeração.
+Observe-se que é importante, neste agrupamento, meios de assegurar a melhor organização possível. No que tange às áreas de trabalho, são recomendados pela norma, no mínimo, 2 pontos por ATR, sendo pontos opcionais permitidos. Denominadas de ATR, as áreas de trabalho são pequenos espaços de trabalho, de um funcionário ou de dispositivos utilizados por funcionários, como impressoras e outros equipamentos. A norma define com ATR, uma área de 10 metros quadrados --- o que evidencia que no projeto, houve uma redução drástica da área métrica que ocasionou a abundância de PTs. Os pontos devem ser etiquetados com iniciação PT. Não é o caso de termos mais do que 01 \textit{switch} operando nesta rede (dependendo do modelo), então foi simplificado o etiquetamento das saídas, como PT, eletroduto de origem e/o grupo de portas com numeração.
 \\
 
-A Sala de Equipamentos (SEQ) é o local em que residirá o \textit{rack} da rede, comportando um \textit{switch} de 48 portas, e demais equipamentos ativos. Todos os equipamentos ativos, suportando o padrão \textit{Gigabit}. Dá-se a subida dos cabos pela laje, pelo cômodo SEQ, com todos os cabos distribuídos em 04 caminhos, até o ponto de descida, indicados pelos \textit{spots} verdes, na figura. Na descida, encaminhar-se-ão por canaletas, até os \textit{keystones}, que recebem as terminações de cobre dos pares. 
+A Sala de Equipamentos (SEQ) é o local em que residirá o \textit{rack} da rede, comportando o \textit{switch} de 48 portas, e demais equipamentos ativos. Dá-se a subida dos cabos pela laje, com todos os cabos distribuídos em quatro (4) CB, até o ponto de descida, indicados pelos \textit{spots} verdes, na figura. Na descida, encaminhar-se-ão por canaletas tipo X2, até os \textit{keystones}, que recebem os filamentos de cobre. 
 \\
 
-Na planta, é possível observar que temos indicações de número de cabos dentro da canaleta. Em certos pontos, temos por certo que recebemos em torno de 8 cabos; e, com a ligação sequencial dos PTs, a quantidade de cabos vai diminuindo. É por isso que temos certas indicações como ``4 x UTP'' e ``2 x UTP'' na sequência: pois está contando em 02, tendo-se 02 cabos já tem previsão de estarem devidamente instalados, de 04 possíveis, naquele segmento. Importante observar que o manuseio dos cabos UTP sejam o mais cuidadoso possível: nenhuma dobra abaixo de 90, para que o cabo não perca suas características físicas e mecânicas de transmissão --- uma única dobra incorreta pode comprometer aquele ponto na rede. 
+Na planta, é possível observar que temos indicações de número de cabos dentro da canaleta. Em certos pontos, temos por certo que recebemos em torno de 8 cabos; e, com a ligação sequencial dos PTs, a quantidade de cabos vai diminuindo. É por isso que temos certas indicações como ``4 x UTP'' e ``2 x UTP'' em sequência: pois está contando-se como 02, tendo 02 cabos já instalados, de 04 possíveis, no segmento físico. Importante observar que o manuseio dos cabos UTP seja o mais cuidadoso possível: nenhuma curvatura que comprometa suas características físicas e mecânicas de banda.
 \\
 
-Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, bem como as impressoras de rede (\textit{Wi-Fi} 01 a 04), sendo posicionados para uma cobertura razoável de sinal sem fio. O QG, a entrada das comunicações, é o armário da edificação que comporta as entradas dos troncos telefônicos e da fibra óptica, valendo dizer que é neste armário que está posicionada a Central de PABX híbrida. Tudo pré-preparado para VoIP (\textit{Voice Over IP}), no futuro.
+Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, bem como as impressoras de rede (\textit{Wi-Fi} 01 a 04), sendo posicionados para uma cobertura razoável de sinal. No DGT também está posicionada a Central de PABX híbrida, sendo tudo pré-preparado para VoIP (\textit{Voice Over IP}), no futuro próximo.
 
 
 
@@ -396,7 +396,7 @@ Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, b
 	\noindent\makebox[\textwidth][c]{
 		\includegraphics[width=\textwidth]{planta_02}
 	}
-	\caption{Planta lógica da visão do cabeamento - Formato A3}
+	\caption{Planta lógica da visão do cabeamento - Formato A3.}
 	\label{fig2}
 \end{figure}
 
@@ -418,7 +418,10 @@ Observa-se também, os pontos estratégicos de instalação de \textit{Wi-Fi}, b
 
 \subsection{Topologia}
 
-A topologia de rede segue o modelo top-down e indica-se os elementos da maneira mais didática possível. Pode-se ver na imagem, que o projeto contempla duas entradas para a internet no roteador: WAN 1 e WAN 2. Diretamente ligado ao roteador, temos o \textit{switch} de 48 portas. Em uma das portas do \textit{switch}, o servidor de \textit{rack}. As ligações em vermelho, com marcações A, B, C e D, são os \textit{backbones} dos grupos de portas do \textit{switch}, mas que estão tomando diferentes caminhos, após a subida dos cabos.
+A topologia para o cabeamento estruturado será apresentada no padrão da norma NBR 14565, com desenho unifilar (\textbf{Figura 3}). Há uma confusão generalizada quando se pensa em topologia. Alguns autores, tais como Elliot \cite{elliott}, p. 17, aplicam a terminologia \textit{top-down} hierárquica, como sendo o padrão do diagrama. Na norma brasileira, esta hierarquia é \textit{bottom-up}. Outra autora, Oppenheimer \cite{oppenheimer2004top}, p. 120, também usa a terminologia ``topologia de rede'' como diagramas no sentido \textit{top-down}. Ocorre que, a topologia apresentada por esta última já se encontra fora do escopo do cabeamento estruturado por tratar-se de uma topologia da ligação de ativos: então o que apenas se vê são roteadores, \textit{switches}, computadores, impressoras; ou seja, a rede lógica interligada. É importante, quando se tem um projeto de cabeamento estruturado, não confundir as topologias da literatura, pois não cabe aqui as definições da rede lógica.
+
+
+Temos o Distribuidor Geral de Telecomunicações (DGT) e a Sala de Equipamentos (SEQ). Os Caminhos em Bandeja (CB) ou eletrodutos são indicados, porém sem os apontamentos das numerações (a norma não exige, pela baixa complexidade). Cada CB corresponde a um agrupamento de portas no \textit{switch}. No modelo de hierarquia \textit{top-down}, temos algo mais parecido com um híbrido de rede física com rede lógica, na \textbf{Figura 4}. 
 
 % =======================================
 % TABELA DE PORTAS DO SWITCH
@@ -430,48 +433,36 @@ A topologia de rede segue o modelo top-down e indica-se os elementos da maneira 
 % FIM DA TABELA
 % =======================================
 
-Note-se que pelo cabeamento, as portas que recebem asterisco (*) são portas não utilizadas no \textit{switch}, mas com o cabeamento devidamente passado, para fins de redundância ou substituição de cabos. Conforme a população de cabos dentro do \textit{backbone}, tem-se mais cabos disponíveis para substituição.
+Note-se que pelo cabeamento, as portas que recebem asterisco (*) são portas não utilizadas no \textit{switch}, mas que estarão com o cabeamento devidamente instalado, para fins de redundância ou substituição de cabos. Dado o maior aproveitamento de cabos e maior população de cabos passando pelo CB, tem-se mais cabos disponíveis para substituição.
 \\
 
-Conforme já demonstrado, os \textit{backbones} são cabeamentos majoritariamente horizontais, que terminam nos pontos de consolidação onde se começa a descida em cada cômodo. A única exceção que se faz é que esses \textit{backbones} totalizando 48 cabos, possuem uma parte na vertical, que sobem do \textit{rack} e vão até a laje, numa distância não mais que 2 metros.
+Os \textit{backbones} são cabeamentos majoritariamente verticais mas que podem também ser horizontais, dependendo da aplicação do projeto. A única exceção que se faz é que esses \textit{backbones} culminam no total de 48 cabos e que sua segmentação alterna poucas vezes da posição horizontal para a posição vertical --- o segmento que sobe do \textit{rack} e vai até a laje e o segmento que desce para as canaletas.
 \\
 
-Dos pontos de consolidação, saem os cabos para todas as tomadas de conexão. No desenho, os dispositivos tais como computadores, impressoras, pontos de acesso sem fio e tomadas de conexão restantes são todos contabilizados como as saída de todos os cabos. Os retângulos em cinza indicam o cômodo em que determinado ponto de conexão ou dispositivo está instalado. Observe-se que determinado ponto de descida de \textit{backbone} pode alimentar outro cômodo, como é o exemplo do cômodo da Administração 1, no qual o cabeamento vertical, vai correr para o cômodo Administração 2.
+Dos pontos de mudança de segmento (e não consolidação, pois não haverá emenda nem equipamento passivo de consolidação) saem os cabos para todas as tomadas de conexão. No diagrama, os dispositivos tais como: computadores, impressoras, pontos de acesso sem fio e tomadas de conexão restantes são todos alocados nos PTs. As ATRs são distribuídas logo após a indicação de passagem pelos CBs, que provém do SEQ e inicialmente do DGT. Esta estrutura também é a considerada topologia \textit{top-down} (de cima para baixo). Dada a baixa complexidade do cabeamento estruturado, é facultativo indicar neste diagrama o posicionamento numérico de CBs, ATRs e PTs.
 \\
 
-Os pontos de acesso sem fio são a exceção do cabeamento horizontal, pois, na verdade, esses dispositivos são instalados mais próximo à altura da porta (2,10 m) do que outros, dada a natureza de desejar-se boa cobertura de \textit{Wi-Fi}.
-\\
-
-Dentro dos tubos azuis, e das linhas vermelhas, é esperado uma determinada população de cabos (entre 10 e 14), enquanto que as linhas pretas não o cabeamento horizontal singular até a tomada e seu respectivo dispositivo. A linha pontilhada indica cabeamento vertical singular para o \textit{Wi-Fi}.
+Os pontos de acesso sem fio são a exceção da segmentação final do cabeamento horizontal, pois, na verdade, esses dispositivos são instalados mais próximo à altura da porta (2,10 m) do que outros, dada a natureza de desejar-se boa cobertura de \textit{Wi-Fi}. Então, tem-se que no PT em que se prevê o dispositivo de acesso sem fio, o cabo ainda suba para em torno de 1,60m de altura.
 
 
 
-%inicio dos comandos para criar uma nova pagina A3 horizontal
-\clearpage
-\thispagestyle{plain}
-\KOMAoptions{paper=a3, paper=landscape, DIV=20}
-\recalctypearea
-%\subsection{Topologia}
 
-\begin{figure}
+
+\begin{figure}[H]
 	%	\centering
 	\noindent\makebox[\textwidth][c]{
-		\includegraphics[width=\textwidth]{topologia}
+		\includegraphics[width=\textwidth]{diag_abnt}
 	}
-	\caption{Visão da topologia - Formato A3}
+	\caption{Elementos construtivos de uma rede primária, conforme a norma NBR 14565.}
 	\label{fig3}
 \end{figure}
 
-%Retornar ao formato A4
-\clearpage
-\KOMAoptions{paper=a4, paper=portrait, DIV=15}
-\recalctypearea
-%-- reinicio em A4 
+
 
 
 \subsection{Encaminhamento}
 
-Pela laje, serão instalados eletrodutos de PVC, de bitola de 2 polegadas. São vendidos em unidades de 3 metros. O sistema X2 de canaletas é versátil por ser adesivado, com alta aderência, e pode comportar até 12 cabos numa única canaleta (4 cabos por segmento, sendo 3 segmentos dentro da canaleta). Canaletas do sistema X são vendidas em unidades de 2 metros. Os acabamentos X2 trata-se de peças que se acoplam nas canaletas, tais como: cantos, curvas, e terminações onde não se é possível realizar manobras perigosas como a sobra massiva de cabos. Os acabamentos podem ser de diversas formas plásticas, mas aqui o ideal é que se pareçam com uma pequena caixa de inspeção nos cantos, para que os cabos possam ter ângulo suficiente de desvio, sem prejudicar as características físicas e mecânicas do CAT 6. Abaixo, uma tabela de quantidade de material de encaminhamento necessário para o cabeamento posterior ao \textit{backbone}.
+Pela laje, serão instalados eletrodutos de PVC (serão os CBs), de bitola de 2 polegadas. São vendidos em unidades de 3 metros. O sistema de canaletas X2 é versátil por ser adesivado, com alta aderência, e pode comportar até 12 cabos numa única canaleta (4 cabos por segmento, sendo 3 segmentos dentro da canaleta). Canaletas do sistema X2 são vendidas em unidades de 2 metros. As peças denominadas \textit{acabamentos X2} são as peças que se acoplam nas canaletas, tais como: cantos, curvas e terminações onde não se é possível realizar manobras perigosas como a sobra massiva de cabos. Os acabamentos podem ser de diversas formas plásticas, mas aqui, o ideal é que se pareçam com uma pequena caixa de inspeção nos cantos, para que os cabos possam ter ângulo suficiente de desvio Abaixo, uma tabela de quantidade de material de encaminhamento necessário:
 
 
 % =======================================
@@ -481,23 +472,21 @@ Pela laje, serão instalados eletrodutos de PVC, de bitola de 2 polegadas. São 
 
 \input{tab5}
 
-\subsubsection{Calculo detalhado do encaminhamento}
+\subsubsection{Cálculo detalhado do encaminhamento}
 
-% TABELA X2
+
 
 \input{tab6}
 
 
-% TABELA ELETRODUTOS
+
 \input{tab7}
-% =======================================
-% FIM DA TABELA
-% =======================================
+
 
 
 \subsection{Memorial descritivo (Passivos)}
 
-Relação de todos os equipamentos passivos que serão utilizados, seguidos das tabelas com o respectivo custo destes passivos, bem como o custo do encaminhamento. Opta-se veementemente pelo uso de um \textit{rack} fechado, pois o local não tem a segurança adequada de um \textit{datacenter}. O cabo a ser orçado é da empresa Furukawa, líder no ramo. A peça 23400174 consiste da segunda linha, porém, superior ao cabo "comum" CAT 5e. A primeira linha, Gigalan, é de alto custo para o projeto, não compensando este investimento, mesmo em longo prazo. Os \textit{patch cords} são os elementos mais onerosos do projeto --- todos da marca Furukawa --- mas o sucesso da implementação depende de \textit{patch cords} de qualidade. A pequena variação de marca observa-se somente pelo conjunto de caixas de sobrepor e \textit{keystones}, mais econômicos, mas de qualidade, das marcas, respectivamente Central Network e AMP.
+Relação de todos os equipamentos passivos que serão utilizados. Os custos serão disponibilizados na seção \textbf{Orçamento}. Opta-se veementemente pelo uso de um \textit{rack} fechado, pois o local não tem a segurança adequada de um \textit{datacenter}. O cabo a ser orçado é da empresa \textit{Furukawa}, líder no ramo. A peça \textbf{23400174} consiste da segunda linha, porém, superior ao cabo "comum" CAT 5e. A primeira linha, \textit{Gigalan}, é de alto custo para o projeto, não compensando este investimento, mesmo no longo prazo. Os \textit{patch cords} são os elementos mais onerosos do projeto --- todos da marca \textit{Furukawa} --- mas o sucesso da implementação depende de \textit{patch cords} de qualidade. A pequena variação de marca observa-se somente pelo conjunto de caixas de sobrepor e \textit{keystones}, mais econômicos, mas de qualidade, das marcas, respectivamente \textit{Central Network} e \textit{AMP}. Facultativamente, recomenda-se o uso de abraçadeiras de velcro para a organização dos cabos. Como a organização da saída dos cabos do SEQ não é muito relevante para um projeto com 48 cabos físicos, torna-se facultativo o uso de tais elementos, podendo optar-se por abraçaceiras de plásticas. Porém, em se tratando de abraçaceiras plásticas, é necessário o cuidado para não ``enforcar'' o conjunto de cabos.
 
 % =======================================
 % TABELA DE PASSIVOS
@@ -511,7 +500,7 @@ Relação de todos os equipamentos passivos que serão utilizados, seguidos das 
 
 \subsubsection{Calculo detalhado do cabeamento e considerações sobre emendas}
 
-Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é estimado para que se saia do \textit{patch panel} e chegue-se até o ponto da área de trabalho. Uma coisa que se deve evitar quando se lida com cabos de cobre é a emenda. A emenda só pode ocorrer quando a situação for extremamente urgente: um serviço indisponível pelo rompimento de um cabo; uma situação de manutenção provisória. Seja qual for o tipo de emenda, precisa ser executada com muita habilidade e precisão: com as ferramentas e conectores corretos. As emendas causam atenuações no sinal. A norma \cite{abnt14565}, p. 11, condena a emenda e recomenda que não haja em possibilidade alguma.
+Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é estimado para que se saia do \textit{patch panel} e chegue-se até a ATR. Uma coisa que se deve evitar quando se lida com cabos de cobre é a \textbf{emenda}. A emenda só pode ocorrer quando a situação for extremamente urgente: um serviço indisponível pelo rompimento de um cabo; uma situação de manutenção provisória. Seja qual for o tipo de emenda, precisa ser executada com muita habilidade e precisão: com as ferramentas e conectores corretos. As emendas causam atenuações no sinal. A norma \cite{abnt14565}, p. 11, condena a feitura de emendas e recomenda que não se projete tal coisa em cabeamento estruturado.
 
 
 
@@ -534,13 +523,13 @@ Na tabela da próxima página, temos o cálculo detalhado do quanto de cabo é e
 
 \subsection{Identificação dos cabos}
 
-Os cabos serão identificados pela seguinte nomenclatura:
+Os cabos serão identificados pela seguinte \textbf{nomenclatura} (as letras concernentes aos cabos reservas não são previstas na norma e estão dispostas apenas para organização do projeto):
 \\
 
-\textbf{PT} = Ponto da \textbf{Área de Trabalho.}
+\textbf{PT} = Ponto de Telecomunicações.
 \\
 
-\textbf{A} = Letra indicadora do \textbf{Eletroduto de Cabos} / Grupo de Portas.
+\textbf{A} = Letra indicadora CB.
 \\
 
 \textbf{1} = Número do cabo.
@@ -552,23 +541,23 @@ Os cabos serão identificados pela seguinte nomenclatura:
 \textbf{1} = Número após o R indica o cabo reserva em questão.
 \\
 
-Os cabos reservas passam pelos eletrodutos, porém eles não descem pelas canaletas de distribuição. A sobra destes condutores ficam armazenadas numa caixa protegida em cima da própria laje, sem adentrar o duto de passagem vertical, especialmente no começo dos pontos de descida dos cabos. Porém, eles ficam suspensos até o \textit{rack}, na origem do sinal: assim caso algum cabo venha a estar danificado na certificação, a manobra para substituir aquele por outro cabo já passado resumir-se-á apenas pela prensagem deste no \textit{patch panel} e na outra extremidade, sim, a recuperação da sobra, pela laje.
+Os cabos reservas passam pelos eletrodutos, porém eles não descem pelas canaletas de distribuição. A sobra destes condutores ficam armazenadas numa caixa protegida em cima da própria laje, sem adentrar o duto de passagem vertical, especialmente no começo dos pontos de descida dos cabos. Porém, eles ficam suspensos até o \textit{rack}, na origem do cabeamento: assim caso algum cabo venha a estar danificado na certificação, a manobra para substituir aquele por outro cabo já instalado resumir-se-á apenas pela prensagem deste no \textit{patch panel} e na extremidade PT.
 \\
 
 Os \textit{patch cords} são identificados com etiquetadoras, bem como os cabos que saem com uma pequena sobra salvaguarda das canaletas.
 
 \section{Implantação}
 
-O cronograma de implantação caracteriza-se pela fase sequencial de atividades. Temos que \textbf{DB}, o projetista que executa as tarefas e \textbf{EP}, empresa privada que auxilia o projetista na execução de determinados passos da implantação; e, logo após a implantação, a certificação. Note-se que por vezes, o executor da tarefa de determinado dia é iniciado ou por \textbf{DB}, ou por \textbf{EP}. No caso que questão, o que inicia é o que tem a liderança da respectiva tarefa, e o que vem por segundo é o auxiliar da tarefa.
+O cronograma de implantação caracteriza-se pela fase sequencial de atividades. Temos que \textbf{DB}, o projetista (autor deste projeto) que executa as tarefas e \textbf{EP}, empresa privada que auxilia o projetista na execução de determinados passos da implantação; e, logo após a implantação, a certificação. Note-se que por vezes, o executor da tarefa de determinado dia é iniciado ou por \textbf{DB}, ou por \textbf{EP}. No caso que questão, o que inicia é o que tem a liderança da respectiva tarefa, e o que vem por segundo é o auxiliar da tarefa.
 \\
 
 A maior parte da execução da implantação concentra-se no período da primeira quinzena de dezembro. A quinzena final de novembro destina-se à aquisição dos equipamentos passivos e ativos: tarefa que demanda tempo e busca pelos componentes, ou até mesmo ainda o recebimento destes por transportadora ou Correios, dependendo do tipo de compra, por isto dá-se um considerável prazo para apenas a juntada de todos os passivos e encaminhamentos.
 \\
 
-O cronograma de certificação está incluído na tabela da próxima página, porém, esta etapa está mais dependente da empresa privada do que do projetista e é esta empresa que faz a homologação final da certificação. Estipulou-se uma janela de 1 mês com uso operacional da rede para proceder-se à certificação em si, documentada. O mês de fevereiro de 2020 é escolhido para realizar-se a certificação da rede.
+O cronograma de certificação está incluído na tabela da próxima página, porém, esta etapa está mais dependente da empresa privada do que do projetista e é esta empresa que faz a homologação final da certificação junto ao órgão de regulamentação. Estipulou-se uma janela de 1 mês com uso operacional da rede para proceder-se à certificação em si, documentada. O mês de fevereiro de 2020 é escolhido para realizar-se a certificação da rede.
 \\
 
-Muito importante notar no cronograma de implantação que há um plantão de 24 horas para chamado diretamente ao projetista, para que este solucione todo os problemas assim que for solicitado, pois a rede ainda não estará certificada, mas pequenos problemas poderão ser solucionados neste plantão semanal de 24 horas. Isso faz parte da garantia do contrato.
+Muito importante notar no cronograma de implantação que há um plantão de 24 horas para chamado diretamente ao projetista, para que este solucione todos os problemas assim que for solicitado, pois a rede ainda não estará certificada e  pequenos problemas poderão ser solucionados neste plantão semanal de 24 horas. Isso faz parte da garantia do contrato.
 
 
 \includepdf[page={1}]{cronograma} 
@@ -576,16 +565,15 @@ Muito importante notar no cronograma de implantação que há um plantão de 24 
 
 \section{Plano de certificação}
 
-A certificação deverá acontecer após a finalização da instalação da rede, e devidamente em estado operacional. O escopo do projeto será apenas apresentar o cronograma de certificação e determinar quais testes devem ser realizados.
+A certificação deverá acontecer após a finalização da instalação da rede e em devido estado operacional. O escopo do projeto será apenas apresentar o cronograma de certificação e determinar quais testes deverão ser realizados.
 \\
 
-Como dito anteriormente, numa rede certificada, deve-se evitar ao extremo o uso de cabos feitos manualmente, com a chamada ``crimpagem''. Para cada ponto, deverá ser utilizada a ferramenta de inserção, e dali o seu respectivo \textit{patch-cord} injetado será conectado.
+Como dito anteriormente, numa rede certificada, não se deve usar o conhecido ``cabo crimpado'' (\textit{crimp}, do inglês: prensar, comprimir, inserir). Para cada PT, deverá ser utilizada a \textbf{Ferramenta de Inserção}, e dali o seu respectivo \textit{patch-cord} injetado será conectado.
 
-Recomenda-se usar o certificador da marca \textit{Fluke}, modelo \textbf{DTX-1800 
-}ou compatível.
-\\
+Recomenda-se usar o certificador da marca \textit{Fluke}, modelo \textbf{DTX-1800}ou compatível.
+\\`
 
-Para a certificação, aponta-se 10 elementos essenciais para o relatório, dos quais os principais estão explanados em síntese.
+Para a certificação, apontam-se 10 elementos essenciais para o relatório, dos quais os principais estão explanados em síntese.
 \\
 \subsection{NEXT - Near End Cross Talk --- ou Paradiafonia}
 A definição de \textit{crosstalk} (diafonia) é o fenômeno ocorrente de um sinal que causa uma interferência não-intencional em outro sinal próximo. O parâmetro \textbf{NEXT} refere-se à capacidade de detectar essa interferência, partindo do ponto de saída do cabo, ou seja, na posição em que estamos: perto do cabo. Na figura abaixo temos o exemplo gráfico de um exame \textbf{NEXT} bem sucedido --- as linhas precisam estar uniformes e não se deve observar nenhuma linha muito abaixo da linha base.
@@ -602,10 +590,10 @@ A definição de \textit{crosstalk} (diafonia) é o fenômeno ocorrente de um si
 
 
 \subsection{FEXT - Far End Cross Talk --- ou Telediafonia}
-Vimos que o NEXT é o fenômeno que o ocorre no início do cabeamento, o ponto de partida. O \textbf{FEXT} seria o mesmo fenômeno, só que fazendo \textbf{o caminho inverso}: partindo do ponto de chegada do cabo, ou seja, na posição em que o cabo termina. O \textbf{FEXT} em si constitui-se num problema menos grave que o \textbf{NEXT}, pois os sinais de interferência são mais fracos, e além disso, atenuados. De acordo com a fabricante Fluke, FEXT não nos diz muito sobre os sinais pois eles são atenuados conforme a distância \cite{understading}. Para melhores resultados, a atenuação é removida da medida FEXT e renomeada para ELFEXT (Equal Level Far End Crosstalk). Atualmente, esta terminologia foi rebatizada para ACRF. 
+Vimos que o NEXT é o fenômeno que o ocorre no início do cabeamento, o ponto de partida. O \textbf{FEXT} seria o mesmo fenômeno, só que fazendo \textbf{o caminho inverso}: partindo do ponto de chegada do cabo, ou seja, na posição em que o cabo termina. O \textbf{FEXT} em si constitui-se num problema menos grave que o \textbf{NEXT}, pois os sinais de interferência são mais fracos, e além disso, são sinais atenuados. De acordo com a fabricante Fluke, FEXT não nos diz muito sobre os sinais pois eles são atenuados conforme a distância \cite{understading}. Para melhores resultados, a atenuação é removida da medida FEXT e renomeada para ELFEXT (Equal Level Far End Crosstalk). Atualmente, esta terminologia foi rebatizada para ACRF. 
 
 \subsection{ACR-N - Attenuation To Cross Talk Ratio Near End --- ou Atenuação relativa à Diafonia}
-Atenuação relativa à diafonia é definida pela diminuição gradual do fluxo de intensidade de um sinal, dentro de um meio, como o cobre, por exemplo. Como já mencionado, o FEXT não nos traz resultados efetivos na certificação, pois com a atenuação, seus valores não são de confiabilidade devido à atenuação. Com a inserção de perda, é possível verificar a resiliência do material em situação de ``estresse''. Nas figuras abaixo temos os respectivos exemplo de gráfico ACR-N.
+Atenuação relativa à diafonia é definida pela diminuição gradual do fluxo de intensidade de um sinal, dentro de um meio, como o cobre, por exemplo. Como já mencionado, o FEXT não nos traz resultados efetivos na certificação, pois com a atenuação, seus valores não são de confiabilidade devido a tal fenômeno. Com a inserção de perda (atenuação), é possível verificar a resiliência do material em situação de ``estresse''. Nas figuras abaixo temos os respectivos exemplo de gráfico ACR-N.
 
 \begin{figure}[H]
 	%	\centering
@@ -618,7 +606,7 @@ Atenuação relativa à diafonia é definida pela diminuição gradual do fluxo 
 
 
 \subsection{Os onze itens de uma rede certificada}
-Nesta seção estão listadas os 10 itens que compõem, os 10 testes primários, para conformidade com os padrões TIA/EIA, sendo alguns deles listados, para entendimento legado.
+Nesta seção estão listadas os 10 itens que compõem, os 10 testes primários, para conformidade com os padrões TIA/EIA, sendo alguns deles listados, para entendimento legado. (Note-se que por vezes, estamos seguindo a Norma ABNT NBR 14565 e por outras vezes, citamos a norma TIA/EIA. Isto é normal, haja vista que alguns padrões são universais, porém a observância da norma regional deve prevalecer na maioria dos casos, especialmente se esta disciplina o assunto rigorosamente.)
 
 \begin{itemize}
 \item Mapa de fios - verifica continuidade de fios e revela a pinagem. 
@@ -637,13 +625,13 @@ Nesta seção estão listadas os 10 itens que compõem, os 10 testes primários,
 
 \section{Plano de manutenção}
 
-Caberá ao setor de T.I. averiguar o estado dos passivos e realizar testes de rede ocasionalmente, incluindo velocidades do \textit{link} contratado de Internet e sinal da rede \textit{wireless}. Também se faz necessário verificar presença de intempéries tais como infiltrações, se ocorrerem, pois é comum que infiltrações por chuva causem danos ao cabeamento. 
+Caberá ao departamento de T.I. averiguar o estado dos passivos e realizar testes de rede ocasionalmente, incluindo velocidades do \textit{link} contratado de Internet e sinal da rede \textit{wireless}. Também se faz necessário verificar presença de intempéries tais como infiltrações, se ocorrerem, pois é comum que infiltrações por chuva causem danos ao cabeamento. 
 \\
 
-Como prática mensal o administrador da rede deverá gerar relatórios de tráfego e buscar a otimização da rede lógica, com a criação de VLANs, para reduzir tráfego e diminuir o domínio de \textit{broadcast}, aumentando a segurança. Verificações ocasionais nos relatórios do servidor do roteador para verificar acesso indevido ou tentativa de acesso indevido por parte de funcionário ou ataque externo.
+Como prática mensal o administrador da rede deverá gerar relatórios de tráfego e buscar a otimização da rede lógica, com a criação de VLANs, para reduzir tráfego e diminuir o domínio de \textit{broadcast}, aumentando a segurança. Verificações ocasionais nos relatórios do servidor e do roteador para verificar acesso ou tentativa de acesso indevido por parte de funcionário ou ataque externo.
 \\
 
-O setor de T.I. deverá criar políticas de segurança para o escritório, tais como acesso ao SEQ e a proteção física dos ativos. É recomendado também a instalação de detectores de fumaça (fora do escopo deste projeto) para a percepção de incêndio.
+O departamento de T.I. deverá criar políticas de segurança para o escritório, tais como controle de acesso ao SEQ e a proteção física dos ativos. É recomendado também a instalação de detectores de fumaça (fora do escopo deste projeto) para a percepção de início de incêndio.
 
 \subsection{Plano de expansão}
 
@@ -651,7 +639,7 @@ Obviamente que neste projeto de baixa complexidade, já é considerado esgotado 
 \\
 
 \begin{itemize}
-	\item Transformar os cabos existentes em links de tronco.
+	\item Transformar os cabos existentes em \textit{links} de tronco.
 	\\
 	\item Abandonar o cabeamento de cobre em favor da passagem de fibra óptica pelos eletrodutos, com os devidos \textit{switches} dedicados e separados por duto.
 	\\
@@ -666,7 +654,7 @@ Obviamente que neste projeto de baixa complexidade, já é considerado esgotado 
 O projeto não demanda, de forma incisiva, condicionamento de ar no cômodo SEQ, pela pouca quantidade de equipamentos presentes. Porém, há um risco inerente de interferência eletromagnética com possíveis cabos de rede que fiquem menos que 30 cm de distância de linhas de energia. A norma estabelece o mínimo de 30 cm de distância dessas linhas, pois o eletromagnetismo provindo desses cabos podem gerar ruídos na rede.
 \\
 
-Não obstante, visa-se que o custo do cabo blindado e de conectores, não se faz imperativo nessa instalação de escritório, pois o custo destes cabos é extremamente elevado, podendo tal valor ser mais compensador gastos com passagem de uma única fibra óptica e a instalação de seus conversores de mídia, na camada 1 e 2. A fibra óptica não captura nenhuma interferência de eletricidade. Ver mais sobre o cancelamento de eletromagnetismo na seção \textbf{Recomendações.}
+Não obstante, visa-se que o custo do cabo blindado e de conectores, não se faz imperativo nessa instalação de escritório, pois o custo destes cabos é extremamente elevado. Ver mais sobre o \textit{cancelamento} na seção \textbf{Recomendações.}
 
 
 
@@ -688,13 +676,7 @@ Preço na data de 10 de novembro de 2019.
 
 \subsection{Cancelamento do eletromagnetismo --- uma explicação}
 
-Muitas vezes, técnicos da elétrica sequer possuem um conhecimento sólido de como se deve ter em mente o \textit{cancelamento} do eletromagnetismo gerado por fios de cobre. Geralmente, temos que os elétrons viajam como que na forma de uma espiral, pelo cobre, com determinada força em uma direção específica. Quando a corrente de um fio de energia recebe o sinal pelo negativo, e volta por outro condutor do mesmo cordão de força, temos que as duas forças serão opostas, causando a repulsa dos dois condutores --- gerando uma interferência para além do cordão. 
-\\
-
-Se o condutor do mesmo cordão de força tivermos a corrente indo na mesma direção, então as forças serão atrativas, causando a atração dos dois condutores --- gerando uma interferência para dentro do núcleo do cordão. Desta forma, podemos pensar que não é sem lógica que cordões de força possuem filamentos de cobre trançados: para causar o cancelamento. O mesmo ocorre com os filamentos de fios de rede --- a trança do par ajuda a haver um \textit{cancelamento} da interferência entre filamentos de cobre.
-\\
-
-A ilustração abaixo demonstra tecnicamente o cancelamento da pela trança do par. Com o trançamento do par, faz-se a alternação de do polo positivo e negativo, sendo a força zero a intermediária coadjuvante no cancelamento.
+Muitas vezes, técnicos da elétrica sequer possuem um conhecimento sólido de como se deve ter em mente o \textit{cancelamento} de ruídos no campo magnético, nos fios de cobre. Geralmente, temos que os elétrons viajam como que na forma de uma espiral, numa direção específica. Quando a corrente de um fio de energia recebe o sinal pelo negativo, e volta por outro condutor do mesmo cordão de força, temos que as duas forças serão opostas, causando a repulsa dos dois condutores --- gerando um campo magnético que ultrapassa os limites para além dos condutores (o que estiver neste espaço, será afetado pelo campo magnético). Se o sinal de um dos condutores do cordão de energia estiver prosseguindo o seu caminho igualmente como o seu par, na mesma direção, então as forças serão atrativas, causando a atração dos dois condutores --- gerando um campo magnético para dentro do núcleo geográfico dos condutores. Desta forma, podemos pensar que não é sem lógica que cordões de força possuem filamentos de cobre trançados: para causar o \textit{cancelamento}. O mesmo ocorre com os filamentos de fios \textit{Ethernet} --- a trança do par ajuda na aplicação do devido \textit{cancelamento} da interferência entre os filamentos de cobre. A ilustração abaixo demonstra tecnicamente o cancelamento da pela trança do par. Com o trançamento do par, faz-se a alternação de do polo positivo e negativo, sendo a força zero a intermediária coadjuvante no cancelamento. A mesma ilustração vale para o sinal de energia de corrente alternada, sob um único par de cobre, com filamentos trançados (Observação: o mesmo não ocorreria com fios sólidos usados em corrente alternada.)
 \\
 
 \begin{figure}[H]
@@ -710,11 +692,11 @@ A ilustração abaixo demonstra tecnicamente o cancelamento da pela trança do p
 
 \subsection{Aterramento}
 
-Contra choques elétricos, é essencial que o pino central da tomada padrão atual, seja ligado a um ponto terra. Note-se que este aterramento não protege os equipamentos de descargas elétricas na rede de distribuição de energia --- fazendo-se necessário o uso de filtros de linha com proteção contra surtos, se a edificação não dispor de uma implementação que ocasione a equipotencialização principal \cite{abnt5410}, p. 145.
+Contra choques elétricos, é essencial que o pino central da tomada padrão atual seja ligado a um ponto terra. Note-se que este aterramento não protege os equipamentos de descargas elétricas na rede de distribuição de energia, fazendo-se necessário o uso de filtros de linha com proteção contra surtos, se a edificação não dispor de uma implementação que ocasione a \textit{equipotencialização} principal \cite{abnt5410}, p. 145.
 
 \subsection{Equipamentos que causem danos}
 
-Um equipamento que geralmente causa danos aos ativos é o chamado ``estabilizador de energia''. Na verdade, o famigerado ``estabilizador de energia'' é um chaveador automático, que prejudica a senoidal da rede de energia de corrente alternada --- sendo entregue de forma distorcida ao equipamento ativo e causando dano irreversível ou mau funcionamento. É recomendado que seja \textit{``banido''} tal equipamento, por não haver base científica sobre sua capacidade de ``estabilizar'' a energia.
+Um equipamento que geralmente causa danos aos ativos é o chamado ``estabilizador de energia''. Na verdade, o \textit{famigerado} ``estabilizador de energia'' é um chaveador automático, que prejudica a senoidal da rede de energia de corrente alternada --- sendo entregue de forma distorcida ao equipamento ativo e também dispositivos finais, causando dano irreversível ou mau funcionamento. É recomendado que seja \textit{``banido''} tal equipamento, por não haver base científica sobre sua capacidade de ``estabilizar'' a energia.
 
 \subsection{Manutenção da energia em caso de queda}
 
@@ -722,10 +704,10 @@ Para equipamentos em que se precise de manutenção da energia mesmo após a que
 
 \subsection{Ativos de Rede}
 
-Como recomendação de ativos é algo importante, dada a considerável massiva presença de roteadores, \textit{switches} e pontos de acesso de baixíssima qualidade revendidos no varejo brasileiro. Cita-se as marcas D-Link e TP-Link como produtos que se deve evitar a aquisição. No caso entre de dilema dessas marcas, ficar com produtos D-Link por possuírem melhor construção física do que TP-Link. 
+Como recomendação de ativos é algo importante, dada a considerável massiva presença de roteadores, \textit{switches} e pontos de acesso de baixíssima qualidade revendidos no varejo brasileiro, cita-se as marcas D-Link e TP-Link como produtos que se deve evitar a aquisição. No caso entre estar em dilema pela escolha de uma das duas marcas criticadas, optar pela marca D-Link. 
 \\
 
-Como recomendação de uma implementação com equipamentos de qualidade, 100\% configuráveis, não há restrição por outras marcas, porém, a recomendação deste projeto segue-se da seguinte forma:
+Como recomendação de uma implementação com equipamentos de qualidade, 100\% configuráveis, tanto por interfaces proprietárias como linha de comando, não há restrição por outras marcas, porém, a recomendação deste projeto segue-se da seguinte forma:
 
 \subsubsection{Roteador}
 
@@ -738,7 +720,7 @@ Roteador com interfaces para dois serviços de Internet, \textit{Gigabit Etherne
 
 \subsubsection{\textit{Switch}}
 
-\textit{Switch} com interfaces \textit{Gigabit Ethernet}, gerenciável por linha de comando, com suporte a VLAN, ACL, modo de tronco e modo de acesso. Recomenda-se roteadores empresariais da marca \textit{Cisco} ou \textit{Mikrotik}. Por exemplo:
+\textit{Switch} com interfaces \textit{Gigabit Ethernet}, gerenciável por linha de comando, com suporte a VLAN, ACL, modo de tronco e modo de acesso. Recomendam-se \textit{switches} empresariais da marca \textit{Cisco} ou \textit{Mikrotik}. Por exemplo:
 
 \begin{itemize}
 	\item{Cisco Catalyst 2960-L Series}. Equipado com o Cisco IOS e acesso ao console do dispositivo para administração. Este equipamento tem 48 portas para a LAN.
